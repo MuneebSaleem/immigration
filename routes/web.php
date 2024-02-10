@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-    return view('home_custom');
-});
+
+Route::resource('/test', TestController::class);
+
+Route::post('/get_country', 'App\Http\Controllers\TestController@getcountry');
 
 Auth::routes();
 

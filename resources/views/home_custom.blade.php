@@ -272,7 +272,7 @@
 
                     <!-- STEP 1 -->
                     <section id="eligibility-form-step-1-section" class="form-step">
-                        <form autocomplete="off" id="eligibility-form-step-1" action="#" method="get">
+                        <form autocomplete="off" id="eligibility-form-step-1"  method="get">
                             <div class="step-header">
                                 <div class="w-75">
                                     <h2 class="text-text-primary mb-16">
@@ -358,108 +358,171 @@
                                 </div>
                             </div>
 
-                            <div class="step-row mt-16 mt-md-24 text-center">
-                                <button type="submit" id="eligibility-form-step-1-submit" class="btn btn-success text-white text-uppercase">
-                                    Continue Application                                    </button>
+
+                        </form>
+                        <div class="step-row mt-16 mt-md-24 text-center">
+                            <button type="submit" id="eligibility-form-step-1-submit" class="btn btn-success text-white text-uppercase">
+                                Continue Application</button>
+                            <button  id="form_add" class="btn btn-success text-white text-uppercase">
+                                Form 2</button>
+                            <button  id="form_2" class="btn btn-success text-white text-uppercase">
+                                Form 3</button>
+                        </div>
+                    </section>
+
+                    <!-- STEP 2 -->
+
+                    <section id="eligibility-form-step-2-section" class="form-step">
+                        <form autocomplete="off" id="eligibility-form-step-2" action="#" method="get">
+                            <div class="summary mb-16 d-flex" id="eligibility-form-step-2-outcome"><img src="{{ asset('app-logo/tick.png')  }}" alt="esta-eligibility-checker-eligible"><h2 class="text-center">Congratulations!<br>
+                                    You are eligible to apply for ESTA</h2>
+                            </div>
+
+                            <div class="step-row d-flex bg-gray-50 border-0-4 p-8" id="citizenship-meta">
+                                <div class="col-6">
+                                    <span class="meta-key">Citizenship:</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="meta-value">AUSTRALIA (AUS)</span>
+                                </div>
+                            </div>
+
+                            <div class="step-row d-flex bg-gray-50 border-0-4 p-8" id="length-of-stay-meta">
+                                <div class="col-6">
+                                    <span class="meta-key">Max length of stay:</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="meta-value">90 Days</span>
+                                </div>
+                            </div>
+
+                            <div class="step-row d-flex bg-gray-50 border-0-4 p-8" id="type-meta">
+                                <div class="col-6">
+                                    <span class="meta-key">Recommended visa type:</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="meta-value">ESTA</span>
+                                </div>
+                            </div>
+
+                            <div class="step-row bg-gray-50 border-0-4 p-8">
+                                <div class="col-12 px-0 d-flex">
+                                    <p class="billing-label my-auto">
+                                        Do you live in the same country as your citizenship?                                            </p>
+
+                                    <div class="d-flex my-auto ms-auto">
+                                        <div class="form-check">
+                                            <label class="form-item-wrapper" for="is-billing-country-not-residence-yes">
+                                                <input type="radio" id="is-billing-country-not-residence-yes" name="is-billing-country-not-residence" value="yes">
+                                                Yes                                                    </label>
+                                        </div>
+
+                                        <div class="form-check ms-4">
+                                            <label class="form-item-wrapper" for="is-billing-country-not-residence-no">
+                                                <input type="radio" id="is-billing-country-not-residence-no" name="is-billing-country-not-residence" value="no">
+                                                No                                                    </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="errorConfirmCountryYouLiveInRadio" class="text-danger"></div>
+
+                                <div class="col-12">
+                                    <div id="billing-country-wrapper" class="wrapper d-none mt-24">
+                                        <label for="country">
+                                            Select the country you live in:                                                </label>
+                                        <select name="billing-country">
+
+                                            <option value="" disabled="" selected="">Select country</option>
+
+                                            <option class="notranslate" value="AFGHANISTAN (AFG)">AFGHANISTAN (AFG)</option><option class="notranslate" value="ALAND ISLANDS (ALA)">ALAND ISLANDS (ALA)</option><option class="notranslate" value="ALBANIA (ALB)">ALBANIA (ALB)</option><option class="notranslate" value="ALGERIA (DZA)">ALGERIA (DZA)</option><option class="notranslate" value="AMERICAN SAMOA (ASM)">AMERICAN SAMOA (ASM)</option><option class="notranslate" value="ANDORRA (AND)">ANDORRA (AND)</option><option class="notranslate" value="ANGOLA (AGO)">ANGOLA (AGO)</option><option class="notranslate" value="ANGUILLA (AIA)">ANGUILLA (AIA)</option><option class="notranslate" value="ANTARCTICA (ATA)">ANTARCTICA (ATA)</option><option class="notranslate" value="ANTIGUA AND BARBUDA (ATG)">ANTIGUA AND BARBUDA (ATG)</option><option class="notranslate" value="ARGENTINA (ARG)">ARGENTINA (ARG)</option><option class="notranslate" value="ARMENIA (ARM)">ARMENIA (ARM)</option><option class="notranslate" value="ARUBA (ABW)">ARUBA (ABW)</option><option class="notranslate" value="AUSTRALIA (AUS)">AUSTRALIA (AUS)</option><option class="notranslate" value="AUSTRIA (AUT)">AUSTRIA (AUT)</option><option class="notranslate" value="AZERBAIJAN (AZE)">AZERBAIJAN (AZE)</option><option class="notranslate" value="BAHAMAS (BHS)">BAHAMAS (BHS)</option><option class="notranslate" value="BAHRAIN (BHR)">BAHRAIN (BHR)</option><option class="notranslate" value="BANGLADESH (BGD)">BANGLADESH (BGD)</option><option class="notranslate" value="BARBADOS (BRB)">BARBADOS (BRB)</option><option class="notranslate" value="BELARUS (BLR)">BELARUS (BLR)</option><option class="notranslate" value="BELGIUM (BEL)">BELGIUM (BEL)</option><option class="notranslate" value="BELIZE (BLZ)">BELIZE (BLZ)</option><option class="notranslate" value="BENIN (BEN)">BENIN (BEN)</option><option class="notranslate" value="BERMUDA (BMU)">BERMUDA (BMU)</option><option class="notranslate" value="BHUTAN (BTN)">BHUTAN (BTN)</option><option class="notranslate" value="BOLIVIA (BOL)">BOLIVIA (BOL)</option><option class="notranslate" value="BONAIRE, SINT EUSTATIUS AND SABA (BES)">BONAIRE, SINT EUSTATIUS AND SABA (BES)</option><option class="notranslate" value="BOSNIA AND HERZEGOVINA (BIH)">BOSNIA AND HERZEGOVINA (BIH)</option><option class="notranslate" value="BOTSWANA (BWA)">BOTSWANA (BWA)</option><option class="notranslate" value="BOUVET ISLAND (BVT)">BOUVET ISLAND (BVT)</option><option class="notranslate" value="BRAZIL (BRA)">BRAZIL (BRA)</option><option class="notranslate" value="BRITISH INDIAN OCEAN TERRITORY (IOT)">BRITISH INDIAN OCEAN TERRITORY (IOT)</option><option class="notranslate" value="BRUNEI (BRN)">BRUNEI (BRN)</option><option class="notranslate" value="BULGARIA (BGR)">BULGARIA (BGR)</option><option class="notranslate" value="BURKINA FASO (BFA)">BURKINA FASO (BFA)</option><option class="notranslate" value="BURMA (BUR)">BURMA (BUR)</option><option class="notranslate" value="BURUNDI (BDI)">BURUNDI (BDI)</option><option class="notranslate" value="CAMBODIA (KHM)">CAMBODIA (KHM)</option><option class="notranslate" value="CAMEROON (CMR)">CAMEROON (CMR)</option><option class="notranslate" value="CANADA (CAN)">CANADA (CAN)</option><option class="notranslate" value="CANTON AND ENDERBURY ISLANDS (CTE)">CANTON AND ENDERBURY ISLANDS (CTE)</option><option class="notranslate" value="CAPE VERDE (CPV)">CAPE VERDE (CPV)</option><option class="notranslate" value="CAYMAN ISLANDS (CYM)">CAYMAN ISLANDS (CYM)</option><option class="notranslate" value="CENTRAL AFRICAN REPUBLIC (CAF)">CENTRAL AFRICAN REPUBLIC (CAF)</option><option class="notranslate" value="CHAD (TCD)">CHAD (TCD)</option><option class="notranslate" value="CHILE (CHL)">CHILE (CHL)</option><option class="notranslate" value="CHINA (CHN)">CHINA (CHN)</option><option class="notranslate" value="CHRISTMAS ISLAND (CXR)">CHRISTMAS ISLAND (CXR)</option><option class="notranslate" value="COCOS (KEELING) ISLANDS (CCK)">COCOS (KEELING) ISLANDS (CCK)</option><option class="notranslate" value="COLOMBIA (COL)">COLOMBIA (COL)</option><option class="notranslate" value="COMOROS (COM)">COMOROS (COM)</option><option class="notranslate" value="CONGO, DEMOCRATIC REPUBLIC OF (COD)">CONGO, DEMOCRATIC REPUBLIC OF (COD)</option><option class="notranslate" value="CONGO, REPUBLIC OF (COG)">CONGO, REPUBLIC OF (COG)</option><option class="notranslate" value="COOK ISLANDS (COK)">COOK ISLANDS (COK)</option><option class="notranslate" value="COSTA RICA (CRI)">COSTA RICA (CRI)</option><option class="notranslate" value="COTE D'IVOIRE (CIV)">COTE D'IVOIRE (CIV)</option><option class="notranslate" value="CROATIA (HRV)">CROATIA (HRV)</option><option class="notranslate" value="CUBA (CUB)">CUBA (CUB)</option><option class="notranslate" value="CURACAO (CUW)">CURACAO (CUW)</option><option class="notranslate" value="CYPRUS (CYP)">CYPRUS (CYP)</option><option class="notranslate" value="CZECH REPUBLIC (CZE)">CZECH REPUBLIC (CZE)</option><option class="notranslate" value="DEMOCRATIC YEMEN (YMD)">DEMOCRATIC YEMEN (YMD)</option><option class="notranslate" value="DENMARK (DNK)">DENMARK (DNK)</option><option class="notranslate" value="DJIBOUTI (DJI)">DJIBOUTI (DJI)</option><option class="notranslate" value="DOMINICA (DMA)">DOMINICA (DMA)</option><option class="notranslate" value="DOMINICAN REPUBLIC (DOM)">DOMINICAN REPUBLIC (DOM)</option><option class="notranslate" value="DRONNING MAUD LAND (DML)">DRONNING MAUD LAND (DML)</option><option class="notranslate" value="EAST TIMOR (TMP)">EAST TIMOR (TMP)</option><option class="notranslate" value="ECUADOR (ECU)">ECUADOR (ECU)</option><option class="notranslate" value="EGYPT (EGY)">EGYPT (EGY)</option><option class="notranslate" value="EL SALVADOR (SLV)">EL SALVADOR (SLV)</option><option class="notranslate" value="EQUATORIAL GUINEA (GNQ)">EQUATORIAL GUINEA (GNQ)</option><option class="notranslate" value="ERITREA (ERI)">ERITREA (ERI)</option><option class="notranslate" value="ESTONIA (EST)">ESTONIA (EST)</option><option class="notranslate" value="ETHIOPIA (ETH)">ETHIOPIA (ETH)</option><option class="notranslate" value="FALKLAND ISLANDS (FLK)">FALKLAND ISLANDS (FLK)</option><option class="notranslate" value="FAROE ISLANDS (FRO)">FAROE ISLANDS (FRO)</option><option class="notranslate" value="FIJI (FJI)">FIJI (FJI)</option><option class="notranslate" value="FINLAND (FIN)">FINLAND (FIN)</option><option class="notranslate" value="FRANCE (FRA)">FRANCE (FRA)</option><option class="notranslate" value="FRANCE METROPOLITAN (FXX)">FRANCE METROPOLITAN (FXX)</option><option class="notranslate" value="FRENCH GUIANA (GUF)">FRENCH GUIANA (GUF)</option><option class="notranslate" value="FRENCH POLYNESIA (PYF)">FRENCH POLYNESIA (PYF)</option><option class="notranslate" value="FRENCH SOUTHERN TERRITORIES (ATF)">FRENCH SOUTHERN TERRITORIES (ATF)</option><option class="notranslate" value="GABON (GAB)">GABON (GAB)</option><option class="notranslate" value="GAMBIA (GMB)">GAMBIA (GMB)</option><option class="notranslate" value="GEORGIA (GEO)">GEORGIA (GEO)</option><option class="notranslate" value="GERMANY (DEU)">GERMANY (DEU)</option><option class="notranslate" value="GHANA (GHA)">GHANA (GHA)</option><option class="notranslate" value="GIBRALTAR (GIB)">GIBRALTAR (GIB)</option><option class="notranslate" value="GREECE (GRC)">GREECE (GRC)</option><option class="notranslate" value="GREENLAND (GRL)">GREENLAND (GRL)</option><option class="notranslate" value="GRENADA (GRD)">GRENADA (GRD)</option><option class="notranslate" value="GUADELOUPE (GLP)">GUADELOUPE (GLP)</option><option class="notranslate" value="GUAM (GUM)">GUAM (GUM)</option><option class="notranslate" value="GUATEMALA (GTM)">GUATEMALA (GTM)</option><option class="notranslate" value="GUERNSEY (GGY)">GUERNSEY (GGY)</option><option class="notranslate" value="GUINEA (GIN)">GUINEA (GIN)</option><option class="notranslate" value="GUINEA-BISSAU (GNB)">GUINEA-BISSAU (GNB)</option><option class="notranslate" value="GUYANA (GUY)">GUYANA (GUY)</option><option class="notranslate" value="HAITI (HTI)">HAITI (HTI)</option><option class="notranslate" value="HEARD AND MC DONALD ISLANDS (HMD)">HEARD AND MC DONALD ISLANDS (HMD)</option><option class="notranslate" value="HONDURAS (HND)">HONDURAS (HND)</option><option class="notranslate" value="HONG KONG (HKG)">HONG KONG (HKG)</option><option class="notranslate" value="HUNGARY (HUN)">HUNGARY (HUN)</option><option class="notranslate" value="ICELAND (ISL)">ICELAND (ISL)</option><option class="notranslate" value="INDIA (IND)">INDIA (IND)</option><option class="notranslate" value="INDONESIA (IDN)">INDONESIA (IDN)</option><option class="notranslate" value="IRAN (IRN)">IRAN (IRN)</option><option class="notranslate" value="IRAQ (IRQ)">IRAQ (IRQ)</option><option class="notranslate" value="IRELAND (IRL)">IRELAND (IRL)</option><option class="notranslate" value="ISLE OF MAN (IMN)">ISLE OF MAN (IMN)</option><option class="notranslate" value="ISRAEL (ISR)">ISRAEL (ISR)</option><option class="notranslate" value="ITALY (ITA)">ITALY (ITA)</option><option class="notranslate" value="JAMAICA (JAM)">JAMAICA (JAM)</option><option class="notranslate" value="JAPAN (JPN)">JAPAN (JPN)</option><option class="notranslate" value="JERSEY (JEY)">JERSEY (JEY)</option><option class="notranslate" value="JOHNSTON ISLAND (JTN)">JOHNSTON ISLAND (JTN)</option><option class="notranslate" value="JORDAN (JOR)">JORDAN (JOR)</option><option class="notranslate" value="KAZAKHSTAN (KAZ)">KAZAKHSTAN (KAZ)</option><option class="notranslate" value="KENYA (KEN)">KENYA (KEN)</option><option class="notranslate" value="KIRIBATI (KIR)">KIRIBATI (KIR)</option><option class="notranslate" value="KOSOVO (KVV)">KOSOVO (KVV)</option><option class="notranslate" value="KUWAIT (KWT)">KUWAIT (KWT)</option><option class="notranslate" value="KYRGYZSTAN (KGZ)">KYRGYZSTAN (KGZ)</option><option class="notranslate" value="LAOS (LAO)">LAOS (LAO)</option><option class="notranslate" value="LATVIA (LVA)">LATVIA (LVA)</option><option class="notranslate" value="LEBANON (LBN)">LEBANON (LBN)</option><option class="notranslate" value="LESOTHO (LSO)">LESOTHO (LSO)</option><option class="notranslate" value="LIBERIA (LBR)">LIBERIA (LBR)</option><option class="notranslate" value="LIBYA (LBY)">LIBYA (LBY)</option><option class="notranslate" value="LIECHTENSTEIN (LIE)">LIECHTENSTEIN (LIE)</option><option class="notranslate" value="LITHUANIA (LTU)">LITHUANIA (LTU)</option><option class="notranslate" value="LUXEMBOURG (LUX)">LUXEMBOURG (LUX)</option><option class="notranslate" value="MACAU (MAC)">MACAU (MAC)</option><option class="notranslate" value="MACEDONIA (MKD)">MACEDONIA (MKD)</option><option class="notranslate" value="MADAGASCAR (MDG)">MADAGASCAR (MDG)</option><option class="notranslate" value="MALAWI (MWI)">MALAWI (MWI)</option><option class="notranslate" value="MALAYSIA (MYS)">MALAYSIA (MYS)</option><option class="notranslate" value="MALDIVES (MDV)">MALDIVES (MDV)</option><option class="notranslate" value="MALI (MLI)">MALI (MLI)</option><option class="notranslate" value="MALTA (MLT)">MALTA (MLT)</option><option class="notranslate" value="MARSHALL ISLANDS (MHL)">MARSHALL ISLANDS (MHL)</option><option class="notranslate" value="MARTINIQUE (MTQ)">MARTINIQUE (MTQ)</option><option class="notranslate" value="MAURITANIA (MRT)">MAURITANIA (MRT)</option><option class="notranslate" value="MAURITIUS (MUS)">MAURITIUS (MUS)</option><option class="notranslate" value="MAYOTTE (MYT)">MAYOTTE (MYT)</option><option class="notranslate" value="MEXICO (MEX)">MEXICO (MEX)</option><option class="notranslate" value="MICRONESIA - FEDERATED STATES OF (FSM)">MICRONESIA - FEDERATED STATES OF (FSM)</option><option class="notranslate" value="MIDWAY ISLANDS (MID)">MIDWAY ISLANDS (MID)</option><option class="notranslate" value="MOLDOVA (MDA)">MOLDOVA (MDA)</option><option class="notranslate" value="MONACO (MCO)">MONACO (MCO)</option><option class="notranslate" value="MONGOLIA (MNG)">MONGOLIA (MNG)</option><option class="notranslate" value="MONTENEGRO (MNE)">MONTENEGRO (MNE)</option><option class="notranslate" value="MONTSERRAT (MSR)">MONTSERRAT (MSR)</option><option class="notranslate" value="MOROCCO (MAR)">MOROCCO (MAR)</option><option class="notranslate" value="MOZAMBIQUE (MOZ)">MOZAMBIQUE (MOZ)</option><option class="notranslate" value="MYANMAR (MMR)">MYANMAR (MMR)</option><option class="notranslate" value="NAMIBIA (NAM)">NAMIBIA (NAM)</option><option class="notranslate" value="NAURU (NRU)">NAURU (NRU)</option><option class="notranslate" value="NEPAL (NPL)">NEPAL (NPL)</option><option class="notranslate" value="NETHERLANDS (NLD)">NETHERLANDS (NLD)</option><option class="notranslate" value="NETHERLANDS ANTILLES (ANT)">NETHERLANDS ANTILLES (ANT)</option><option class="notranslate" value="NEUTRAL ZONE (NTZ)">NEUTRAL ZONE (NTZ)</option><option class="notranslate" value="NEW CALEDONIA (NCL)">NEW CALEDONIA (NCL)</option><option class="notranslate" value="NEW ZEALAND (NZL)">NEW ZEALAND (NZL)</option><option class="notranslate" value="NICARAGUA (NIC)">NICARAGUA (NIC)</option><option class="notranslate" value="NIGER (NER)">NIGER (NER)</option><option class="notranslate" value="NIGERIA (NGA)">NIGERIA (NGA)</option><option class="notranslate" value="NIUE (NIU)">NIUE (NIU)</option><option class="notranslate" value="NORFOLK ISLAND (NFK)">NORFOLK ISLAND (NFK)</option><option class="notranslate" value="NORTH KOREA (PRK)">NORTH KOREA (PRK)</option><option class="notranslate" value="NORTHERN MARIANA ISLANDS (MNP)">NORTHERN MARIANA ISLANDS (MNP)</option><option class="notranslate" value="NORWAY (NOR)">NORWAY (NOR)</option><option class="notranslate" value="OMAN (OMN)">OMAN (OMN)</option><option class="notranslate" value="PAKISTAN (PAK)">PAKISTAN (PAK)</option><option class="notranslate" value="PALAU (PLW)">PALAU (PLW)</option><option class="notranslate" value="PALESTINIAN TERRITORIES (PSE)">PALESTINIAN TERRITORIES (PSE)</option><option class="notranslate" value="PANAMA (PAN)">PANAMA (PAN)</option><option class="notranslate" value="PAPUA NEW GUINEA (PNG)">PAPUA NEW GUINEA (PNG)</option><option class="notranslate" value="PARAGUAY (PRY)">PARAGUAY (PRY)</option><option class="notranslate" value="PERU (PER)">PERU (PER)</option><option class="notranslate" value="PHILIPPINES (PHL)">PHILIPPINES (PHL)</option><option class="notranslate" value="PITCAIRN ISLANDS (PCN)">PITCAIRN ISLANDS (PCN)</option><option class="notranslate" value="POLAND (POL)">POLAND (POL)</option><option class="notranslate" value="PORTUGAL (PRT)">PORTUGAL (PRT)</option><option class="notranslate" value="PUERTO RICO (PRI)">PUERTO RICO (PRI)</option><option class="notranslate" value="QATAR (QAT)">QATAR (QAT)</option><option class="notranslate" value="REUNION (REU)">REUNION (REU)</option><option class="notranslate" value="ROMANIA (ROM)">ROMANIA (ROM)</option><option class="notranslate" value="RUSSIA (RUS)">RUSSIA (RUS)</option><option class="notranslate" value="RWANDA (RWA)">RWANDA (RWA)</option><option class="notranslate" value="SAINT BARTHELEMY (BLM)">SAINT BARTHELEMY (BLM)</option><option class="notranslate" value="SAINT KITTS AND NEVIS (KNA)">SAINT KITTS AND NEVIS (KNA)</option><option class="notranslate" value="SAINT LUCIA (LCA)">SAINT LUCIA (LCA)</option><option class="notranslate" value="SAINT MARTIN (FRENCH PART) (MAF)">SAINT MARTIN (FRENCH PART) (MAF)</option><option class="notranslate" value="SAINT VINCENT AND THE GRENADINES (VCT)">SAINT VINCENT AND THE GRENADINES (VCT)</option><option class="notranslate" value="SAMOA (WSM)">SAMOA (WSM)</option><option class="notranslate" value="SAN MARINO (SMR)">SAN MARINO (SMR)</option><option class="notranslate" value="SAO TOME AND PRINCIPE (STP)">SAO TOME AND PRINCIPE (STP)</option><option class="notranslate" value="SAUDI ARABIA (SAU)">SAUDI ARABIA (SAU)</option><option class="notranslate" value="SENEGAL (SEN)">SENEGAL (SEN)</option><option class="notranslate" value="SERBIA (SRB)">SERBIA (SRB)</option><option class="notranslate" value="SERBIA AND MONTENEGRO (SCG)">SERBIA AND MONTENEGRO (SCG)</option><option class="notranslate" value="SEYCHELLES (SYC)">SEYCHELLES (SYC)</option><option class="notranslate" value="SIERRA LEONE (SLE)">SIERRA LEONE (SLE)</option><option class="notranslate" value="SINGAPORE (SGP)">SINGAPORE (SGP)</option><option class="notranslate" value="SINT MAARTEN (DUTCH PART) (SXM)">SINT MAARTEN (DUTCH PART) (SXM)</option><option class="notranslate" value="SLOVAKIA (SVK)">SLOVAKIA (SVK)</option><option class="notranslate" value="SLOVENIA (SVN)">SLOVENIA (SVN)</option><option class="notranslate" value="SOLOMON ISLANDS (SLB)">SOLOMON ISLANDS (SLB)</option><option class="notranslate" value="SOMALIA (SOM)">SOMALIA (SOM)</option><option class="notranslate" value="SOUTH AFRICA (ZAF)">SOUTH AFRICA (ZAF)</option><option class="notranslate" value="SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS SGS)">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS SGS)</option><option class="notranslate" value="SOUTH KOREA (KOR)">SOUTH KOREA (KOR)</option><option class="notranslate" value="SOUTH SUDAN (SSD)">SOUTH SUDAN (SSD)</option><option class="notranslate" value="SPAIN (ESP)">SPAIN (ESP)</option><option class="notranslate" value="SRI LANKA (LKA)">SRI LANKA (LKA)</option><option class="notranslate" value="ST. HELENA (SHN)">ST. HELENA (SHN)</option><option class="notranslate" value="ST. PIERRE AND MIQUELON (SPM)">ST. PIERRE AND MIQUELON (SPM)</option><option class="notranslate" value="SUDAN (SDN)">SUDAN (SDN)</option><option class="notranslate" value="SURINAME (SUR)">SURINAME (SUR)</option><option class="notranslate" value="SVALBARD AND JAN MAYEN ISLANDS (SJM)">SVALBARD AND JAN MAYEN ISLANDS (SJM)</option><option class="notranslate" value="SWAZILAND (SWZ)">SWAZILAND (SWZ)</option><option class="notranslate" value="SWEDEN (SWE)">SWEDEN (SWE)</option><option class="notranslate" value="SWITZERLAND (CHE)">SWITZERLAND (CHE)</option><option class="notranslate" value="SYRIA (SYR)">SYRIA (SYR)</option><option class="notranslate" value="TAIWAN (TWN)">TAIWAN (TWN)</option><option class="notranslate" value="TAJIKISTAN (TJK)">TAJIKISTAN (TJK)</option><option class="notranslate" value="TANZANIA (TZA)">TANZANIA (TZA)</option><option class="notranslate" value="THAILAND (THA)">THAILAND (THA)</option><option class="notranslate" value="TIMOR-LESTE (TLS)">TIMOR-LESTE (TLS)</option><option class="notranslate" value="TOGO (TGO)">TOGO (TGO)</option><option class="notranslate" value="TOKELAU (TKL)">TOKELAU (TKL)</option><option class="notranslate" value="TONGA (TON)">TONGA (TON)</option><option class="notranslate" value="TRINIDAD AND TOBAGO (TTO)">TRINIDAD AND TOBAGO (TTO)</option><option class="notranslate" value="TUNISIA (TUN)">TUNISIA (TUN)</option><option class="notranslate" value="TURKEY (TUR)">TURKEY (TUR)</option><option class="notranslate" value="TURKMENISTAN (TKM)">TURKMENISTAN (TKM)</option><option class="notranslate" value="TURKS AND CAICOS ISLANDS (TCA)">TURKS AND CAICOS ISLANDS (TCA)</option><option class="notranslate" value="TUVALU (TUV)">TUVALU (TUV)</option><option class="notranslate" value="UGANDA (UGA)">UGANDA (UGA)</option><option class="notranslate" value="UKRAINE (UKR)">UKRAINE (UKR)</option><option class="notranslate" value="UNITED ARAB EMIRATES (ARE)">UNITED ARAB EMIRATES (ARE)</option><option class="notranslate" value="UNITED KINGDOM (GBR)">UNITED KINGDOM (GBR)</option><option class="notranslate" value="UNITED STATES (USA)">UNITED STATES (USA)</option><option class="notranslate" value="UNITED STATES MINOR OUTLYING ISLANDS (UMI)">UNITED STATES MINOR OUTLYING ISLANDS (UMI)</option><option class="notranslate" value="URUGUAY (URY)">URUGUAY (URY)</option><option class="notranslate" value="UZBEKISTAN (UZB)">UZBEKISTAN (UZB)</option><option class="notranslate" value="VANUATU (VUT)">VANUATU (VUT)</option><option class="notranslate" value="VATICAN CITY STATE (HOLY SEE) (VAT)">VATICAN CITY STATE (HOLY SEE) (VAT)</option><option class="notranslate" value="VENEZUELA (VEN)">VENEZUELA (VEN)</option><option class="notranslate" value="VIETNAM (VNM)">VIETNAM (VNM)</option><option class="notranslate" value="VIRGIN ISLANDS (BRITISH) (VGB)">VIRGIN ISLANDS (BRITISH) (VGB)</option><option class="notranslate" value="VIRGIN ISLANDS (U.S.) (VIR)">VIRGIN ISLANDS (U.S.) (VIR)</option><option class="notranslate" value="WAKE ISLAND (WAK)">WAKE ISLAND (WAK)</option><option class="notranslate" value="WALLIS AND FUTUNA ISLANDS (WLF)">WALLIS AND FUTUNA ISLANDS (WLF)</option><option class="notranslate" value="WESTERN SAHARA (ESH)">WESTERN SAHARA (ESH)</option><option class="notranslate" value="YEMEN (YEM)">YEMEN (YEM)</option><option class="notranslate" value="ZAIRE (ZAR)">ZAIRE (ZAR)</option><option class="notranslate" value="ZAMBIA (ZMB)">ZAMBIA (ZMB)</option><option class="notranslate" value="ZIMBABWE (ZWE)">ZIMBABWE (ZWE)</option>                                                </select>
+                                        <div id="errorConfirmCountryYouLiveInCountry" class="text-danger"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="general-info" class="step-row d-none border-0-4"><div class="col-md-6 p-0">
+                                    <p class="text-strong"><strong>ESTA Eligibility:</strong></p>
+                                    <ul>
+                                        <li><span dir="ltr" role="presentation">You are a citizen of one of the Visa Waiver Countries</span></li>
+                                        <li><span dir="ltr" role="presentation">You will travel to the US for 90 days or less</span></li>
+                                        <li><span dir="ltr" role="presentation">You will travel for business or pleasure</span></li>
+                                        <li><span dir="ltr" role="presentation">You are not in possession of a visitor visa</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 p-0 mb-3 mb-md-0">
+                                    <p class="text-strong"><strong>What you need to apply for ESTA:</strong></p>
+                                    <ul>
+                                        <li><span dir="ltr" role="presentation">A valid passport</span></li>
+                                        <li><span dir="ltr" role="presentation">A valid email address</span></li>
+                                        <li><span dir="ltr" role="presentation">Your home address and phone number</span></li>
+                                        <li><span dir="ltr" role="presentation">Your emergency contact’s phone number and email</span></li>
+                                        <li><span dir="ltr" role="presentation">A valid credit card with available funds</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="step-row mt-16 mt-md- text-center">
+                                <button type="submit" id="eligibility-form-step-2-submit" class="btn btn-success text-white text-uppercase">APPLY NOW</button>
                             </div>
                         </form>
                     </section>
 
-                    <!-- STEP 2 -->
-{{--                    <section id="eligibility-form-step-2-section" class="form-step d-none">--}}
-{{--                        <form autocomplete="off" id="eligibility-form-step-2" action="#" method="get">--}}
-{{--                            <div class="summary mb-16 d-flex" id="eligibility-form-step-2-outcome">--}}
-
-{{--                            </div>--}}
-
-{{--                            <div class="step-row d-flex bg-gray-50 border-0-4 p-8" id="citizenship-meta">--}}
-{{--                                <div class="col-6">--}}
-{{--                                    <span class="meta-key"></span>--}}
-{{--                                </div>--}}
-{{--                                <div class="col-6 text-end">--}}
-{{--                                    <span class="meta-value"></span>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="step-row d-flex bg-gray-50 border-0-4 p-8" id="length-of-stay-meta">--}}
-{{--                                <div class="col-6">--}}
-{{--                                    <span class="meta-key"></span>--}}
-{{--                                </div>--}}
-{{--                                <div class="col-6 text-end">--}}
-{{--                                    <span class="meta-value"></span>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="step-row d-flex bg-gray-50 border-0-4 p-8" id="type-meta">--}}
-{{--                                <div class="col-6">--}}
-{{--                                    <span class="meta-key"></span>--}}
-{{--                                </div>--}}
-{{--                                <div class="col-6 text-end">--}}
-{{--                                    <span class="meta-value"></span>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="step-row bg-gray-50 border-0-4 p-8">--}}
-{{--                                <div class="col-12 px-0 d-flex">--}}
-{{--                                    <p class="billing-label my-auto">--}}
-{{--                                        Do you live in the same country as your citizenship?                                            </p>--}}
-
-{{--                                    <div class="d-flex my-auto ms-auto">--}}
-{{--                                        <div class="form-check">--}}
-{{--                                            <label class="form-item-wrapper" for="is-billing-country-not-residence-yes">--}}
-{{--                                                <input type="radio" id="is-billing-country-not-residence-yes" name="is-billing-country-not-residence" value="yes">--}}
-{{--                                                Yes                                                    </label>--}}
-{{--                                        </div>--}}
-
-{{--                                        <div class="form-check ms-4">--}}
-{{--                                            <label class="form-item-wrapper" for="is-billing-country-not-residence-no">--}}
-{{--                                                <input type="radio" id="is-billing-country-not-residence-no" name="is-billing-country-not-residence" value="no">--}}
-{{--                                                No                                                    </label>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-
-{{--                                </div>--}}
-{{--                                <div id="errorConfirmCountryYouLiveInRadio" class="text-danger"></div>--}}
-
-{{--                                <div class="col-12">--}}
-{{--                                    <div id="billing-country-wrapper" class="wrapper d-none mt-24">--}}
-{{--                                        <label for="country">--}}
-{{--                                            Select the country you live in:                                                </label>--}}
-{{--                                        <select name="billing-country">--}}
-
-{{--                                            <option value="" disabled="" selected="">Select country</option>--}}
-
-{{--                                            <option class="notranslate" value="AFGHANISTAN (AFG)">AFGHANISTAN (AFG)</option><option class="notranslate" value="ALAND ISLANDS (ALA)">ALAND ISLANDS (ALA)</option><option class="notranslate" value="ALBANIA (ALB)">ALBANIA (ALB)</option><option class="notranslate" value="ALGERIA (DZA)">ALGERIA (DZA)</option><option class="notranslate" value="AMERICAN SAMOA (ASM)">AMERICAN SAMOA (ASM)</option><option class="notranslate" value="ANDORRA (AND)">ANDORRA (AND)</option><option class="notranslate" value="ANGOLA (AGO)">ANGOLA (AGO)</option><option class="notranslate" value="ANGUILLA (AIA)">ANGUILLA (AIA)</option><option class="notranslate" value="ANTARCTICA (ATA)">ANTARCTICA (ATA)</option><option class="notranslate" value="ANTIGUA AND BARBUDA (ATG)">ANTIGUA AND BARBUDA (ATG)</option><option class="notranslate" value="ARGENTINA (ARG)">ARGENTINA (ARG)</option><option class="notranslate" value="ARMENIA (ARM)">ARMENIA (ARM)</option><option class="notranslate" value="ARUBA (ABW)">ARUBA (ABW)</option><option class="notranslate" value="AUSTRALIA (AUS)">AUSTRALIA (AUS)</option><option class="notranslate" value="AUSTRIA (AUT)">AUSTRIA (AUT)</option><option class="notranslate" value="AZERBAIJAN (AZE)">AZERBAIJAN (AZE)</option><option class="notranslate" value="BAHAMAS (BHS)">BAHAMAS (BHS)</option><option class="notranslate" value="BAHRAIN (BHR)">BAHRAIN (BHR)</option><option class="notranslate" value="BANGLADESH (BGD)">BANGLADESH (BGD)</option><option class="notranslate" value="BARBADOS (BRB)">BARBADOS (BRB)</option><option class="notranslate" value="BELARUS (BLR)">BELARUS (BLR)</option><option class="notranslate" value="BELGIUM (BEL)">BELGIUM (BEL)</option><option class="notranslate" value="BELIZE (BLZ)">BELIZE (BLZ)</option><option class="notranslate" value="BENIN (BEN)">BENIN (BEN)</option><option class="notranslate" value="BERMUDA (BMU)">BERMUDA (BMU)</option><option class="notranslate" value="BHUTAN (BTN)">BHUTAN (BTN)</option><option class="notranslate" value="BOLIVIA (BOL)">BOLIVIA (BOL)</option><option class="notranslate" value="BONAIRE, SINT EUSTATIUS AND SABA (BES)">BONAIRE, SINT EUSTATIUS AND SABA (BES)</option><option class="notranslate" value="BOSNIA AND HERZEGOVINA (BIH)">BOSNIA AND HERZEGOVINA (BIH)</option><option class="notranslate" value="BOTSWANA (BWA)">BOTSWANA (BWA)</option><option class="notranslate" value="BOUVET ISLAND (BVT)">BOUVET ISLAND (BVT)</option><option class="notranslate" value="BRAZIL (BRA)">BRAZIL (BRA)</option><option class="notranslate" value="BRITISH INDIAN OCEAN TERRITORY (IOT)">BRITISH INDIAN OCEAN TERRITORY (IOT)</option><option class="notranslate" value="BRUNEI (BRN)">BRUNEI (BRN)</option><option class="notranslate" value="BULGARIA (BGR)">BULGARIA (BGR)</option><option class="notranslate" value="BURKINA FASO (BFA)">BURKINA FASO (BFA)</option><option class="notranslate" value="BURMA (BUR)">BURMA (BUR)</option><option class="notranslate" value="BURUNDI (BDI)">BURUNDI (BDI)</option><option class="notranslate" value="CAMBODIA (KHM)">CAMBODIA (KHM)</option><option class="notranslate" value="CAMEROON (CMR)">CAMEROON (CMR)</option><option class="notranslate" value="CANADA (CAN)">CANADA (CAN)</option><option class="notranslate" value="CANTON AND ENDERBURY ISLANDS (CTE)">CANTON AND ENDERBURY ISLANDS (CTE)</option><option class="notranslate" value="CAPE VERDE (CPV)">CAPE VERDE (CPV)</option><option class="notranslate" value="CAYMAN ISLANDS (CYM)">CAYMAN ISLANDS (CYM)</option><option class="notranslate" value="CENTRAL AFRICAN REPUBLIC (CAF)">CENTRAL AFRICAN REPUBLIC (CAF)</option><option class="notranslate" value="CHAD (TCD)">CHAD (TCD)</option><option class="notranslate" value="CHILE (CHL)">CHILE (CHL)</option><option class="notranslate" value="CHINA (CHN)">CHINA (CHN)</option><option class="notranslate" value="CHRISTMAS ISLAND (CXR)">CHRISTMAS ISLAND (CXR)</option><option class="notranslate" value="COCOS (KEELING) ISLANDS (CCK)">COCOS (KEELING) ISLANDS (CCK)</option><option class="notranslate" value="COLOMBIA (COL)">COLOMBIA (COL)</option><option class="notranslate" value="COMOROS (COM)">COMOROS (COM)</option><option class="notranslate" value="CONGO, DEMOCRATIC REPUBLIC OF (COD)">CONGO, DEMOCRATIC REPUBLIC OF (COD)</option><option class="notranslate" value="CONGO, REPUBLIC OF (COG)">CONGO, REPUBLIC OF (COG)</option><option class="notranslate" value="COOK ISLANDS (COK)">COOK ISLANDS (COK)</option><option class="notranslate" value="COSTA RICA (CRI)">COSTA RICA (CRI)</option><option class="notranslate" value="COTE D'IVOIRE (CIV)">COTE D'IVOIRE (CIV)</option><option class="notranslate" value="CROATIA (HRV)">CROATIA (HRV)</option><option class="notranslate" value="CUBA (CUB)">CUBA (CUB)</option><option class="notranslate" value="CURACAO (CUW)">CURACAO (CUW)</option><option class="notranslate" value="CYPRUS (CYP)">CYPRUS (CYP)</option><option class="notranslate" value="CZECH REPUBLIC (CZE)">CZECH REPUBLIC (CZE)</option><option class="notranslate" value="DEMOCRATIC YEMEN (YMD)">DEMOCRATIC YEMEN (YMD)</option><option class="notranslate" value="DENMARK (DNK)">DENMARK (DNK)</option><option class="notranslate" value="DJIBOUTI (DJI)">DJIBOUTI (DJI)</option><option class="notranslate" value="DOMINICA (DMA)">DOMINICA (DMA)</option><option class="notranslate" value="DOMINICAN REPUBLIC (DOM)">DOMINICAN REPUBLIC (DOM)</option><option class="notranslate" value="DRONNING MAUD LAND (DML)">DRONNING MAUD LAND (DML)</option><option class="notranslate" value="EAST TIMOR (TMP)">EAST TIMOR (TMP)</option><option class="notranslate" value="ECUADOR (ECU)">ECUADOR (ECU)</option><option class="notranslate" value="EGYPT (EGY)">EGYPT (EGY)</option><option class="notranslate" value="EL SALVADOR (SLV)">EL SALVADOR (SLV)</option><option class="notranslate" value="EQUATORIAL GUINEA (GNQ)">EQUATORIAL GUINEA (GNQ)</option><option class="notranslate" value="ERITREA (ERI)">ERITREA (ERI)</option><option class="notranslate" value="ESTONIA (EST)">ESTONIA (EST)</option><option class="notranslate" value="ETHIOPIA (ETH)">ETHIOPIA (ETH)</option><option class="notranslate" value="FALKLAND ISLANDS (FLK)">FALKLAND ISLANDS (FLK)</option><option class="notranslate" value="FAROE ISLANDS (FRO)">FAROE ISLANDS (FRO)</option><option class="notranslate" value="FIJI (FJI)">FIJI (FJI)</option><option class="notranslate" value="FINLAND (FIN)">FINLAND (FIN)</option><option class="notranslate" value="FRANCE (FRA)">FRANCE (FRA)</option><option class="notranslate" value="FRANCE METROPOLITAN (FXX)">FRANCE METROPOLITAN (FXX)</option><option class="notranslate" value="FRENCH GUIANA (GUF)">FRENCH GUIANA (GUF)</option><option class="notranslate" value="FRENCH POLYNESIA (PYF)">FRENCH POLYNESIA (PYF)</option><option class="notranslate" value="FRENCH SOUTHERN TERRITORIES (ATF)">FRENCH SOUTHERN TERRITORIES (ATF)</option><option class="notranslate" value="GABON (GAB)">GABON (GAB)</option><option class="notranslate" value="GAMBIA (GMB)">GAMBIA (GMB)</option><option class="notranslate" value="GEORGIA (GEO)">GEORGIA (GEO)</option><option class="notranslate" value="GERMANY (DEU)">GERMANY (DEU)</option><option class="notranslate" value="GHANA (GHA)">GHANA (GHA)</option><option class="notranslate" value="GIBRALTAR (GIB)">GIBRALTAR (GIB)</option><option class="notranslate" value="GREECE (GRC)">GREECE (GRC)</option><option class="notranslate" value="GREENLAND (GRL)">GREENLAND (GRL)</option><option class="notranslate" value="GRENADA (GRD)">GRENADA (GRD)</option><option class="notranslate" value="GUADELOUPE (GLP)">GUADELOUPE (GLP)</option><option class="notranslate" value="GUAM (GUM)">GUAM (GUM)</option><option class="notranslate" value="GUATEMALA (GTM)">GUATEMALA (GTM)</option><option class="notranslate" value="GUERNSEY (GGY)">GUERNSEY (GGY)</option><option class="notranslate" value="GUINEA (GIN)">GUINEA (GIN)</option><option class="notranslate" value="GUINEA-BISSAU (GNB)">GUINEA-BISSAU (GNB)</option><option class="notranslate" value="GUYANA (GUY)">GUYANA (GUY)</option><option class="notranslate" value="HAITI (HTI)">HAITI (HTI)</option><option class="notranslate" value="HEARD AND MC DONALD ISLANDS (HMD)">HEARD AND MC DONALD ISLANDS (HMD)</option><option class="notranslate" value="HONDURAS (HND)">HONDURAS (HND)</option><option class="notranslate" value="HONG KONG (HKG)">HONG KONG (HKG)</option><option class="notranslate" value="HUNGARY (HUN)">HUNGARY (HUN)</option><option class="notranslate" value="ICELAND (ISL)">ICELAND (ISL)</option><option class="notranslate" value="INDIA (IND)">INDIA (IND)</option><option class="notranslate" value="INDONESIA (IDN)">INDONESIA (IDN)</option><option class="notranslate" value="IRAN (IRN)">IRAN (IRN)</option><option class="notranslate" value="IRAQ (IRQ)">IRAQ (IRQ)</option><option class="notranslate" value="IRELAND (IRL)">IRELAND (IRL)</option><option class="notranslate" value="ISLE OF MAN (IMN)">ISLE OF MAN (IMN)</option><option class="notranslate" value="ISRAEL (ISR)">ISRAEL (ISR)</option><option class="notranslate" value="ITALY (ITA)">ITALY (ITA)</option><option class="notranslate" value="JAMAICA (JAM)">JAMAICA (JAM)</option><option class="notranslate" value="JAPAN (JPN)">JAPAN (JPN)</option><option class="notranslate" value="JERSEY (JEY)">JERSEY (JEY)</option><option class="notranslate" value="JOHNSTON ISLAND (JTN)">JOHNSTON ISLAND (JTN)</option><option class="notranslate" value="JORDAN (JOR)">JORDAN (JOR)</option><option class="notranslate" value="KAZAKHSTAN (KAZ)">KAZAKHSTAN (KAZ)</option><option class="notranslate" value="KENYA (KEN)">KENYA (KEN)</option><option class="notranslate" value="KIRIBATI (KIR)">KIRIBATI (KIR)</option><option class="notranslate" value="KOSOVO (KVV)">KOSOVO (KVV)</option><option class="notranslate" value="KUWAIT (KWT)">KUWAIT (KWT)</option><option class="notranslate" value="KYRGYZSTAN (KGZ)">KYRGYZSTAN (KGZ)</option><option class="notranslate" value="LAOS (LAO)">LAOS (LAO)</option><option class="notranslate" value="LATVIA (LVA)">LATVIA (LVA)</option><option class="notranslate" value="LEBANON (LBN)">LEBANON (LBN)</option><option class="notranslate" value="LESOTHO (LSO)">LESOTHO (LSO)</option><option class="notranslate" value="LIBERIA (LBR)">LIBERIA (LBR)</option><option class="notranslate" value="LIBYA (LBY)">LIBYA (LBY)</option><option class="notranslate" value="LIECHTENSTEIN (LIE)">LIECHTENSTEIN (LIE)</option><option class="notranslate" value="LITHUANIA (LTU)">LITHUANIA (LTU)</option><option class="notranslate" value="LUXEMBOURG (LUX)">LUXEMBOURG (LUX)</option><option class="notranslate" value="MACAU (MAC)">MACAU (MAC)</option><option class="notranslate" value="MACEDONIA (MKD)">MACEDONIA (MKD)</option><option class="notranslate" value="MADAGASCAR (MDG)">MADAGASCAR (MDG)</option><option class="notranslate" value="MALAWI (MWI)">MALAWI (MWI)</option><option class="notranslate" value="MALAYSIA (MYS)">MALAYSIA (MYS)</option><option class="notranslate" value="MALDIVES (MDV)">MALDIVES (MDV)</option><option class="notranslate" value="MALI (MLI)">MALI (MLI)</option><option class="notranslate" value="MALTA (MLT)">MALTA (MLT)</option><option class="notranslate" value="MARSHALL ISLANDS (MHL)">MARSHALL ISLANDS (MHL)</option><option class="notranslate" value="MARTINIQUE (MTQ)">MARTINIQUE (MTQ)</option><option class="notranslate" value="MAURITANIA (MRT)">MAURITANIA (MRT)</option><option class="notranslate" value="MAURITIUS (MUS)">MAURITIUS (MUS)</option><option class="notranslate" value="MAYOTTE (MYT)">MAYOTTE (MYT)</option><option class="notranslate" value="MEXICO (MEX)">MEXICO (MEX)</option><option class="notranslate" value="MICRONESIA - FEDERATED STATES OF (FSM)">MICRONESIA - FEDERATED STATES OF (FSM)</option><option class="notranslate" value="MIDWAY ISLANDS (MID)">MIDWAY ISLANDS (MID)</option><option class="notranslate" value="MOLDOVA (MDA)">MOLDOVA (MDA)</option><option class="notranslate" value="MONACO (MCO)">MONACO (MCO)</option><option class="notranslate" value="MONGOLIA (MNG)">MONGOLIA (MNG)</option><option class="notranslate" value="MONTENEGRO (MNE)">MONTENEGRO (MNE)</option><option class="notranslate" value="MONTSERRAT (MSR)">MONTSERRAT (MSR)</option><option class="notranslate" value="MOROCCO (MAR)">MOROCCO (MAR)</option><option class="notranslate" value="MOZAMBIQUE (MOZ)">MOZAMBIQUE (MOZ)</option><option class="notranslate" value="MYANMAR (MMR)">MYANMAR (MMR)</option><option class="notranslate" value="NAMIBIA (NAM)">NAMIBIA (NAM)</option><option class="notranslate" value="NAURU (NRU)">NAURU (NRU)</option><option class="notranslate" value="NEPAL (NPL)">NEPAL (NPL)</option><option class="notranslate" value="NETHERLANDS (NLD)">NETHERLANDS (NLD)</option><option class="notranslate" value="NETHERLANDS ANTILLES (ANT)">NETHERLANDS ANTILLES (ANT)</option><option class="notranslate" value="NEUTRAL ZONE (NTZ)">NEUTRAL ZONE (NTZ)</option><option class="notranslate" value="NEW CALEDONIA (NCL)">NEW CALEDONIA (NCL)</option><option class="notranslate" value="NEW ZEALAND (NZL)">NEW ZEALAND (NZL)</option><option class="notranslate" value="NICARAGUA (NIC)">NICARAGUA (NIC)</option><option class="notranslate" value="NIGER (NER)">NIGER (NER)</option><option class="notranslate" value="NIGERIA (NGA)">NIGERIA (NGA)</option><option class="notranslate" value="NIUE (NIU)">NIUE (NIU)</option><option class="notranslate" value="NORFOLK ISLAND (NFK)">NORFOLK ISLAND (NFK)</option><option class="notranslate" value="NORTH KOREA (PRK)">NORTH KOREA (PRK)</option><option class="notranslate" value="NORTHERN MARIANA ISLANDS (MNP)">NORTHERN MARIANA ISLANDS (MNP)</option><option class="notranslate" value="NORWAY (NOR)">NORWAY (NOR)</option><option class="notranslate" value="OMAN (OMN)">OMAN (OMN)</option><option class="notranslate" value="PAKISTAN (PAK)">PAKISTAN (PAK)</option><option class="notranslate" value="PALAU (PLW)">PALAU (PLW)</option><option class="notranslate" value="PALESTINIAN TERRITORIES (PSE)">PALESTINIAN TERRITORIES (PSE)</option><option class="notranslate" value="PANAMA (PAN)">PANAMA (PAN)</option><option class="notranslate" value="PAPUA NEW GUINEA (PNG)">PAPUA NEW GUINEA (PNG)</option><option class="notranslate" value="PARAGUAY (PRY)">PARAGUAY (PRY)</option><option class="notranslate" value="PERU (PER)">PERU (PER)</option><option class="notranslate" value="PHILIPPINES (PHL)">PHILIPPINES (PHL)</option><option class="notranslate" value="PITCAIRN ISLANDS (PCN)">PITCAIRN ISLANDS (PCN)</option><option class="notranslate" value="POLAND (POL)">POLAND (POL)</option><option class="notranslate" value="PORTUGAL (PRT)">PORTUGAL (PRT)</option><option class="notranslate" value="PUERTO RICO (PRI)">PUERTO RICO (PRI)</option><option class="notranslate" value="QATAR (QAT)">QATAR (QAT)</option><option class="notranslate" value="REUNION (REU)">REUNION (REU)</option><option class="notranslate" value="ROMANIA (ROM)">ROMANIA (ROM)</option><option class="notranslate" value="RUSSIA (RUS)">RUSSIA (RUS)</option><option class="notranslate" value="RWANDA (RWA)">RWANDA (RWA)</option><option class="notranslate" value="SAINT BARTHELEMY (BLM)">SAINT BARTHELEMY (BLM)</option><option class="notranslate" value="SAINT KITTS AND NEVIS (KNA)">SAINT KITTS AND NEVIS (KNA)</option><option class="notranslate" value="SAINT LUCIA (LCA)">SAINT LUCIA (LCA)</option><option class="notranslate" value="SAINT MARTIN (FRENCH PART) (MAF)">SAINT MARTIN (FRENCH PART) (MAF)</option><option class="notranslate" value="SAINT VINCENT AND THE GRENADINES (VCT)">SAINT VINCENT AND THE GRENADINES (VCT)</option><option class="notranslate" value="SAMOA (WSM)">SAMOA (WSM)</option><option class="notranslate" value="SAN MARINO (SMR)">SAN MARINO (SMR)</option><option class="notranslate" value="SAO TOME AND PRINCIPE (STP)">SAO TOME AND PRINCIPE (STP)</option><option class="notranslate" value="SAUDI ARABIA (SAU)">SAUDI ARABIA (SAU)</option><option class="notranslate" value="SENEGAL (SEN)">SENEGAL (SEN)</option><option class="notranslate" value="SERBIA (SRB)">SERBIA (SRB)</option><option class="notranslate" value="SERBIA AND MONTENEGRO (SCG)">SERBIA AND MONTENEGRO (SCG)</option><option class="notranslate" value="SEYCHELLES (SYC)">SEYCHELLES (SYC)</option><option class="notranslate" value="SIERRA LEONE (SLE)">SIERRA LEONE (SLE)</option><option class="notranslate" value="SINGAPORE (SGP)">SINGAPORE (SGP)</option><option class="notranslate" value="SINT MAARTEN (DUTCH PART) (SXM)">SINT MAARTEN (DUTCH PART) (SXM)</option><option class="notranslate" value="SLOVAKIA (SVK)">SLOVAKIA (SVK)</option><option class="notranslate" value="SLOVENIA (SVN)">SLOVENIA (SVN)</option><option class="notranslate" value="SOLOMON ISLANDS (SLB)">SOLOMON ISLANDS (SLB)</option><option class="notranslate" value="SOMALIA (SOM)">SOMALIA (SOM)</option><option class="notranslate" value="SOUTH AFRICA (ZAF)">SOUTH AFRICA (ZAF)</option><option class="notranslate" value="SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS SGS)">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS SGS)</option><option class="notranslate" value="SOUTH KOREA (KOR)">SOUTH KOREA (KOR)</option><option class="notranslate" value="SOUTH SUDAN (SSD)">SOUTH SUDAN (SSD)</option><option class="notranslate" value="SPAIN (ESP)">SPAIN (ESP)</option><option class="notranslate" value="SRI LANKA (LKA)">SRI LANKA (LKA)</option><option class="notranslate" value="ST. HELENA (SHN)">ST. HELENA (SHN)</option><option class="notranslate" value="ST. PIERRE AND MIQUELON (SPM)">ST. PIERRE AND MIQUELON (SPM)</option><option class="notranslate" value="SUDAN (SDN)">SUDAN (SDN)</option><option class="notranslate" value="SURINAME (SUR)">SURINAME (SUR)</option><option class="notranslate" value="SVALBARD AND JAN MAYEN ISLANDS (SJM)">SVALBARD AND JAN MAYEN ISLANDS (SJM)</option><option class="notranslate" value="SWAZILAND (SWZ)">SWAZILAND (SWZ)</option><option class="notranslate" value="SWEDEN (SWE)">SWEDEN (SWE)</option><option class="notranslate" value="SWITZERLAND (CHE)">SWITZERLAND (CHE)</option><option class="notranslate" value="SYRIA (SYR)">SYRIA (SYR)</option><option class="notranslate" value="TAIWAN (TWN)">TAIWAN (TWN)</option><option class="notranslate" value="TAJIKISTAN (TJK)">TAJIKISTAN (TJK)</option><option class="notranslate" value="TANZANIA (TZA)">TANZANIA (TZA)</option><option class="notranslate" value="THAILAND (THA)">THAILAND (THA)</option><option class="notranslate" value="TIMOR-LESTE (TLS)">TIMOR-LESTE (TLS)</option><option class="notranslate" value="TOGO (TGO)">TOGO (TGO)</option><option class="notranslate" value="TOKELAU (TKL)">TOKELAU (TKL)</option><option class="notranslate" value="TONGA (TON)">TONGA (TON)</option><option class="notranslate" value="TRINIDAD AND TOBAGO (TTO)">TRINIDAD AND TOBAGO (TTO)</option><option class="notranslate" value="TUNISIA (TUN)">TUNISIA (TUN)</option><option class="notranslate" value="TURKEY (TUR)">TURKEY (TUR)</option><option class="notranslate" value="TURKMENISTAN (TKM)">TURKMENISTAN (TKM)</option><option class="notranslate" value="TURKS AND CAICOS ISLANDS (TCA)">TURKS AND CAICOS ISLANDS (TCA)</option><option class="notranslate" value="TUVALU (TUV)">TUVALU (TUV)</option><option class="notranslate" value="UGANDA (UGA)">UGANDA (UGA)</option><option class="notranslate" value="UKRAINE (UKR)">UKRAINE (UKR)</option><option class="notranslate" value="UNITED ARAB EMIRATES (ARE)">UNITED ARAB EMIRATES (ARE)</option><option class="notranslate" value="UNITED KINGDOM (GBR)">UNITED KINGDOM (GBR)</option><option class="notranslate" value="UNITED STATES (USA)">UNITED STATES (USA)</option><option class="notranslate" value="UNITED STATES MINOR OUTLYING ISLANDS (UMI)">UNITED STATES MINOR OUTLYING ISLANDS (UMI)</option><option class="notranslate" value="URUGUAY (URY)">URUGUAY (URY)</option><option class="notranslate" value="UZBEKISTAN (UZB)">UZBEKISTAN (UZB)</option><option class="notranslate" value="VANUATU (VUT)">VANUATU (VUT)</option><option class="notranslate" value="VATICAN CITY STATE (HOLY SEE) (VAT)">VATICAN CITY STATE (HOLY SEE) (VAT)</option><option class="notranslate" value="VENEZUELA (VEN)">VENEZUELA (VEN)</option><option class="notranslate" value="VIETNAM (VNM)">VIETNAM (VNM)</option><option class="notranslate" value="VIRGIN ISLANDS (BRITISH) (VGB)">VIRGIN ISLANDS (BRITISH) (VGB)</option><option class="notranslate" value="VIRGIN ISLANDS (U.S.) (VIR)">VIRGIN ISLANDS (U.S.) (VIR)</option><option class="notranslate" value="WAKE ISLAND (WAK)">WAKE ISLAND (WAK)</option><option class="notranslate" value="WALLIS AND FUTUNA ISLANDS (WLF)">WALLIS AND FUTUNA ISLANDS (WLF)</option><option class="notranslate" value="WESTERN SAHARA (ESH)">WESTERN SAHARA (ESH)</option><option class="notranslate" value="YEMEN (YEM)">YEMEN (YEM)</option><option class="notranslate" value="ZAIRE (ZAR)">ZAIRE (ZAR)</option><option class="notranslate" value="ZAMBIA (ZMB)">ZAMBIA (ZMB)</option><option class="notranslate" value="ZIMBABWE (ZWE)">ZIMBABWE (ZWE)</option>                                                </select>--}}
-{{--                                        <div id="errorConfirmCountryYouLiveInCountry" class="text-danger"></div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div id="general-info" class="step-row d-none border-0-4">--}}
-
-{{--                            </div>--}}
-{{--                            <div class="step-row mt-16 mt-md- text-center">--}}
-{{--                                <button type="submit" id="eligibility-form-step-2-submit" class="btn btn-success text-white text-uppercase"></button>--}}
-{{--                            </div>--}}
-{{--                        </form>--}}
-{{--                    </section>--}}
 
 
+                    <section id="eligibility-form-step-add-form-section" class="form-step">
+                        <form autocomplete="off" id="eligibility-form-step-2" action="#" method="get">
+                            <div class="summary mb-16 d-flex" id="eligibility-form-step-2-outcome"><img src="{{ asset('app-logo/tick.png')  }}" alt="esta-eligibility-checker-eligible">
+                                <h2 style="padding-top: 15px;" class="text-center">Personal Details<br>
+                                </h2>
+                            </div>
 
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Full Legal Name</label>
+                                    <input type="text" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="inputPassword4">
+                                </div>
+                            </div>
 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Middle Name</label>
+                                    <input type="text" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="inputPassword4">
+                                </div>
+                            </div>
 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Phone No</label>
+                                    <input type="text" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputPassword4">
+                                </div>
+                            </div>
 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Confirm Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                            </div>
 
-
-
-
-
-
-
-
-
-
+                            <div class="step-row mt-16 mt-md- text-center">
+                                <button type="submit" id="eligibility-form-step-2-submit" class="btn btn-success text-white text-uppercase">Proceed To Application</button>
+                            </div>
+                        </form>
+                    </section>
 
                     <!-------------------------CUSTOM-------------------->
+
 
 
 
@@ -506,13 +569,13 @@
                                         <div class="form-check">
                                             <label class="form-item-wrapper" for="is-billing-country-not-residence-yes">
                                                 <input type="radio" id="is-billing-country-not-residence-yes" name="is-billing-country-not-residence" value="yes">
-                                                Yes                                                    </label>
+                                                Yes</label>
                                         </div>
 
                                         <div class="form-check ms-4">
                                             <label class="form-item-wrapper" for="is-billing-country-not-residence-no">
                                                 <input type="radio" id="is-billing-country-not-residence-no" name="is-billing-country-not-residence" value="no">
-                                                No                                                    </label>
+                                                No  </label>
                                         </div>
                                     </div>
 
@@ -767,10 +830,48 @@
 @endsection
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script>
-    $('#eligibility-form-step-1-submit').on('click', function () {
-        $("#eligibility-form-step-1-section").hide();
-        $("#eligibility-form-step-2-section").show();
+    $(document).ready(function(){
+        $('#has-secondary-citizenship').change(function(){
+            if($(this).is(":checked")) {
+                $('#secondary-citizenship-container').removeClass('d-none');
+            } else {
+                $('#secondary-citizenship-container').addClass('d-none');
+            }
+        });
+
+
+        $('input[name="is-billing-country-not-residence"]').change(function(){
+            if($(this).val() === 'no') {
+                $('#billing-country-wrapper').removeClass('d-none');
+            } else {
+                $('#billing-country-wrapper').addClass('d-none');
+            }
+        });
+
+
+        $('#eligibility-form-step-2-section').hide();
+        $('#eligibility-form-step-add-form-section').hide();
+
+        $('#form_2').click(function(){
+            $('#eligibility-form-step-1-section').hide();
+            $('#eligibility-form-step-2-section').show();
+        });
+
+        $('#form_add').click(function(){
+            $('#eligibility-form-step-1-section').hide();
+            $('#eligibility-form-step-2-section').hide();
+            $('#eligibility-form-step-add-form-section').show();
+        });
+
+        // Show Form 1 section when Continue Application button is clicked
+        $('#eligibility-form-step-1-submit').click(function(){
+            $('#eligibility-form-step-2-section').hide();
+            $('#eligibility-form-step-1-section').show();
+        });
     });
 </script>
 

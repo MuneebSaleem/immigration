@@ -303,13 +303,13 @@
                             <div id="secondary-citizenship-container" class="step-row d-none">
                                 <label for="citizenship-country-secondary">
                                     Select your second passport                                    </label>
-                                <select name="citizenship-country" id="citizenship-country">
+                                <select name="citizenship-country-second" id="citizenship-country-second">
                                     <option value="" disabled selected>Select country</option>
                                     @foreach($country as $c)
                                         <option value="{{ $c->countryCode }}">{{ $c->countryName }}</option>
                                     @endforeach
                                 </select>
-                                <div id="errorSecondaryCitizenship" class="text-danger"></div>
+                                <div id="errorCitizenshipsecond" class="text-danger" style="display: none">Please select your citizenship</div>
                             </div>
                             <hr>
 
@@ -674,10 +674,26 @@
             }
         });
 
+        var citizenshipCountrysecond = $('#citizenship-country-second');
+        var errorCitizenshipsecond = $('#errorCitizenshipsecond');
+
+        errorCitizenshipsecond.hide();
+
+        citizenshipCountrysecond.change(function() {
+            if (citizenshipCountrysecond.val() !== "") {
+                errorCitizenshipsecond.hide();
+            }
+        });
+
         // Event listener for button click
         $('#form_1_proceed').click(function() {
             if (citizenshipCountry.val() === "" || citizenshipCountry.val() === null) {
                 errorCitizenship.show();
+                return;
+            }
+
+            if (citizenshipCountrysecond.val() === "" || citizenshipCountrysecond.val() === null) {
+                errorCitizenshipsecond.show();
                 return;
             }
 

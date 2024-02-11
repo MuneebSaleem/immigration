@@ -288,7 +288,7 @@
                                         <option value="{{ $c->countryCode }}">{{ $c->countryName }}</option>
                                     @endforeach
                                 </select>
-                                <div id="errorCitizenship" class="text-danger"></div>
+                                <div id="errorCitizenship" class="text-danger" style="display: none">Please select your citizenship</div>
                             </div>
 
                             <div class="step-row">
@@ -380,7 +380,7 @@
 
 
                     <section id="eligibility-form-step-add-form-section" class="form-step">
-                        <form autocomplete="off" id="eligibility-form-step-2" action="#" method="get">
+                        <form autocomplete="off" id="eligibility-form-step-2-custom" action="#" method="get">
                             <div class="summary mb-16 d-flex" id="eligibility-form-step-2-outcome"><img src="{{ asset('app-logo/tick.png')  }}" alt="esta-eligibility-checker-eligible">
                                 <h2 style="padding-top: 15px;" class="text-center">Personal Details<br>
                                 </h2>
@@ -388,41 +388,48 @@
 
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Full Legal Name</label>
-                                    <input type="text" class="form-control" id="inputEmail4">
+                                    <label for="fullName" class="form-label">Full Legal Name</label>
+                                    <input type="text" name="fullName" class="form-control" id="fullName" required>
+                                    <div class="invalid-feedback">Please enter your full legal name.</div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="inputPassword4">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Middle Name</label>
-                                    <input type="text" class="form-control" id="inputEmail4">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="inputPassword4">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" name="firstName" class="form-control" id="firstName" required>
+                                    <div class="invalid-feedback">Please enter your first name.</div>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Phone No</label>
-                                    <input type="text" class="form-control" id="inputEmail4">
+                                    <label for="middleName" class="form-label">Middle Name</label>
+                                    <input type="text" name="middleName" class="form-control" id="middleName" required>
+                                    <div class="invalid-feedback">Please enter your middle name.</div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="inputPassword4">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text"  name="lastName" class="form-control" id="lastName" required>
+                                    <div class="invalid-feedback">Please enter your last name.</div>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Confirm Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
+                                    <label for="phoneNumber" class="form-label">Phone No</label>
+                                    <input type="tel" name="phoneNumber" class="form-control" id="phoneNumber" required>
+                                    <div class="invalid-feedback">Please enter your phone number.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" name="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="confirmEmail" class="form-label">Confirm Email</label>
+                                    <input type="email" name="confirmEmail" class="form-control" id="confirmEmail" required>
+                                    <div class="invalid-feedback">Please confirm your email address.</div>
                                 </div>
                             </div>
 
@@ -652,12 +659,27 @@
 
 
 
-
-
         $('#eligibility-form-step-2-section').hide();
         $('#eligibility-form-step-add-form-section').hide();
 
-        $('#form_1_proceed').click(function(){
+        var citizenshipCountry = $('#citizenship-country');
+        var errorCitizenship = $('#errorCitizenship');
+
+        errorCitizenship.hide();
+
+        citizenshipCountry.change(function() {
+            if (citizenshipCountry.val() !== "") {
+                errorCitizenship.hide();
+            }
+        });
+
+        // Event listener for button click
+        $('#form_1_proceed').click(function() {
+            if (citizenshipCountry.val() === "" || citizenshipCountry.val() === null) {
+                errorCitizenship.show();
+                return;
+            }
+
             $('#eligibility-form-step-add-form-section').show();
             $('#eligibility-form-step-1-section').hide();
             $('#eligibility-form-step-2-section').hide();
@@ -665,11 +687,32 @@
 
 
         var imagePath = "";
-        $('#eligibility-form-step-2-submit-123').click(function(e){
+        $('.form-control').focusout(function() {
+            $(this).removeClass('is-invalid');
+        });
+        $('#eligibility-form-step-2-submit-123').click(function(event){
+
+            var form = $('#eligibility-form-step-2-custom')[0];
+
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                $(form).addClass('was-validated');
+
+                $('.form-control').each(function() {
+                    if (!this.validity.valid) {
+                        $(this).addClass('is-invalid');
+                    }
+                });
+
+                return;
+            }
+
             $('#eligibility-form-step-1-section').hide();
             $('#eligibility-form-step-add-form-section').hide();
             $('#eligibility-form-step-2-section').show();
-            e.preventDefault(); // Prevent default form submission
+            event.preventDefault(); // Prevent default form submission
             var selectedCountry = $('#citizenship-country').val();
             $.ajax({
                 url: '/get_country',

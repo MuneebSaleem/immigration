@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\StepsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,7 @@ Route::get('/', function () {
 
 
 Route::resource('/test', TestController::class);
-
+Route::resource('/steps1', StepsController::class);
 Route::post('/get_country', 'App\Http\Controllers\TestController@getcountry');
 
 Auth::routes();

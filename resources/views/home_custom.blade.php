@@ -496,11 +496,13 @@
                 errorCitizenship.show();
                 return;
             }
-
-            if (citizenshipCountrysecond.val() === "" || citizenshipCountrysecond.val() === null) {
-                errorCitizenshipsecond.show();
-                return;
+            if ($('#has-secondary-citizenship').is(':checked')) {
+                if (citizenshipCountrysecond.val() === "" || citizenshipCountrysecond.val() === null) {
+                    errorCitizenshipsecond.show();
+                    return;
+                }
             }
+
 
             $('#eligibility-form-step-add-form-section').show();
             $('#eligibility-form-step-1-section').hide();

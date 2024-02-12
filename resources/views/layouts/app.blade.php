@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="{{ asset('dist/css/custom.css')  }}">
     <link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">
-    <link rel="stylesheet" href="{{ asset('dist/css/styles.css')  }}">
+{{--    <link rel="stylesheet" href="{{ asset('dist/css/styles.css')  }}">--}}
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>

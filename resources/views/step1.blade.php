@@ -107,7 +107,7 @@
                             </div>
                             <br>
                             <p class="text-center">
-                                <img class="prod-thumb" src="/media/photo/b-2-tourist-visa-application-guide-en.jpg" alt="B-2 Tourist Visa Application Guide">
+                                <img class="prod-thumb" src="https://www.onlineimmigration.com/media/photo/b-2-tourist-visa-application-guide-en.jpg" alt="B-2 Tourist Visa Application Guide">
                             </p>
                             <br>
                             <p class="right-prod-price text-center no-mar no-pad">
@@ -119,7 +119,7 @@
                             </p>
 
                             <p class="text-center">
-                                <img src="/static/frontend/img/star-separator.png" style="max-width:231px; width:100%;">
+                                <img src="https://www.onlineimmigration.com/static/frontend/img/star-separator.png" style="max-width:231px; width:100%;">
                             </p>
                             <p class="text-justify">Many visitors to the U.S. need to apply for a B-2 tourist visa depending on which passport is being used. The B-2 tourist visa application process can take several months, and all tourists&nbsp; are advised to start the visa process early to avoid any trip delays. Download the Visa Application Guide for more information about how to apply and what documents are needed.
 
@@ -132,7 +132,7 @@
                                 <li>Step by Step Guide on How to Apply </li>
                                 <li>All You Need to Know About the B-2 Tourist Visa Application</li>
                             </ul><p></p>
-                            <p class="text-center"><img src="/static/workflow_processing/img/credit-cards-accepted.png" style="margin:1px; margin-top:-3px; width:100%; max-width:130px;"></p>
+                            <p class="text-center"><img src="https://www.onlineimmigration.com/static/workflow_processing/img/credit-cards-accepted.png" style="margin:1px; margin-top:-3px; width:100%; max-width:130px;"></p>
                             <p>&nbsp;</p>
                         </div>
                     </div>

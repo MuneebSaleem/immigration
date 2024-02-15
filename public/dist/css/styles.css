@@ -3,11 +3,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Inter");
 /* line 9, ../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.2.0.4/assets/stylesheets/bootstrap/_normalize.scss */
-html {
+/*html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-}
+}*/
 
 /* line 19, ../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.2.0.4/assets/stylesheets/bootstrap/_normalize.scss */
 body {
@@ -9166,4 +9166,47 @@ footer .footer.style p, footer .footer.style .foot-links a {
   margin: 0px;
   padding: 0px;
   color: #EEF2F6;
+}
+.bg-white {
+  background-color: #fff;
+}
+.navbar-nav {
+  background-color: transparent ;
+}
+.pll-parent-menu-item.menu-item {
+  background-color: transparent;
+  border: 1px solid black;
+}
+.image-color-background {
+  background: #142E5D url("../../app-logo/navmenubg.png") no-repeat right center;
+  height: 60px;
+}
+.secure-text {
+    color: #fff;
+    text-align: end;
+    padding: 20px;
+    font-size: 12px;
+}
+.blue-area-bg {
+  display: inline-block;
+  background: #142E5D;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: #fff;
+}
+.float-right {
+  float: right;
+}
+.red {
+  color: red;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.bg-grey {
+  background: #e1e1e1;
 }

@@ -26,7 +26,10 @@ class StepsController extends Controller
      */
     public function index(Request $request)
     {
-        return view('step1');
+        $countries = Country::select('id', 'countryCode', 'countryName', 'is_active','isoAlpha3')->get();
+        
+        return view('step1-form', compact("countries"));
+        // return view('step1');
     }
 
     /**

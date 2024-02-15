@@ -172,14 +172,14 @@
   --bs-form-invalid-color: #ea868f;
   --bs-form-invalid-border-color: #ea868f; }
 
-*,
+/**,
 *::before,
 *::after {
   box-sizing: border-box; }
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
-    scroll-behavior: smooth; } }
+    scroll-behavior: smooth; } }*/
 
 body {
   margin: 0;

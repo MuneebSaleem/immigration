@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\StepsController;
@@ -23,7 +24,9 @@ Route::get('/', function () {
 Route::resource('/test', TestController::class);
 Route::resource('/steps1', StepsController::class);
 Route::post('/get_country', 'App\Http\Controllers\TestController@getcountry');
+Route::post('/send_email', 'App\Http\Controllers\TestController@send_email');
 
+Route::get('send-mail/{email}', [MailController::class, 'index']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

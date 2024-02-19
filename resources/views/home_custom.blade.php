@@ -517,7 +517,6 @@
         $('#eligibility-form-step-2-submit-123').click(function(event){
 
             var form = $('#eligibility-form-step-2-custom')[0];
-
             if (form.checkValidity() === false) {
                 event.preventDefault();
                 event.stopPropagation();
@@ -536,6 +535,26 @@
             $('#eligibility-form-step-1-section').hide();
             $('#eligibility-form-step-add-form-section').hide();
             $('#eligibility-form-step-2-section').show();
+
+            var email_send = $('#email').val();
+
+            if (email_send) {
+
+                $.ajax({
+                    url: '/send_email',
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: { email: email_send },
+                    success: function (response) {
+                        console.log('Email sent successfully!');
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error occurred while sending email:', error);
+                    }
+                });
+            }
             event.preventDefault(); // Prevent default form submission
             var selectedCountry = $('#citizenship-country').val();
             $.ajax({
@@ -626,7 +645,7 @@
 
 
 
-                    $('#eligibility-form-step-2-submit').on('click', function(e) {console.log($('select[name="billing-country"]').val());
+                    $('#eligibility-form-step-2-submit').on('click', function(e) {
                         e.preventDefault(); // Prevent form submission
                         if ($('input[name="is-billing-country-not-residence"]:checked').length === 0) {
                             // If not checked, show error message

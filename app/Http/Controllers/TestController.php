@@ -111,4 +111,11 @@ class TestController extends Controller
             ->get();
         return response()->json(['country' => $country]);
     }
+
+    public function send_email(Request $request) {
+        $requestData = $request->all();
+        $email = $requestData['email'];
+        app('App\Http\Controllers\MailController')->index($email);
+        //return response()->json(['email' => $email]);
+    }
 }

@@ -9210,3 +9210,21 @@ footer .footer.style p, footer .footer.style .foot-links a {
 .bg-grey {
   background: #e1e1e1;
 }
+.sidebar-form{
+  align-items: center;
+}
+.light-grey{
+  font-weight: 500;
+  color: navy;
+  text-align: center;
+}
+.border-left {
+  border-left: 1px solid #bcb9b9;
+}
+.img-payment {
+  text-align: center;
+  width: 130px;
+}
+li.gap-reduce {
+    margin-bottom: 5px;
+}

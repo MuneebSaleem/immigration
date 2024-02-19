@@ -24,7 +24,7 @@
 </head>
 <body>
     <div id="app bg-white">
-        
+
 
         <main class="">
             @yield('content')
@@ -33,7 +33,7 @@
 </body>
 </html>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
+{{--<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>--}}
 <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
 
 <script type="c8afb60f36a3fdc0ba218d80-text/javascript">

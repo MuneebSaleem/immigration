@@ -549,13 +549,10 @@
                     var checkActive = response.country[0].is_active;
                     var countryName = response.country[0].countryName;
                     var isoName = "(" + response.country[0].isoAlpha3 + ")";
-                    if(checkActive == 1){
+
                          imagePath = "{{ asset('app-logo/tick.png') }}";
                         var eligibleText = `<h2 class="text-center">Congratulations!<br>You are eligible to apply for ESTA</h2>`;
-                    }else{
-                         imagePath = "{{ asset('app-logo/wrong.png') }}";
-                        var eligibleText = `<h2 class="text-center">You are not eligible for ESTA Apply for Tourist Visa to visit the United States</h2>`;
-                    }
+
                     var sectionHtml =`<div class="summary mb-16 d-flex" id="eligibility-form-step-2-outcome">
                                         <img src="${imagePath}" alt="esta-eligibility-checker-eligible">
                                         ${eligibleText}
@@ -619,13 +616,34 @@
                                     </div>
                                 </div>
                                 <div class="step-row mt-16 mt-md- text-center">
-                                    <button type="submit" id="eligibility-form-step-2-submit" class="btn btn-success text-white text-uppercase">APPLY NOW</button>
+                                    <button id="eligibility-form-step-2-submit" class="btn btn-success text-white text-uppercase">APPLY NOW</button>
                                 </div>`;
 
                     $('.append-data').append(sectionHtml);
 
+
+
+
+
+
+                    $('#eligibility-form-step-2-submit').on('click', function(e) {console.log($('select[name="billing-country"]').val());
+                        e.preventDefault(); // Prevent form submission
+                        if ($('input[name="is-billing-country-not-residence"]:checked').length === 0) {
+                            // If not checked, show error message
+                            $('#errorConfirmCountryYouLiveInRadio').text('Please confirm the country where you live.');
+                        } else if ($('input[name="is-billing-country-not-residence"]:checked').val() === 'no' && ($('select[name="billing-country"]').val() === '' || $('select[name="billing-country"]').val() === null)) {
+                            // If "No" is selected and no country is chosen from dropdown, show error message
+                            $('#errorConfirmCountryYouLiveInRadio').text('');
+                            $('#errorConfirmCountryYouLiveInCountry').text('Please select the country you live in.');
+                        } else {
+                            // If everything is valid, redirect to the new Laravel route
+                            window.location.href = '/steps1';
+                        }
+                    });
+
+
                     $('input[name="is-billing-country-not-residence"]').change(function(){
-                        if($(this).val() === 'no') {
+                        if($(this).val() === 'no') {console.log('hhh');
                             $('#billing-country-wrapper').removeClass('d-none');
                         } else {
                             $('#billing-country-wrapper').addClass('d-none');

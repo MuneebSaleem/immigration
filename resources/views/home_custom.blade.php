@@ -81,8 +81,8 @@
                         <form autocomplete="off" id="eligibility-form-step-1"  method="get">
                             <div class="step-header">
                                 <div class="w-75">
-                                    <h2 class="text-text-primary mb-16">
-                                        Start ESTA Application                                        </h2>
+                                    <h1 class="text-text-primary mb-16">
+                                        <b>US entry waiver & Canadian Pardon</b></h1>
                                 </div>
                             </div>
 
@@ -91,7 +91,7 @@
                                 <select name="citizenship-country" id="citizenship-country">
                                     <option value="" disabled selected>Select country</option>
                                     @foreach($country as $c)
-                                        <option value="{{ $c->countryCode }}">{{ $c->countryName }}</option>
+                                        <option value="{{ $c->countryCode }}" @if($c->countryName === 'Canada') style="font-weight:bold;" @endif>{{ $c->countryName }}</option>
                                     @endforeach
                                 </select>
                                 <div id="errorCitizenship" class="text-danger" style="display: none">Please select your citizenship</div>
@@ -194,35 +194,21 @@
 
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label for="fullName" class="form-label">Full Legal Name</label>
-                                    <input type="text" name="fullName" class="form-control" id="fullName" required>
-                                    <div class="invalid-feedback">Please enter your full legal name.</div>
-                                </div>
-                                <div class="col-md-6">
                                     <label for="firstName" class="form-label">First Name</label>
                                     <input type="text" name="firstName" class="form-control" id="firstName" required>
                                     <div class="invalid-feedback">Please enter your first name.</div>
                                 </div>
+                                <div class="col-md-6">
+                                    <label for="middleName" class="form-label">Middle Name</label>
+                                    <input type="text" name="middleName" class="form-control" id="middleName">
+                                </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-md-6">
-                                    <label for="middleName" class="form-label">Middle Name</label>
-                                    <input type="text" name="middleName" class="form-control" id="middleName" required>
-                                    <div class="invalid-feedback">Please enter your middle name.</div>
-                                </div>
                                 <div class="col-md-6">
                                     <label for="lastName" class="form-label">Last Name</label>
                                     <input type="text"  name="lastName" class="form-control" id="lastName" required>
                                     <div class="invalid-feedback">Please enter your last name.</div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="phoneNumber" class="form-label">Phone No</label>
-                                    <input type="tel" name="phoneNumber" class="form-control" id="phoneNumber" required>
-                                    <div class="invalid-feedback">Please enter your phone number.</div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="email" class="form-label">Email</label>
@@ -232,12 +218,23 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-md-6">
-                                    <label for="confirmEmail" class="form-label">Confirm Email</label>
-                                    <input type="email" name="confirmEmail" class="form-control" id="confirmEmail" required>
-                                    <div class="invalid-feedback">Please confirm your email address.</div>
+                                <div class="col-md-2">
+                                    <label for="countryCode" class="form-label">Country Code</label>
+                                    <select name="countryCode" class="form-control" id="countryCode" required>
+                                        <option value="" selected disabled>Select Code</option>
+                                        @foreach($country as $countryItem)
+                                            <option value="{{ $countryItem->telephonePrefix }}"> {{ $countryItem->telephonePrefix }}</option>
+                                        @endforeach
+                                    </select>
+                                    <div class="invalid-feedback">Please select a country code.</div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="phoneNumber" class="form-label">Phone No</label>
+                                    <input type="number" name="phoneNumber" class="form-control" id="phoneNumber" required>
+                                    <div class="invalid-feedback">Please enter your phone number.</div>
                                 </div>
                             </div>
+
 
 
                         </form>

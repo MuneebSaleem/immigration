@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Spatie\Permission\Models\Role;
 use Hash;
@@ -26,7 +27,9 @@ class TestController extends Controller
      */
     public function index(Request $request)
     {
-        $country = Country::select('id', 'countryCode', 'countryName')->get();
+        $country = Cache::remember('countries', now()->addHours(24), function () {
+            return Country::select('id', 'countryCode', 'countryName', 'telephonePrefix')->get();
+        });
 
         return view('home_custom',compact('country'));
     }
@@ -48,19 +51,6 @@ class TestController extends Controller
      */
     public function store(Request $request)
     {
-//        $this->validate($request, [
-//            'name' => 'required',
-//            'email' => 'required|email|unique:users,email',
-//            'password' => 'required|same:confirm-password',
-//            'roles' => 'required'
-//        ]);
-
-        $input = $request->all();
-        $input['business_id'] = $this->user;
-        $branch = Branch::create($input);
-
-        return redirect()->route('branch.index')
-            ->with('success','Branch created successfully');
     }
 
     /**
@@ -116,6 +106,5 @@ class TestController extends Controller
         $requestData = $request->all();
         $email = $requestData['email'];
         app('App\Http\Controllers\MailController')->index($email);
-        //return response()->json(['email' => $email]);
     }
 }

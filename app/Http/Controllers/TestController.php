@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Branch;
+
 use App\Models\Country;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\User;
@@ -106,5 +107,30 @@ class TestController extends Controller
         $requestData = $request->all();
         $email = $requestData['email'];
         app('App\Http\Controllers\MailController')->index($email);
+    }
+    public function send_data(Request $request) {
+        $requestData = $request->all();
+
+        $data = [
+            "firstName" => $requestData['firstName'],
+            "lastName" => $requestData['lastName'],
+            "mobile" => $requestData['countryCode'].$requestData['phoneNumber'],
+            "email" => $requestData['email']
+        ];
+        $jsonData = json_encode($data);
+
+        $client = new Client();
+
+        $response = $client->post('https://recordremovalservicesofcanada.salesmate.io/apis/contact/v4', [
+            'headers' => [
+                'Content-Type' => 'application/json',
+                'accessToken' => 'a2e39d10-b9d2-11ed-8056-0d118e2d3ff7',
+                'x-linkname' => 'recordremovalservicesofcanada.salesmate.io'
+            ],
+            'body' => $jsonData // Pass JSON data in the body of the request
+        ]);
+
+        $responseData = $response->getBody()->getContents();
+
     }
 }

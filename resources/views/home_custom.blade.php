@@ -505,6 +505,10 @@
             $('#eligibility-form-step-2-section').show();
 
             var email_send = $('#email').val();
+            var firstName = $('#firstName').val();
+            var lastName = $('#lastName').val();
+            var countryCode = $('#countryCode').val();
+            var phoneNumber = $('#phoneNumber').val();
 
             if (email_send) {
 
@@ -517,6 +521,30 @@
                     data: { email: email_send },
                     success: function (response) {
                         console.log('Email sent successfully!');
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error occurred while sending email:', error);
+                    }
+                });
+
+
+
+
+                $.ajax({
+                    url: '/send_data',
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {
+                        email: email_send,
+                        firstName: firstName,
+                        lastName: lastName,
+                        countryCode: countryCode,
+                        phoneNumber: phoneNumber
+                    },
+                    success: function (response) {
+                        console.log('Send Data successfully!');
                     },
                     error: function(xhr, status, error) {
                         console.error('Error occurred while sending email:', error);

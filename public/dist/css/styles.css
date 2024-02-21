@@ -8983,3 +8983,7 @@ footer .footer.style p, footer .footer.style .foot-links a {
 li.gap-reduce {
     margin-bottom: 5px;
 }
+.sidebar-head {
+    font-size: 24px;
+    font-weight: 600;
+}

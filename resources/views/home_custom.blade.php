@@ -165,42 +165,42 @@
 
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label for="firstName" class="form-label">First Name</label>
+                                    <label for="firstName" class="form-label m-0">First Name</label>
                                     <input type="text" name="firstName" class="form-control" id="firstName" required>
                                     <div class="invalid-feedback">Please enter your first name.</div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="middleName" class="form-label">Middle Name</label>
+                                    <label for="middleName" class="form-label m-0">Middle Name</label>
                                     <input type="text" name="middleName" class="form-control" id="middleName">
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row mt-2">
                                 <div class="col-md-6">
-                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <label for="lastName" class="form-label m-0">Last Name</label>
                                     <input type="text"  name="lastName" class="form-control" id="lastName" required>
                                     <div class="invalid-feedback">Please enter your last name.</div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="email" class="form-label">Email</label>
+                                    <label for="email" class="form-label m-0">Email</label>
                                     <input type="email" name="email" class="form-control" id="email" required>
                                     <div class="invalid-feedback">Please enter a valid email address.</div>
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <label for="countryCode" class="form-label">Country Code</label>
+                            <div class="row mt-2">
+                                <div class="col-md-2 m-0">
+                                    <label for="countryCode" class="form-label m-0">Code</label>
                                     <select name="countryCode" class="form-control" id="countryCode" required>
-                                        <option value="" selected disabled>Select Code</option>
+                                        <option value="" selected disabled>Select</option>
                                         @foreach($country as $countryItem)
                                             <option value="{{ $countryItem->telephonePrefix }}"> {{ $countryItem->telephonePrefix }}</option>
                                         @endforeach
                                     </select>
                                     <div class="invalid-feedback">Please select a country code.</div>
                                 </div>
-                                <div class="col-md-4">
-                                    <label for="phoneNumber" class="form-label">Phone No</label>
+                                <div class="col-md-4 m-0">
+                                    <label for="phoneNumber" class="form-label m-0">Phone No</label>
                                     <input type="number" name="phoneNumber" class="form-control" id="phoneNumber" required>
                                     <div class="invalid-feedback">Please enter your phone number.</div>
                                 </div>

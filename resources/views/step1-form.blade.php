@@ -12,8 +12,8 @@
                 </div>
 
                 <div class="col-3 col-md-6 col-xl-8 my-auto d-flex justify-content-end text-end">
-                    
-                   
+
+
                 </div>
             </div>
         <!-- </div> -->
@@ -34,7 +34,7 @@
 	    					</h1>
 	    				</div>
 
-	    				
+
 						<div class="col-md-6 mt-4 ">
 							<label for="firstName" class="font-weight-500 form-label"><span class="red">*</span> First Name</label>
 						    <input required type="email" class="form-control" id="firstName">
@@ -159,7 +159,7 @@
                                 </div>
                             </div>
                         </div>
-						
+
 
 	    			</div>
                     <div class="mt-4 form-check bg-grey p-5">
@@ -178,10 +178,10 @@
     		<div class="col-md-4 p-48 border-left">
                 <div class="sidebar-form">
         			<div class="row">
-                        <h2 class="light-grey px-64">B-2 TOURIST VISA APPLICATION GUIDE</h2>
-                        <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-64"> 
-                        <p class="px-64 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE US$ 9.95 </p>
-                        <img class="my-5 px-64" src="{{ asset('app-logo/star-separator.png') }}">
+                        <h2 class="light-grey px-46 sidebar-head">B-2 TOURIST VISA APPLICATION GUIDE</h2>
+                        <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-46">
+                        <p class="px-46 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE US$ 9.95 </p>
+                        <img class="my-5 px-46" src="{{ asset('app-logo/star-separator.png') }}">
                         <p class="text-justify">Many visitors to the U.S. need to apply for a B-2 tourist visa depending on which passport is being used. The B-2 tourist visa application process can take several months, and all tourists  are advised to start the visa process early to avoid any trip delays. Download the Visa Application Guide for more information about how to apply and what documents are needed.</p>
                         <ul class="list-style mx-5">
                             <li class="gap-reduce">Overview of the B-2 Tourist Visa Application</li>
@@ -195,7 +195,7 @@
                         <p class="text-center">
                             <img width="200" src="{{ asset('app-logo/credit-cards-accepted.png') }}" class="img-payment">
                         </p>
-                        
+
                     </div>
                 </div>
     		</div>

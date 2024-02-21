@@ -1060,8 +1060,8 @@ body {
 /*/*  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 /*  font-size: 16px;*/
  /* line-height: 1.428571429;
-  color: #333333;
-  background-color: #fff;*/
+  color: #333333;*/
+  background-color: #fff;
 }
 
 /* line 36, ../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.2.0.4/assets/stylesheets/bootstrap/_scaffolding.scss */
@@ -8984,6 +8984,6 @@ li.gap-reduce {
     margin-bottom: 5px;
 }
 .sidebar-head {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
 }

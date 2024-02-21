@@ -28,7 +28,7 @@
     		<div class="col-md-8 px-4">
     			<form class="row font-14 ">
 	    			<div class="container-form">
-	    				<div class="blue-area-bg px-48 py-4">
+	    				<div class="blue-area-bg px-48 py-2">
 	    					<h1 class="m-0">Customer Information
 	    					<img class="float-right" src="{{ asset('app-logo/us-flag.png') }}" />
 	    					</h1>
@@ -69,7 +69,7 @@
 							</select>
 						</div>
 
-                        <div class="blue-area-bg px-48 py-4 mt-4">
+                        <div class="blue-area-bg px-48 py-2 mt-4">
                             <h1 class="m-0">Secure Billing Information
                             <img class="float-right" src="{{ asset('app-logo/us-flag.png') }}" />
                             </h1>
@@ -178,8 +178,8 @@
     		<div class="col-md-4 p-48 border-left">
                 <div class="sidebar-form">
         			<div class="row">
-                        <h2 class="light-grey px-46 sidebar-head">B-2 TOURIST VISA APPLICATION GUIDE</h2>
-                        <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-46">
+                        <h2 class="light-grey px-32 sidebar-head">B-2 TOURIST VISA APPLICATION GUIDE</h2>
+                        <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-32">
                         <p class="px-46 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE US$ 9.95 </p>
                         <img class="my-5 px-46" src="{{ asset('app-logo/star-separator.png') }}">
                         <p class="text-justify">Many visitors to the U.S. need to apply for a B-2 tourist visa depending on which passport is being used. The B-2 tourist visa application process can take several months, and all tourists  are advised to start the visa process early to avoid any trip delays. Download the Visa Application Guide for more information about how to apply and what documents are needed.</p>

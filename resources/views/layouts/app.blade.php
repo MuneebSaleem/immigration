@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
 
     <!-- <link rel="stylesheet" href="{{ asset('dist/css/custom.css')  }}"> -->
-    <link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">
+{{--    <link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">--}}
     <link rel="stylesheet" href="{{ asset('dist/css/styles.css')  }}">
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])

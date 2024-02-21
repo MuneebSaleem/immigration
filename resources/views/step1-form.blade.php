@@ -183,7 +183,7 @@
                         <p class="px-46 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE US$ 9.95 </p>
                         <img class="my-5 px-46" src="{{ asset('app-logo/star-separator.png') }}">
                         <p class="text-justify">Many visitors to the U.S. need to apply for a B-2 tourist visa depending on which passport is being used. The B-2 tourist visa application process can take several months, and all tourists  are advised to start the visa process early to avoid any trip delays. Download the Visa Application Guide for more information about how to apply and what documents are needed.</p>
-                        <ul class="list-style mx-5">
+                        <ul class="list-style mx-3">
                             <li class="gap-reduce">Overview of the B-2 Tourist Visa Application</li>
                             <li class="gap-reduce">What is the B-2 Tourist Visa?</li>
                             <li class="gap-reduce">List of Who Can Apply and Restrictions</li>

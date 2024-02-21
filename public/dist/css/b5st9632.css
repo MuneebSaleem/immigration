@@ -68,9 +68,9 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1.2rem;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
+  --bs-body-line-height: 1.8;
   --bs-body-color: #121926;
   --bs-body-color-rgb: 18, 25, 38;
   --bs-body-bg: #fff;
@@ -15205,7 +15205,7 @@ body {
     margin-bottom: 0; }
 
 .check-green {
-  margin-bottom: 0; 
+  margin-bottom: 0;
   margin-left: 0;}
   .check-green li {
     position: relative;

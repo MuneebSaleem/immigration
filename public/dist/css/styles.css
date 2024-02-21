@@ -1062,6 +1062,8 @@ body {
  /* line-height: 1.428571429;
   color: #333333;*/
   background-color: #fff;
+    font-size: 15px !important;
+    line-height: 18px;
 }
 
 /* line 36, ../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.2.0.4/assets/stylesheets/bootstrap/_scaffolding.scss */

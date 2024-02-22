@@ -475,83 +475,8 @@
             $('#eligibility-form-step-add-form-section').show();
             $('#eligibility-form-step-1-section').hide();
             $('#eligibility-form-step-2-section').hide();
-        });
 
 
-        var imagePath = "";
-        $('.form-control').focusout(function() {
-            $(this).removeClass('is-invalid');
-        });
-        $('#eligibility-form-step-2-submit-123').click(function(event){
-
-            var form = $('#eligibility-form-step-2-custom')[0];
-            if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-
-                $(form).addClass('was-validated');
-
-                $('.form-control').each(function() {
-                    if (!this.validity.valid) {
-                        $(this).addClass('is-invalid');
-                    }
-                });
-
-                return;
-            }
-
-            $('#eligibility-form-step-1-section').hide();
-            $('#eligibility-form-step-add-form-section').hide();
-            $('#eligibility-form-step-2-section').show();
-
-            var email_send = $('#email').val();
-            var firstName = $('#firstName').val();
-            var lastName = $('#lastName').val();
-            var countryCode = $('#countryCode').val();
-            var phoneNumber = $('#phoneNumber').val();
-
-            if (email_send) {
-
-                $.ajax({
-                    url: '/send_email',
-                    method: 'POST',
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    data: { email: email_send },
-                    success: function (response) {
-                        console.log('Email sent successfully!');
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error occurred while sending email:', error);
-                    }
-                });
-
-
-
-
-                $.ajax({
-                    url: '/send_data',
-                    method: 'POST',
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    data: {
-                        email: email_send,
-                        firstName: firstName,
-                        lastName: lastName,
-                        countryCode: countryCode,
-                        phoneNumber: phoneNumber
-                    },
-                    success: function (response) {
-                        console.log('Send Data successfully!');
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error occurred while sending email:', error);
-                    }
-                });
-            }
-            event.preventDefault(); // Prevent default form submission
             var selectedCountry = $('#citizenship-country').val();
             $.ajax({
                 url: '/get_country',
@@ -565,8 +490,8 @@
                     var countryName = response.country[0].countryName;
                     var isoName = "(" + response.country[0].isoAlpha3 + ")";
 
-                         imagePath = "{{ asset('app-logo/tick.png') }}";
-                        var eligibleText = `<h2 class="text-center">Congratulations!<br>You are eligible to apply for ESTA</h2>`;
+                    imagePath = "{{ asset('app-logo/tick.png') }}";
+                    var eligibleText = `<h2 class="text-center">Congratulations!<br>You are eligible to apply for ESTA</h2>`;
 
                     var sectionHtml =`<div class="summary mb-16 d-flex" id="eligibility-form-step-2-outcome">
                                         <img src="${imagePath}" alt="esta-eligibility-checker-eligible">
@@ -636,50 +561,121 @@
 
                     $('.append-data').append(sectionHtml);
 
-
-
-
-
-
-                    $('#eligibility-form-step-2-submit').on('click', function(e) {
-                        e.preventDefault(); // Prevent form submission
-                        if ($('input[name="is-billing-country-not-residence"]:checked').length === 0) {
-                            // If not checked, show error message
-                            $('#errorConfirmCountryYouLiveInRadio').text('Please confirm the country where you live.');
-                        } else if ($('input[name="is-billing-country-not-residence"]:checked').val() === 'no' && ($('select[name="billing-country"]').val() === '' || $('select[name="billing-country"]').val() === null)) {
-                            // If "No" is selected and no country is chosen from dropdown, show error message
-                            $('#errorConfirmCountryYouLiveInRadio').text('');
-                            $('#errorConfirmCountryYouLiveInCountry').text('Please select the country you live in.');
-                        } else {
-                            // If everything is valid, redirect to the new Laravel route
-                            window.location.href = '/steps1';
-                        }
-                    });
-
-
-                    $('input[name="is-billing-country-not-residence"]').change(function(){
-                        if($(this).val() === 'no') {console.log('hhh');
-                            $('#billing-country-wrapper').removeClass('d-none');
-                        } else {
-                            $('#billing-country-wrapper').addClass('d-none');
-                        }
-                    });
-                    var countries = <?php echo json_encode($country); ?>; // Assuming $country is available in JavaScript
-                    var selectDropdown = document.querySelector('select[name="billing-country"]');
-
-                    countries.forEach(function(country) {
-                        var option = document.createElement('option');
-                        option.value = country.countryCode;
-                        option.textContent = country.countryName;
-                        selectDropdown.appendChild(option);
-                    });
-
-
                 },
-                error: function (error) {
-                    console.error("Error sending data to server:", error);
+                error: function(xhr, status, error) {
+                    console.error('Error occurred while sending email:', error);
                 }
+
             });
+        });
+
+
+        var imagePath = "";
+        $('.form-control').focusout(function() {
+            $(this).removeClass('is-invalid');
+        });
+        $('#eligibility-form-step-2-submit-123').click(function(event){
+
+            var form = $('#eligibility-form-step-2-custom')[0];
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                $(form).addClass('was-validated');
+
+                $('.form-control').each(function() {
+                    if (!this.validity.valid) {
+                        $(this).addClass('is-invalid');
+                    }
+                });
+
+                return;
+            }
+
+            $('#eligibility-form-step-1-section').hide();
+            $('#eligibility-form-step-add-form-section').hide();
+            $('#eligibility-form-step-2-section').show();
+
+            var email_send = $('#email').val();
+            var firstName = $('#firstName').val();
+            var lastName = $('#lastName').val();
+            var countryCode = $('#countryCode').val();
+            var phoneNumber = $('#phoneNumber').val();
+
+            if (email_send) {
+
+                $.ajax({
+                    url: '/send_email',
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: { email: email_send },
+                    success: function (response) {
+                        console.log('Email sent successfully!');
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error occurred while sending email:', error);
+                    }
+                });
+
+                $.ajax({
+                    url: '/send_data',
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {
+                        email: email_send,
+                        firstName: firstName,
+                        lastName: lastName,
+                        countryCode: countryCode,
+                        phoneNumber: phoneNumber
+                    },
+                    success: function (response) {
+                        console.log('Send Data successfully!');
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error occurred while sending email:', error);
+                    }
+                });
+
+
+                $('#eligibility-form-step-2-submit').on('click', function(e) {
+                    e.preventDefault(); // Prevent form submission
+                    if ($('input[name="is-billing-country-not-residence"]:checked').length === 0) {
+                        // If not checked, show error message
+                        $('#errorConfirmCountryYouLiveInRadio').text('Please confirm the country where you live.');
+                    } else if ($('input[name="is-billing-country-not-residence"]:checked').val() === 'no' && ($('select[name="billing-country"]').val() === '' || $('select[name="billing-country"]').val() === null)) {
+                        // If "No" is selected and no country is chosen from dropdown, show error message
+                        $('#errorConfirmCountryYouLiveInRadio').text('');
+                        $('#errorConfirmCountryYouLiveInCountry').text('Please select the country you live in.');
+                    } else {
+                        // If everything is valid, redirect to the new Laravel route
+                        window.location.href = '/steps1';
+                    }
+                });
+
+
+                $('input[name="is-billing-country-not-residence"]').change(function(){
+                    if($(this).val() === 'no') {console.log('hhh');
+                        $('#billing-country-wrapper').removeClass('d-none');
+                    } else {
+                        $('#billing-country-wrapper').addClass('d-none');
+                    }
+                });
+                var countries = <?php echo json_encode($country); ?>; // Assuming $country is available in JavaScript
+                var selectDropdown = document.querySelector('select[name="billing-country"]');
+
+                countries.forEach(function(country) {
+                    var option = document.createElement('option');
+                    option.value = country.countryCode;
+                    option.textContent = country.countryName;
+                    selectDropdown.appendChild(option);
+                });
+
+
+                }
         });
 
 

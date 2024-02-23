@@ -658,7 +658,7 @@
 
 
                 $('input[name="is-billing-country-not-residence"]').change(function(){
-                    if($(this).val() === 'no') {console.log('hhh');
+                    if($(this).val() === 'no') {
                         $('#billing-country-wrapper').removeClass('d-none');
                     } else {
                         $('#billing-country-wrapper').addClass('d-none');

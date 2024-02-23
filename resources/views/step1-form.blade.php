@@ -26,48 +26,9 @@
     <section class="container main-section-content px-5 py-4">
     	<div class="row">
     		<div class="col-md-8 px-4">
-    			<form class="row font-14 ">
+    			<form class="row font-14" id="paymentForm">
 	    			<div class="container-form">
-	    				<div class="blue-area-bg px-4 py-2">
-	    					<h1 class="m-0">Customer Information
-	    					<img class="float-right" src="{{ asset('app-logo/us-flag.png') }}" />
-	    					</h1>
-	    				</div>
 
-
-						<div class="col-md-6 mt-4 ">
-							<label for="firstName" class="font-weight-500 form-label"><span class="red">*</span> First Name</label>
-						    <input required type="email" class="form-control" id="firstName">
-						</div>
-						<div class="col-md-6 mt-4 ">
-						    <label for="lastName" class="font-weight-500 form-label"><span class="red">*</span> Last Name</label>
-						    <input type="text" class="form-control" id="lastName">
-						</div>
-
-						<div class="col-md-6 mt-4 ">
-							<label for="email" class="font-weight-500 form-label"><span class="red">*</span> Email Address</label>
-						    <input required type="email" class="form-control" id="email">
-						</div>
-						<div class="col-md-6 mt-4 ">
-						    <label for="confirEmail" class="font-weight-500 form-label"><span class="red">*</span> Email Address</label>
-						    <input type="text" class="form-control" id="confirEmail">
-						</div>
-
-						<div class="col-md-6 mt-4 ">
-							<label for="alternativeEmail" class="font-weight-500 form-label"><span class="red">*</span> Alternative Email Address</label>
-						    <input required type="email" class="form-control" id="alternativeEmail">
-						</div>
-						<div class="col-md-6 mt-4 ">
-						    <label for="number" class="font-weight-500 form-label"><span class="red">*</span> Phone Number</label>
-						    <select class="form-select form-control" id="number" data-placeholder="Choose one thing">
-							    <option></option>
-							    <option>Reactive</option>
-							    <option>Solution</option>
-							    <option>Conglomeration</option>
-							    <option>Algoritm</option>
-							    <option>Holistic</option>
-							</select>
-						</div>
 
                         <div class="blue-area-bg px-4 py-2 mt-4">
                             <h1 class="m-0">Secure Billing Information
@@ -77,42 +38,49 @@
 
                         <div class="col-md-6 mt-4 ">
                             <label for="firstName" class="font-weight-500 form-label"><span class="red">*</span> First Name</label>
-                            <input required type="email" class="form-control" id="firstName">
+                            <input required type="text" class="form-control" id="ssl_first_name" name="ssl_first_name">
+                            <div class="invalid-feedback">Please enter your first name.</div>
                         </div>
                         <div class="col-md-6 mt-4 ">
-                            <label for="lastName" class="font-weight-500 form-label"><span class="red">*</span> Last Name</label>
-                            <input type="text" class="form-control" id="lastName">
+                            <label for="ssl_last_name" class="font-weight-500 form-label"><span class="red">*</span> Last Name</label>
+                            <input required type="text" class="form-control" id="ssl_last_name" name="ssl_last_name">
+                            <div class="invalid-feedback">Please enter your last name.</div>
                         </div>
                         <div class="col-md-6 mt-4 ">
                             <label for="streetAddress" class="font-weight-500 form-label"><span class="red">*</span> Street Address</label>
-                            <input required type="email" class="form-control" id="streetAddress">
+                            <input required type="text" class="form-control" id="streetAddress" name="ssl_avs_address">
+                            <div class="invalid-feedback">Please enter your Street Address.</div>
                         </div>
                         <div class="col-md-6 mt-4 ">
-                            <label for="city" class="font-weight-500 form-label"><span class="red">*</span> City</label>
-                            <input type="text" class="form-control" id="city">
+                            <label for="ssl_city" class="font-weight-500 form-label"><span class="red">*</span> City</label>
+                            <input required type="text" class="form-control" id="city" name="ssl_city">
+                            <div class="invalid-feedback">Please enter your city.</div>
                         </div>
                         <div class="col-md-6 mt-4 ">
-                            <label for="zipCode" class="font-weight-500 form-label"><span class="red">*</span> Zip Code</label>
-                            <input type="text" class="form-control" id="zipCode">
+                            <label for="zipCode" class="font-weight-500 form-label"> Zip Code</label>
+                            <input type="text" class="form-control" id="zipCode" name="zipCode">
                         </div>
                         <div class="col-md-6 mt-4 ">
                             <label for="country" class="font-weight-500 form-label"><span class="red">*</span> Country</label>
-                            <select class="form-select form-control" id="country" data-placeholder="Choose one thing">
-                                <option>Select Country</option>
+                            <select required class="form-select form-control" id="country"  name="country">
+                                <option value="" selected disabled>Select Country</option>
                                 @foreach ($countries as $country)
                                 <option>{{ $country->countryName }}</option>
                                 @endforeach
                             </select>
+                            <div class="invalid-feedback">Please select country.</div>
                         </div>
                         <div class="col-md-6 mt-4 ">
-                            <label for="cardNumber" class="font-weight-500 form-label"><span class="red">*</span> Card Number</label>
-                            <input type="text" class="form-control" id="cardNumber">
+                            <label for="ssl_card_number" class="font-weight-500 form-label"><span class="red">*</span> Card Number</label>
+                            <input required type="number" class="form-control" id="ssl_card_number" name="ssl_card_number">
+                            <div class="invalid-feedback">Please enter your card number.</div>
                         </div>
                         <div class="col-md-5 mt-4 ">
                             <div class="row">
                                 <div class="col-md-9">
-                                    <label for="cvv" class="font-weight-500 form-label"><span class="red">*</span> CVV</label>
-                                    <input type="text" class="w-90 form-control" id="cvv">
+                                    <label for="ssl_cvv2cvc2" class="font-weight-500 form-label"><span class="red">*</span> CVV</label>
+                                    <input required type="number" class="w-90 form-control" id="ssl_cvv2cvc2" name="ssl_cvv2cvc2">
+                                    <div class="invalid-feedback">Please enter your cvv code.</div>
                                 </div>
                                 <div class="col-md-3 mt-4">
                                     <img src="{{ asset('app-logo/cvv_small.png') }}">
@@ -120,42 +88,44 @@
                             </div>
                         </div>
                         <div class="col-md-8 mt-4 ">
-                            <label for="cardExpiration" class="font-weight-500 form-label"><span class="red">*</span> Card Expiration</label>
+                            <label for="month" class="font-weight-500 form-label"><span class="red">*</span> Card Expiration</label>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <select class="form-select form-control" id="cardExpiration" data-placeholder="Choose Month">
-                                        <option></option>
-                                        <option>1- January</option>
-                                        <option>2- Febuary</option>
-                                        <option>3- March</option>
-                                        <option>4- April</option>
-                                        <option>5- May</option>
-                                        <option>6- June</option>
-                                        <option>7- July</option>
-                                        <option>8- August</option>
-                                        <option>9- September</option>
-                                        <option>10- October</option>
-                                        <option>11- November</option>
-                                        <option>12- December</option>
+                                    <select required name="month" class="form-select form-control" id="month" data-placeholder="Choose Month">
+                                        <option value="" selected disabled>Select Month</option>
+                                        <option value="01">01- January</option>
+                                        <option value="02">02- Febuary</option>
+                                        <option value="03">03- March</option>
+                                        <option value="04">04- April</option>
+                                        <option value="05">05- May</option>
+                                        <option value="06">06- June</option>
+                                        <option value="07">07- July</option>
+                                        <option value="08">08- August</option>
+                                        <option value="09">09- September</option>
+                                        <option value="10">10- October</option>
+                                        <option value="11">11- November</option>
+                                        <option value="12">12- December</option>
                                     </select>
+                                    <div class="invalid-feedback">Please select month.</div> <!-- Move outside the <select> element -->
                                 </div>
                                 <div class="col-md-6">
-                                    <select class="form-select form-control" id="cardExpiration" data-placeholder="Choose Year">
-                                        <option></option>
-                                        <option>2024</option>
-                                        <option>2025</option>
-                                        <option>2026</option>
-                                        <option>2027</option>
-                                        <option>2028</option>
-                                        <option>2029</option>
-                                        <option>2030</option>
-                                        <option>2031</option>
-                                        <option>2032</option>
-                                        <option>2033</option>
-                                        <option>2034</option>
-                                        <option>2035</option>
-                                        <option>2036</option>
+                                    <select required name="year" class="form-select form-control" id="cardExpiration" data-placeholder="Choose Year">
+                                        <option value="" selected disabled>Select Year</option>
+                                        <option value= "24">2024</option>
+                                        <option value= "25">2025</option>
+                                        <option value= "26">2026</option>
+                                        <option value= "27">2027</option>
+                                        <option value= "28">2028</option>
+                                        <option value= "29">2029</option>
+                                        <option value= "30">2030</option>
+                                        <option value= "31">2031</option>
+                                        <option value= "32">2032</option>
+                                        <option value= "33">2033</option>
+                                        <option value= "34">2034</option>
+                                        <option value= "35">2035</option>
+                                        <option value= "36">2036</option>
                                     </select>
+                                    <div class="invalid-feedback">Please select year.</div>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +140,7 @@
                     </div>
                     <div class="col-md-12 mt-4 ">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-success me-md-2" type="button">Order Now <i class="fa fa-angle-right"></i> </button>
+                            <button id="orderButton" class="btn btn-success me-md-2" type="button">Order Now <i class="fa fa-angle-right"></i> </button>
                         </div>
                     </div>
     			</form>
@@ -235,7 +205,57 @@
 
 
 @endsection
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+
 <script type="text/javascript">
+
+    $(document).ready(function() {
+        $('#orderButton').click(function(event) {
+            event.preventDefault();
+            var form = $('#paymentForm');
+            form.find('.is-invalid').removeClass('is-invalid');
+            form.removeClass('was-validated');
+
+            form.find('select').each(function() {
+                if ($(this).val() === "select") {
+                    $(this).addClass("is-invalid");
+                }
+            });
+
+            if (!form[0].checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+                form.addClass('was-validated');
+                return;
+            }
+            var formData = form.serialize();
+
+            $.ajax({
+                url: "{{ route('step.send_payment') }}",
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: formData,
+                success: function(response) {
+                    console.log(response);
+                },
+                error: function(xhr, status, error) {
+                    console.error('Request failed!');
+                }
+            });
+        });
+    });
+
+
+
+
 	$(document).ready(function() {
 		$('#number').select2( {
 		    theme: "bootstrap-5",
@@ -245,7 +265,4 @@
 	});
 </script>
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+

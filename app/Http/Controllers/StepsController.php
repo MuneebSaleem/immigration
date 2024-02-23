@@ -112,4 +112,29 @@ class StepsController extends Controller
             ->get();
         return response()->json(['country' => $country]);
     }
+
+
+    public function send_payment(Request $request) {
+        $requestData = $request->all();
+
+        $converge = app(\Treestoneit\LaravelConvergeApi\Converge::class);
+
+        $createSale = $converge->authOnly([
+            'ssl_card_number' => $requestData['ssl_card_number'],
+            'ssl_exp_date' => $requestData['month'].$requestData['year'],
+            'ssl_cvv2cvc2' => $requestData['ssl_cvv2cvc2'],
+            'ssl_amount' => '9.95',
+            'ssl_add_token' => 'Y',
+            'ssl_avs_address' => $requestData['ssl_avs_address'],
+            'ssl_city' => $requestData['ssl_city'],
+            'ssl_description' => 'test',
+            'ssl_first_name' => $requestData['ssl_first_name'],
+            'ssl_last_name' => $requestData['ssl_first_name'],
+        ]);
+
+        return response()->json($createSale);
+
+
+    }
+
 }

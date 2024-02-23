@@ -8952,6 +8952,10 @@ footer .footer.style p, footer .footer.style .foot-links a {
   border-top-left-radius: 10px;
   color: #fff;
 }
+.blue-area-bg > h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
 .float-right {
   float: right;
 }
@@ -8983,9 +8987,34 @@ footer .footer.style p, footer .footer.style .foot-links a {
   width: 130px;
 }
 li.gap-reduce {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 .sidebar-head {
     font-size: 22px;
     font-weight: 600;
+}
+.form-label {
+  margin-bottom: 0.1rem !important;
+}
+.main-section-content {
+  padding: 0rem 5rem;
+}
+.background-navy {
+  background: #142E5D url("../../app-logo/footer-background.png") no-repeat right center ;
+}
+.footer-nav {
+  color: #fff;
+    text-align: right;
+    padding: 1rem 2rem;
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer-text {
+  color: #fff;
+}
+section.container.px-5.py-4.background-navy {
+    padding: 1.2rem 4rem !important;
+}
+.text-paragraph {
+  line-height: 22px;
 }

@@ -23,12 +23,12 @@
     		<i class="fa fa-shield"></i> SECURE APPLICATION
     	</div>
     </header>
-    <section class="container px-160 py-4">
+    <section class="container main-section-content px-5 py-4">
     	<div class="row">
     		<div class="col-md-8 px-4">
     			<form class="row font-14 ">
 	    			<div class="container-form">
-	    				<div class="blue-area-bg px-48 py-2">
+	    				<div class="blue-area-bg px-4 py-2">
 	    					<h1 class="m-0">Customer Information
 	    					<img class="float-right" src="{{ asset('app-logo/us-flag.png') }}" />
 	    					</h1>
@@ -69,7 +69,7 @@
 							</select>
 						</div>
 
-                        <div class="blue-area-bg px-48 py-2 mt-4">
+                        <div class="blue-area-bg px-4 py-2 mt-4">
                             <h1 class="m-0">Secure Billing Information
                             <img class="float-right" src="{{ asset('app-logo/us-flag.png') }}" />
                             </h1>
@@ -175,14 +175,14 @@
                     </div>
     			</form>
     		</div>
-    		<div class="col-md-4 p-48 border-left">
+    		<div class="col-md-4 p-5 gap-2 border-left">
                 <div class="sidebar-form">
         			<div class="row">
-                        <h2 class="light-grey px-32 sidebar-head">B-2 TOURIST VISA APPLICATION GUIDE</h2>
-                        <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-32">
-                        <p class="px-46 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE US$ 9.95 </p>
-                        <img class="my-5 px-46" src="{{ asset('app-logo/star-separator.png') }}">
-                        <p class="text-justify">Many visitors to the U.S. need to apply for a B-2 tourist visa depending on which passport is being used. The B-2 tourist visa application process can take several months, and all tourists  are advised to start the visa process early to avoid any trip delays. Download the Visa Application Guide for more information about how to apply and what documents are needed.</p>
+                        <h2 class="light-grey px-5 sidebar-head">B-2 TOURIST VISA APPLICATION GUIDE</h2>
+                        <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-5">
+                        <p class="px-5 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE US$ 9.95 </p>
+                        <img class="my-3 px-5" src="{{ asset('app-logo/star-separator.png') }}">
+                        <p class="text-justify text-paragraph">Many visitors to the U.S. need to apply for a B-2 tourist visa depending on which passport is being used. The B-2 tourist visa application process can take several months, and all tourists  are advised to start the visa process early to avoid any trip delays. Download the Visa Application Guide for more information about how to apply and what documents are needed.</p>
                         <ul class="list-style mx-3">
                             <li class="gap-reduce">Overview of the B-2 Tourist Visa Application</li>
                             <li class="gap-reduce">What is the B-2 Tourist Visa?</li>
@@ -200,6 +200,35 @@
                 </div>
     		</div>
     	</div>
+    </section>
+    <section class="container px-5 py-4 background-navy">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ asset('app-logo/logo-no-background.png') }}">
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline footer-nav">
+                  <li class="list-inline-item">Item 1</li>
+                  <li class="list-inline-item">Item 2</li>
+                  <li class="list-inline-item">Item 3</li>
+                  <li class="list-inline-item">Item 4</li>
+                  <li class="list-inline-item">Item 5</li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <p class="footer-text">Online Immigration is owned and operated by a private company. Our mission is to help immigrants and travelers through the complex United States immigration system with our do-it-yourself immigration guides and travel authorization consultancy. We are not a law firm, and our website does not provide legal advice. We are not affiliated with the United States government. All applicants have the option to file their submission directly at uscis.gov or travel.state.gov without our assistance. Online Immigration is a division of ETAS Travel LLC, which is affiliated with a U.S. law firm.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container copy-right px-5 py-4">
+        <div class="row">
+            <div class="col-md-6">
+                <p>© 2024 onlineimmigration.com. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="float-right" src="{{ asset('app-logo/footer-icons.png') }}">
+            </div>
+        </div>
     </section>
 </div>
 

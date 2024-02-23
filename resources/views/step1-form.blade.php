@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
-
+    <link rel="stylesheet" href="{{ asset('dist/css/modal.css')  }}">
+<div class="loading" style="display: none;">Loading&#8230;</div>
 <div class="container">
 	<section id="top-bar-main" class="py-20">
         <!-- <div class="container"> -->
@@ -234,6 +235,8 @@
                 form.addClass('was-validated');
                 return;
             }
+
+            $(".loading").show();
             var formData = form.serialize();
 
             $.ajax({
@@ -245,9 +248,11 @@
                 data: formData,
                 success: function(response) {
                     console.log(response);
+                    $(".loading").hide();
                 },
                 error: function(xhr, status, error) {
                     console.error('Request failed!');
+                    $(".loading").hide();
                 }
             });
         });

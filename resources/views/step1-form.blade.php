@@ -208,6 +208,50 @@
 @endsection
 
 
+
+<div class="modal success-modal" tabindex="-1" style="display:block;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Payment Status</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Congragulation your request has been approved</p>
+      </div>
+      <div class="modal-footer">
+        <!-- <a href="{{ env('APP_URL') }}/book/e-book.pdf" target="_blank" class="btn btn-success btn-sm download-btn">Download your eBook</a> -->
+        <button id="downloadBtn" class="btn btn-success btn-lg">Download your eBook</button>
+<button type="button" class="btn btn-secondary btn-lg close-btn" data-bs-dismiss="modal">Close</button>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal failure-modal" tabindex="-1" style="display:none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Payment Status</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-danger">Your Card Details not valid</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-lg close-btn" data-bs-dismiss="modal">Close</button>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -217,6 +261,11 @@
 <script type="text/javascript">
 
     $(document).ready(function() {
+
+        document.getElementById("downloadBtn").addEventListener("click", function() {
+            window.open("{{ env('APP_URL') }}/book/e-book.pdf", "_blank");
+        });
+
         $('#orderButton').click(function(event) {
             event.preventDefault();
             var form = $('#paymentForm');
@@ -256,6 +305,7 @@
                 data: formData,
                 success: function(response) {
                     if(response.success === true){
+                    $(".success-modal").css("display", "block");
                         $.ajax({
                             url: "{{ route('order-email.send') }}",
                             method: 'POST',
@@ -269,6 +319,7 @@
                             success: function(response) {
                                 console.log(response);
                                     $(".loading").hide();
+                                    $(".success-modal").css("display", "block");
                             },
                             error: function(xhr, status, error) {
                                 console.error('Request failed!');
@@ -276,7 +327,9 @@
                             }
                         });
                     }
-                    console.log(response.success);
+                    if(response.success === false){
+                        $(".failure-modal").css("display", "block");
+                    }
                     $(".loading").hide();
                 },
                 error: function(xhr, status, error) {

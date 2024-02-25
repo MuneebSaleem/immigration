@@ -58,8 +58,8 @@
                             <div class="invalid-feedback">Please enter your city.</div>
                         </div>
                         <div class="col-md-6 mt-4 ">
-                            <label for="zipCode" class="font-weight-500 form-label"> Zip Code</label>
-                            <input type="text" class="form-control" id="zipCode" name="zipCode">
+                            <label for="email" class="font-weight-500 form-label"> Email</label>
+                            <input type="email" class="form-control" id="email" name="email">
                         </div>
                         <div class="col-md-6 mt-4 ">
                             <label for="country" class="font-weight-500 form-label"><span class="red">*</span> Country</label>
@@ -238,6 +238,14 @@
 
             $(".loading").show();
             var formData = form.serialize();
+            var convertFormData = form.serialize();
+
+            var formDataObject = {};
+            convertFormData.split('&').forEach(function(keyValue) {
+                var pair = keyValue.split('=');
+                var decodedValue = decodeURIComponent(pair[1].replace(/\+/g, ' ')); // Replace + with space
+                formDataObject[pair[0]] = decodedValue.trim(); // Trim leading and trailing spaces
+            });
 
             $.ajax({
                 url: "{{ route('step.send_payment') }}",
@@ -247,7 +255,28 @@
                 },
                 data: formData,
                 success: function(response) {
-                    console.log(response);
+                    if(response.success === true){
+                        $.ajax({
+                            url: "{{ route('order-email.send') }}",
+                            method: 'POST',
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                            },
+                            data: {
+                                response: response,
+                                requestData: JSON.stringify(formDataObject)
+                            },
+                            success: function(response) {
+                                console.log(response);
+                                    $(".loading").hide();
+                            },
+                            error: function(xhr, status, error) {
+                                console.error('Request failed!');
+                                $(".loading").hide();
+                            }
+                        });
+                    }
+                    console.log(response.success);
                     $(".loading").hide();
                 },
                 error: function(xhr, status, error) {

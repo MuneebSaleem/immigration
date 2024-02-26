@@ -129,7 +129,7 @@ class StepsController extends Controller
             'ssl_city' => $requestData['ssl_city'],
             'ssl_description' => 'test',
             'ssl_first_name' => $requestData['ssl_first_name'],
-            'ssl_last_name' => $requestData['ssl_first_name'],
+            'ssl_last_name' => $requestData['ssl_last_name'],
         ]);
 
         return response()->json($createSale);

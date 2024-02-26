@@ -217,7 +217,7 @@
         <button type="button" class="btn-close close-modal" data-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Congratulations! Your request has been approved.</p>
+        <p>Congratulations! We are delighted to inform you that your request has been successfully approved! Details regarding the approval have been sent to the email.</p>
       </div>
       <div class="modal-footer">
         <button id="downloadBtn" class="btn btn-success btn-lg">Download your eBook</button>

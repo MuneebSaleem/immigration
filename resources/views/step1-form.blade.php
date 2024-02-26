@@ -209,7 +209,7 @@
 
 
 
-<div class="modal success-modal" tabindex="-1" style="display:block;">
+<div class="modal success-modal" tabindex="-1" style="display:none;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -229,7 +229,7 @@
 
 
 
-<div class="modal failure-modal" tabindex="-1" style="display:block;">
+<div class="modal failure-modal" tabindex="-1" style="display:none;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

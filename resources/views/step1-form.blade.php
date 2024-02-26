@@ -209,22 +209,19 @@
 
 
 
-<div class="modal success-modal" tabindex="-1" style="display:none;">
+<div class="modal success-modal" tabindex="-1" style="display:block;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Payment Status</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close close-modal" data-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Congragulation your request has been approved</p>
+        <p>Congratulations! Your request has been approved.</p>
       </div>
       <div class="modal-footer">
-        <!-- <a href="{{ env('APP_URL') }}/book/e-book.pdf" target="_blank" class="btn btn-success btn-sm download-btn">Download your eBook</a> -->
         <button id="downloadBtn" class="btn btn-success btn-lg">Download your eBook</button>
-<button type="button" class="btn btn-secondary btn-lg close-btn" data-bs-dismiss="modal">Close</button>
-
-
+        <button type="button" class="btn btn-secondary btn-lg close-btn" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -237,13 +234,13 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Payment Status</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close close-modal" data-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <p class="text-danger">Your Card Details not valid</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary btn-lg close-btn" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary btn-lg close-btn" data-dismiss="modal">Close</button>
 
 
       </div>
@@ -264,6 +261,16 @@
 
         document.getElementById("downloadBtn").addEventListener("click", function() {
             window.open("{{ env('APP_URL') }}/book/e-book.pdf", "_blank");
+        });
+
+        $('.btn-close').on('click', function() {
+          var modalFail = $('.failure-modal');
+          modalFail.hide();
+        });
+
+        $('.btn-close').on('click', function() {
+          var modalSuccess = $('.success-modal');
+          modalSuccess.hide();
         });
 
         $('#orderButton').click(function(event) {
@@ -351,5 +358,5 @@
 		} );
 	});
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

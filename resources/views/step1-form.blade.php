@@ -221,7 +221,7 @@
       </div>
       <div class="modal-footer">
         <button id="downloadBtn" class="btn btn-success btn-lg">Download your eBook</button>
-        <button type="button" class="btn btn-secondary btn-lg close-btn" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary btn-lg close-btn close-modal-button" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -229,7 +229,7 @@
 
 
 
-<div class="modal failure-modal" tabindex="-1" style="display:none;">
+<div class="modal failure-modal" tabindex="-1" style="display:block;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -240,7 +240,7 @@
         <p class="text-danger">Your Card Details not valid</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary btn-lg close-btn" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary btn-lg close-btn close-modal-button" data-dismiss="modal">Close</button>
 
 
       </div>
@@ -269,6 +269,16 @@
         });
 
         $('.btn-close').on('click', function() {
+          var modalSuccess = $('.success-modal');
+          modalSuccess.hide();
+        });
+
+        $('.close-modal-button').on('click', function() {
+          var modalFail = $('.failure-modal');
+          modalFail.hide();
+        });
+
+        $('.close-modal-button').on('click', function() {
           var modalSuccess = $('.success-modal');
           modalSuccess.hide();
         });

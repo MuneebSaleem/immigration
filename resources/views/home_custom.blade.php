@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/logo-main.png') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/1672-X-288-White.png') }}" alt="US Immigration support">
 
                 </div>
 
@@ -164,32 +164,38 @@
                             </div>
 
                             <div class="row g-3">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <label for="firstName" class="form-label m-0">First Name</label>
                                     <input type="text" name="firstName" class="form-control" id="firstName" required>
                                     <div class="invalid-feedback">Please enter your first name.</div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <label for="middleName" class="form-label m-0">Middle Name</label>
                                     <input type="text" name="middleName" class="form-control" id="middleName">
                                 </div>
-                            </div>
-
-                            <div class="row mt-2">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <label for="lastName" class="form-label m-0">Last Name</label>
                                     <input type="text"  name="lastName" class="form-control" id="lastName" required>
                                     <div class="invalid-feedback">Please enter your last name.</div>
                                 </div>
+                            </div>
+
+                            <div class="row mt-2">
+
                                 <div class="col-md-6">
                                     <label for="email" class="form-label m-0">Email</label>
                                     <input type="email" name="email" class="form-control" id="email" required>
                                     <div class="invalid-feedback">Please enter a valid email address.</div>
                                 </div>
+                                <div class="col-md-6">
+                                    <label for="confirm_email" class="form-label m-0">Confirm Email</label>
+                                    <input type="email" name="confirm_email" class="form-control" id="confirm_email" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
                             </div>
 
                             <div class="row mt-2">
-                                <div class="col-md-2 m-0">
+                                <div class="col-md-6 m-0">
                                     <label for="countryCode" class="form-label m-0">Code</label>
                                     <select name="countryCode" class="form-control" id="countryCode" required>
                                         <option value="" selected disabled>Select</option>
@@ -199,7 +205,7 @@
                                     </select>
                                     <div class="invalid-feedback">Please select a country code.</div>
                                 </div>
-                                <div class="col-md-4 m-0">
+                                <div class="col-md-6 m-0">
                                     <label for="phoneNumber" class="form-label m-0">Phone No</label>
                                     <input type="number" name="phoneNumber" class="form-control" id="phoneNumber" required>
                                     <div class="invalid-feedback">Please enter your phone number.</div>
@@ -371,7 +377,7 @@
             <div class="row">
                 <div class="col-12 col-lg-5 text-center text-lg-start mb-20 my-lg-auto">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/logo-main.png') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/1672-X-288-White.png') }}" alt="US Immigration support">
 
                 </div>
 
@@ -588,6 +594,18 @@
                         $(this).addClass('is-invalid');
                     }
                 });
+
+                return;
+            }
+
+            var email = $('#email').val();
+            var confirmEmail = $('#confirm_email').val();
+            if (email !== confirmEmail) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                $('#confirm_email').addClass('is-invalid');
+                $('.invalid-feedback').text('Confirm Email must match with Email.');
 
                 return;
             }

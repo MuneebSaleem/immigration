@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
 
-                    <img class="" src="{{ asset('app-logo/logo-main-dark.png') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/1672-X-288-White.png') }}" alt="US Immigration support">
 
                 </div>
 
@@ -33,7 +33,7 @@
 
                         <div class="blue-area-bg px-4 py-2 mt-4">
                             <h1 class="m-0">Secure Billing Information
-                            <img class="float-right" src="{{ asset('app-logo/us-flag.png') }}" />
+                            <img class="float-right" src="{{ asset('app-logo/canada.png') }}" />
                             </h1>
                         </div>
 
@@ -175,7 +175,7 @@
     <section class="container px-5 py-4 background-navy">
         <div class="row">
             <div class="col-md-6">
-                <img src="{{ asset('app-logo/logo-no-background.png') }}">
+                <img class="navbar-brand" src="{{ asset('app-logo/1672-X-288-White.png') }}">
             </div>
             <div class="col-md-6">
                 <ul class="list-inline footer-nav">

@@ -221,7 +221,7 @@
       </div>
       <div class="modal-footer">
         <button id="downloadBtn" class="btn btn-success btn-lg">Download your eBook</button>
-        <button type="button" class="btn btn-secondary btn-lg close-btn close-modal-button" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary btn-lg close-btn close-modal-button-update" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -278,9 +278,10 @@
           modalFail.hide();
         });
 
-        $('.close-modal-button').on('click', function() {
+        $('.close-modal-button-update').on('click', function() {
           var modalSuccess = $('.success-modal');
           modalSuccess.hide();
+          window.location.href = '/';
         });
 
         $('#orderButton').click(function(event) {

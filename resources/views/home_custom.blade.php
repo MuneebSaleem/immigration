@@ -193,14 +193,13 @@
                                     <div class="invalid-feedback">Please enter a valid email address.</div>
                                 </div>
                             </div>
-
                             <div class="row mt-2">
                                 <div class="col-md-6 m-0">
                                     <label for="countryCode" class="form-label m-0">Code</label>
                                     <select name="countryCode" class="form-control" id="countryCode" required>
-                                        <option value="" selected disabled>Select</option>
+                                        <option value="" selected disabled>Select Country</option>
                                         @foreach($country as $countryItem)
-                                            <option value="{{ $countryItem->telephonePrefix }}"> {{ $countryItem->telephonePrefix }}</option>
+                                            <option value="{{ $countryItem->telephonePrefix }}"> {{ $countryItem->countryName . ' ' . '('.$countryItem->isoAlpha3 . ')' .' ('.$countryItem->telephonePrefix .')'  }}</option>
                                         @endforeach
                                     </select>
                                     <div class="invalid-feedback">Please select a country code.</div>

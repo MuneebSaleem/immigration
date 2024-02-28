@@ -1,6 +1,4 @@
 @extends('layouts.app')
-
-{{--@include('home_modal')--}}
 @section('content')
     <link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">
 
@@ -421,7 +419,7 @@
 
 
 @endsection
-
+@include('home_modal')
 
 
 <script src="{{ asset('dist/js/jquery-3.6.4.min.js') }}"></script>

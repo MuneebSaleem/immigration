@@ -16,10 +16,6 @@
     <link rel="stylesheet" href="{{ asset('dist/css/font-awesome.min.css')  }}">
     <link rel="stylesheet" href="{{ asset('dist/css/select2.min.css')  }}">
     <link rel="stylesheet" href="{{ asset('dist/css/select2-bootstrap-5-theme.min.css')  }}">
-
-
-
-    <link rel="stylesheet" href="{{ asset('dist/css/styles.css')  }}">
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>

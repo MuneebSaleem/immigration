@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@include('home_modal')
+{{--@include('home_modal')--}}
 @section('content')
     <link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">
 

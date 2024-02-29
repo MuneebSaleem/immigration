@@ -4,7 +4,12 @@
     <title>US Application</title>
 </head>
 <body>
-<h1>Thank you for your submission to Pardon Waiver Services Canada</h1>
+
+<img class="navbar-brand" src="{{ asset('app-logo/email-header.png') }}">
+
+<h1><b>** General Information / Application Guide Instructions **</b></h1>
+<br>
+<h3>Thank you for your submission to Pardon Waiver Services Canada</h3>
 <p>Pardon Waiver Services Canada is a nationwide Canadian Pardon (Record Suspension), and U.S. Entry Waiver application processing firm.</p>
 
 <p>Each year PPWS assists thousands of qualified Canadians like you, in obtaining Pardons (Record Suspensions) of their criminal convictions, and U.S. Entry waivers. This will open new doors for you in employment, community service, make travel easier, and provide peace of mind.</p>

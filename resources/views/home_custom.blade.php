@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">
 @section('content')
-    
+
 
     <section id="top-bar-main" class="bg-atlantic-blue py-20">
         <div class="container">
@@ -50,8 +50,8 @@
                     <section id="eligibility-form-step-1-section" class="form-step">
                         <form autocomplete="off" id="eligibility-form-step-1"  method="get">
                             <div class="step-header">
-                                <div class="w-75">
-                                    <h1 class="text-text-primary mb-16">
+                                <div class="w-75" style="width: 103% !important;">
+                                    <h1 class="text-text-primary mb-10">
                                         <b>US entry waiver & Canadian Pardon</b></h1>
                                 </div>
                             </div>

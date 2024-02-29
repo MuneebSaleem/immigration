@@ -1,6 +1,7 @@
 @extends('layouts.app')
+<link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">
 @section('content')
-    <link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">
+    
 
     <section id="top-bar-main" class="bg-atlantic-blue py-20">
         <div class="container">
@@ -139,7 +140,7 @@
                         </form>
                         <div class="step-row mt-16 mt-md-24 text-center">
 
-                            <button  id="form_1_proceed" class="btn btn-success text-white text-uppercase">
+                            <button  id="form_1_proceed" class="btn btn-success">
                                 Proceed to Application</button>
                         </div>
                     </section>

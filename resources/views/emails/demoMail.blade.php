@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<img class="navbar-brand" src="https://iili.io/JMMnEiP.md.png">
+{{--<img class="navbar-brand" src="{{ asset('app-logo/email-header.png') }}">--}}
 
 <h1><b>** General Information / Application Guide Instructions **</b></h1>
 <br>

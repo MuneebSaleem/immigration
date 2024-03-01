@@ -194,9 +194,9 @@
                             </div>
                             <div class="row mt-2">
                                 <div class="col-md-6 m-0">
-                                    <label for="countryCode" class="form-label m-0">Code</label>
+                                    <label for="countryCode" class="form-label m-0">Country Code</label>
                                     <select name="countryCode" class="form-control" id="countryCode" required>
-                                        <option value="" selected disabled>Select Country</option>
+                                        <option value="" selected disabled>Select Country Code</option>
                                         @foreach($country as $countryItem)
                                             <option value="{{ $countryItem->telephonePrefix }}"> {{ $countryItem->countryName . ' ' . '('.$countryItem->isoAlpha3 . ')' .' ('.$countryItem->telephonePrefix .')'  }}</option>
                                         @endforeach

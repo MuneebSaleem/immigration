@@ -40,12 +40,12 @@
 
                         <div class="col-md-6 mt-4 ">
                             <label for="firstName" class="font-weight-500 form-label"><span class="red">*</span> First Name</label>
-                            <input required type="text" class="form-control" id="ssl_first_name" name="ssl_first_name">
+                            <input required type="text" class="form-control" id="ssl_first_name" name="ssl_first_name" value="{{ isset($userData['firstName']) ? $userData['firstName']  : '' }}">
                             <div class="invalid-feedback">Please enter your first name.</div>
                         </div>
                         <div class="col-md-6 mt-4 ">
                             <label for="ssl_last_name" class="font-weight-500 form-label"><span class="red">*</span> Last Name</label>
-                            <input required type="text" class="form-control" id="ssl_last_name" name="ssl_last_name">
+                            <input required type="text" class="form-control" id="ssl_last_name" name="ssl_last_name" value="{{ isset($userData['lastName']) ? $userData['lastName']  : '' }}">
                             <div class="invalid-feedback">Please enter your last name.</div>
                         </div>
                         <div class="col-md-6 mt-4 ">
@@ -60,14 +60,18 @@
                         </div>
                         <div class="col-md-6 mt-4 ">
                             <label for="email" class="font-weight-500 form-label"> Email</label>
-                            <input type="email" class="form-control" id="email" name="email">
+                            <input type="email" class="form-control" id="email" name="email" value="{{ isset($userData['email']) ? $userData['email']  : '' }}">
                         </div>
                         <div class="col-md-6 mt-4 ">
                             <label for="country" class="font-weight-500 form-label"><span class="red">*</span> Country</label>
                             <select required class="form-select form-control" id="country"  name="country">
                                 <option value="" selected disabled>Select Country</option>
                                 @foreach ($countries as $country)
-                                <option>{{ $country->countryName }}</option>
+                                    @if ($country->countryName == 'Canada')
+                                        <option value="{{ $country->countryName }}" selected style="font-weight: bold;">{{ $country->countryName }}</option>
+                                    @else
+                                        <option value="{{ $country->countryName }}">{{ $country->countryName }}</option>
+                                    @endif
                                 @endforeach
                             </select>
                             <div class="invalid-feedback">Please select country.</div>
@@ -261,7 +265,14 @@
     $(document).ready(function() {
 
         document.getElementById("downloadBtn").addEventListener("click", function() {
-            window.open("{{ env('APP_URL') }}/book/e-book.pdf", "_blank");
+            var pdfUrl = "{{ env('APP_URL') }}/book/e-book.pdf";
+
+            var link = document.createElement("a");
+            link.href = pdfUrl;
+            link.download = "e-book.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         });
 
         $('.btn-close').on('click', function() {

@@ -111,6 +111,10 @@ class TestController extends Controller
     public function send_data(Request $request) {
         $requestData = $request->all();
 
+        $email = $requestData['email'];
+        $cacheKey = 'user_data_' . $email;
+        Cache::put($cacheKey, $requestData);
+
         $data = [
             "firstName" => $requestData['firstName'],
             "lastName" => $requestData['lastName'],

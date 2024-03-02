@@ -27,7 +27,7 @@
                     <div class="my-auto me-3 d-none d-md-block">
                         <p class="check-gold text-white mb-0 check-gold">24/7 Customer Service</p>
                     </div>
-                              </div>
+                </div>
             </div>
         </div>
     </section>
@@ -63,7 +63,7 @@
                             <div class="step-header">
                                 <div class="w-75" style="width: 103% !important;">
                                     <h1 class="text-text-primary mb-10">
-                                        <b>Canadian Pardon</b></h1>
+                                        <b>US entry waiver</b></h1>
                                 </div>
                             </div>
 
@@ -724,7 +724,7 @@
                 });
 
 
-                }
+            }
         });
 
 

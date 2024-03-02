@@ -5,7 +5,7 @@
 </head>
 <body>
 
-{{--<img class="navbar-brand" src="{{ asset('app-logo/email-header.png') }}">--}}
+<img class="navbar-brand" src="https://colonyfoods.s3.amazonaws.com/email-header.png">
 
 <h1><b>** General Information / Application Guide Instructions **</b></h1>
 <br>

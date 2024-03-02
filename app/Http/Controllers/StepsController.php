@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Spatie\Permission\Models\Role;
 use Hash;
@@ -27,9 +28,15 @@ class StepsController extends Controller
     public function index(Request $request)
     {
         $countries = Country::select('id', 'countryCode', 'countryName', 'is_active','isoAlpha3')->get();
+        $emailEncoded = $request->query('email');
+        $cacheKey1 = 'user_data_' . $emailEncoded;
+        if (Cache::has($cacheKey1)) {
+            $userData = Cache::get($cacheKey1);
+        }else{
+            $userData = [];
+        }
 
-        return view('step1-form', compact("countries"));
-        // return view('step1');
+        return view('step1-form', compact("countries",'userData'));
     }
 
     /**
@@ -49,19 +56,7 @@ class StepsController extends Controller
      */
     public function store(Request $request)
     {
-//        $this->validate($request, [
-//            'name' => 'required',
-//            'email' => 'required|email|unique:users,email',
-//            'password' => 'required|same:confirm-password',
-//            'roles' => 'required'
-//        ]);
 
-        $input = $request->all();
-        $input['business_id'] = $this->user;
-        $branch = Branch::create($input);
-
-        return redirect()->route('branch.index')
-            ->with('success','Branch created successfully');
     }
 
     /**

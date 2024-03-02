@@ -125,11 +125,11 @@ class TestController extends Controller
 
         $client = new Client();
 
-        $response = $client->post('https://recordremovalservicesofcanada.salesmate.io/apis/contact/v4', [
+        $response = $client->post(env('SALESMATE_API_URL'), [
             'headers' => [
                 'Content-Type' => 'application/json',
-                'accessToken' => 'a2e39d10-b9d2-11ed-8056-0d118e2d3ff7',
-                'x-linkname' => 'recordremovalservicesofcanada.salesmate.io'
+                'accessToken' => env('SALESMATE_ACCESS_TOKEN'),
+                'x-linkname' => env('SALESMATE_X_LINKNAME')
             ],
             'body' => $jsonData // Pass JSON data in the body of the request
         ]);

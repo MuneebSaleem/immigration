@@ -244,6 +244,15 @@
 
     $(document).ready(function() {
 
+        $('#ssl_card_number').on('input', function() {
+            var cardNumber = $(this).val().replace(/[^\d]/g, ''); // Remove non-numeric characters
+            if (cardNumber.length > 16) {
+                cardNumber = cardNumber.slice(0, 16); // Limit to 10 digits
+            }
+            $(this).val(cardNumber); // Update the input value
+        });
+
+
 
         $('.btn-close').on('click', function() {
           var modalFail = $('.failure-modal');
@@ -276,12 +285,6 @@
                 return;
             }
 
-            $('#ssl_card_number').on('input', function(event) {
-                var cardNumber = $(this).val().replace(/[^\d]/g, ''); // Remove non-numeric characters
-                if (cardNumber.length > 16) {
-                    $(this).val(cardNumber.substring(0, 16)); // Truncate to 16 digits
-                }
-            });
 
             var cardNumbercheck = $('#ssl_card_number').val().replace(/[^\d]/g, ''); // Remove non-numeric characters
             if (cardNumbercheck.length !== 16) {

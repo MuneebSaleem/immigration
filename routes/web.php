@@ -25,6 +25,10 @@ Route::get('/v2', function () {
     return view('welcomes');
 });
 
+Route::get('/thankyou', function () {
+    return view('thankyou');
+})->name('thankyou');
+
 
 Route::resource('/test', TestController::class);
 Route::resource('/steps1', StepsController::class);

@@ -78,8 +78,8 @@
                         </div>
                         <div class="col-md-6 mt-4 ">
                             <label for="ssl_card_number" class="font-weight-500 form-label"><span class="red">*</span> Card Number</label>
-                            <input required type="number" class="form-control" id="ssl_card_number" name="ssl_card_number">
-                            <div class="invalid-feedback">Please enter your card number.</div>
+                            <input required type="number" class="form-control" id="ssl_card_number" name="ssl_card_number" maxlength="16">
+                            <div class="invalid-feedback" id="card_validation">Card number must be exactly 16 digits.</div>
                         </div>
                         <div class="col-md-5 mt-4 ">
                             <div class="row">
@@ -214,26 +214,6 @@
 
 
 
-<div class="modal success-modal" tabindex="-1" style="display:none;">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Payment Status</h5>
-        <button type="button" class="btn-close close-modal" data-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Congratulations! We are delighted to inform you that your request has been successfully approved! Details regarding the approval have been sent to the email.</p>
-      </div>
-      <div class="modal-footer">
-        <button id="downloadBtn" class="btn btn-success btn-lg">Download your eBook</button>
-        <button type="button" class="btn btn-secondary btn-lg close-btn close-modal-button-update" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
 <div class="modal failure-modal" tabindex="-1" style="display:none;">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -264,37 +244,18 @@
 
     $(document).ready(function() {
 
-        document.getElementById("downloadBtn").addEventListener("click", function() {
-            var pdfUrl = "{{ env('APP_URL') }}/book/e-book.pdf";
-
-            var link = document.createElement("a");
-            link.href = pdfUrl;
-            link.download = "e-book.pdf";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
 
         $('.btn-close').on('click', function() {
           var modalFail = $('.failure-modal');
           modalFail.hide();
         });
 
-        $('.btn-close').on('click', function() {
-          var modalSuccess = $('.success-modal');
-          modalSuccess.hide();
-        });
 
         $('.close-modal-button').on('click', function() {
           var modalFail = $('.failure-modal');
           modalFail.hide();
         });
 
-        $('.close-modal-button-update').on('click', function() {
-          var modalSuccess = $('.success-modal');
-          modalSuccess.hide();
-          window.location.href = '/';
-        });
 
         $('#orderButton').click(function(event) {
             event.preventDefault();
@@ -314,6 +275,24 @@
                 form.addClass('was-validated');
                 return;
             }
+
+            $('#ssl_card_number').on('input', function(event) {
+                var cardNumber = $(this).val().replace(/[^\d]/g, ''); // Remove non-numeric characters
+                if (cardNumber.length > 16) {
+                    $(this).val(cardNumber.substring(0, 16)); // Truncate to 16 digits
+                }
+            });
+
+            var cardNumbercheck = $('#ssl_card_number').val().replace(/[^\d]/g, ''); // Remove non-numeric characters
+            if (cardNumbercheck.length !== 16) {
+                event.preventDefault();
+                event.stopPropagation();
+                $('#ssl_card_number').addClass('is-invalid');
+                $('.invalid-feedback').text('Card number must be 16 digits.');
+
+                return;
+            }
+
 
             $(".loading").show();
             var formData = form.serialize();
@@ -335,7 +314,6 @@
                 data: formData,
                 success: function(response) {
                     if(response.success === true){
-                    $(".success-modal").css("display", "block");
                         $.ajax({
                             url: "{{ route('order-email.send') }}",
                             method: 'POST',
@@ -347,20 +325,19 @@
                                 requestData: JSON.stringify(formDataObject)
                             },
                             success: function(response) {
-                                console.log(response);
-                                    $(".loading").hide();
-                                    $(".success-modal").css("display", "block");
+                                window.location.href = "{{ route('thankyou') }}";
                             },
                             error: function(xhr, status, error) {
                                 console.error('Request failed!');
+                            },
+                            complete: function() {
                                 $(".loading").hide();
                             }
                         });
-                    }
-                    if(response.success === false){
+                    } else {
                         $(".failure-modal").css("display", "block");
+                        $(".loading").hide();
                     }
-                    $(".loading").hide();
                 },
                 error: function(xhr, status, error) {
                     console.error('Request failed!');

@@ -19,14 +19,14 @@
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/1672-X-288-White.png') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/Artboard 47.png') }}" alt="US Immigration support">
 
                 </div>
 
                 <div class="col-3 col-md-6 col-xl-8 my-auto d-flex justify-content-end text-end">
-                    <div class="my-auto me-3 d-none d-md-block">
-                        <p class="check-gold text-white mb-0 check-gold">24/7 Customer Service</p>
-                    </div>
+{{--                    <div class="my-auto me-3 d-none d-md-block">--}}
+{{--                        <p class="check-gold text-white mb-0 check-gold">24/7 Customer Service</p>--}}
+{{--                    </div>--}}
                               </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="container">
             <div class="row">
                 <div class="col my-2 text-gray-900">
-                    <p>U.S. Immigration Support is an information website not affiliated with the United States government.</p>
+                    <p>Services of Canada is an information website not affiliated with the United States government. We do not provide legal services.</p>
                 </div>
             </div>
         </div>
@@ -245,8 +245,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-10">
-                        <h1>Visiting USA with a B-2 Tourist Visa or Travel Authorization (ESTA)</h1>
-                        <p>All foreigners visiting the United States of America need to hold a valid visa or travel authorization (ESTA) unless they are green card holders. While a visa is issued by a US embassy, the travel authorization is applied for an issued online. The Electronic System for Travel Authorisation (ESTA) serves as an online platform designed to facilitate the application process for the U.S. Visa Waiver Program. For individuals planning to travel to the USA via air or sea, obtaining travel authorisation through ESTA is a prerequisite before embarking on their journey.</p>
+                        <h2>Visiting the USA with a Criminal Record: Canadian Pardons or U.S. Entry Waiver Authorization</h2>
+                        <p>Canadian foreign nationals, along with select international travelers visiting the United States of America (including individuals with prior arrest records or those who may have faced US deportation due to overstay violations), are required to possess a valid U.S. Entry Waiver as well as a Canadian Record Suspension (Pardon). Unlike a visa, which is obtained through a US embassy, the US Entry Waiver application undergoes a separate processing procedure. The Electronic Secured Adjudication Forms Environment (e-SAFE) simplifies the application process for the U.S. Visa Waiver Program, enabling individuals planning multiple air or sea travels to the USA to acquire necessary authorization before their journey.</p>
                     </div>
                     <div class="col-12 col-lg-2 my-auto">
                         <img class="w-100 ps-lg-5" src="{{ asset('app-logo/Frame-27535.png')  }}" alt="ESTA Application">
@@ -259,9 +259,52 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>What are the requirements to apply for an ESTA?</h1>
-                <p>Eligibility for the Visa Waiver Program is exclusive to citizens from 41 qualifying countries. To secure travel authorisation, an ESTA application must be duly completed. Additionally, a biometric passport featuring a microchip and the relevant symbol on its cover is mandatory. The Visa Waiver Program permits stays of up to 90 days, encompassing purposes such as tourism, business, transit, healthcare, or participation in non-credited study programs.</p>
-                <p>It is recommended that travellers apply for ESTA prior to making any hotel or flight reservations, as there may be a need for a full visa. Once your ESTA application receives approval, you have the option to update it with final itinerary details before your departure</p>
+                <h2>What are the requirements for an i-192 Waiver?</h2>
+                <p>Eligibility for the U.S. Entry Waiver and Canadian Record Suspension (Pardon) extends to citizens of Canada as well as other qualifying countries. To obtain travel authorization, applicants must complete the U.S. Entry Waiver application process. Additionally, possession of a biometric RCMP report is mandatory. The U.S. Entry Waiver permits stays of up to 179 days per year and it's good for up to FIVE years, catering to various purposes such as tourism, transit, healthcare, or participation in accredited credited study programs.</p>
+                <p>We recommend applying for the U.S. Entry Waiver prior to making hotel or flight reservations, as some situations may require a lengthy document collection period. Upon approval of your U.S. Entry Waiver application, you can update it with final itinerary details before your departure for added convenience.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>&nbsp;</p>
+                <div class="row flag-list d-flex justify-content-between mx-0">
+                    <h2 class="px-0">Application Form I-192 for Advance Permission to Enter as a Nonimmigrant e-SAFE process for citizens of Canada:</h2>
+                    <strong>Eligible nonimmigrant citizens from:</strong>
+                    <div class="col-12 py-1">
+                    </div>
+                    <div class="col-6 px-0 col-md-auto order-1">
+                        <ul>
+                            <li><img decoding="async" src="{{ asset('country/ad.png') }}" alt="ESTA Countries">  Canada </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 px-0 col-md-auto order-3 order-md-2">
+                        <ul>
+                            <li><img decoding="async" src="{{ asset('country/ee-min.png') }}" alt="ESTA Countries">  Palau </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-6 px-0 col-md-auto order-5 order-md-3">
+                        <ul>
+                            <li><img decoding="async" src="{{ asset('country/it-min.png') }}" alt="ESTA Countries">  Federated States of Micronesia</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-6 px-0 col-md-auto order-2 order-md-4">
+                        <ul>
+                            <li><img decoding="async" src="{{ asset('country/nl-min.png') }}" alt="ESTA Countries">  Marshall Islands</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <strong><b>Note:</b> If you're seeking admission under the Visa Waiver Program (VWP) per INA section 217, do not file this form. Inadmissible aliens from VWP countries must apply for a nonimmigrant visa at a U.S. Embassy or consulate for travel authorization.</strong>
+
             </div>
         </div>
     </div>
@@ -354,26 +397,37 @@
     <div class="container">
         <div class="row mx-0 py-12 border-1-4">
             <div class="col-12">
-                <h2>Checklist for visiting the United States of America</h2>
+                <h2>Preparation Checklist for Visiting the United States</h2>
             </div>
             <div class="col-12 col-lg-6">
                 <ul class="check-green">
-                    <li>Valid Passport</li>
-                    <li>Approved ESTA, visa or other travel authorization</li>
-                    <li>Travel Insurance</li>
-                    <li>Itinerary and accommodation details</li>
-                    <li>Emergency Contacts</li>
-                    <li>Travel Maps and Apps</li>
+                    <li>Ensure your passport is valid and not expired.</li>
+                    <li>Bring adaptors for 110V power outlets if required
+                    </li>
+                    <li>Prepare itinerary and confirm accommodation details.
+                    </li>
+                    <li>Secure travel insurance.
+                    </li>
+                    <li>Explore transportation options for getting around.
+                    </li>
+                    <li>Carry sufficient local currency (USD) and payment methods.
+                    </li>
                 </ul>
             </div>
             <div class="col-12 col-lg-6">
                 <ul class="check-green">
-                    <li>Internet Access</li>
-                    <li>Methods of payment and local currency (USD)</li>
-                    <li>Transportation Options</li>
-                    <li>Read the latest news</li>
-                    <li>Language Translation App (If Needed)</li>
-                    <li>Adaptors for 110V</li>
+                    <li>Download travel maps and relevant apps.
+                    </li>
+                    <li>Arrange for internet access during your stay.
+                    </li>
+                    <li>Stay updated by following the latest news.
+                    </li>
+                    <li>Have emergency contact information readily available.
+                    </li>
+                    <li>Consider a language translation app if needed.
+                    </li>
+                    <li>Obtain your approved U.S. Entry waiver from DHS,  or necessary travel authorization.
+                    </li>
                 </ul>
             </div>
         </div>
@@ -518,10 +572,10 @@
                     var isoName = "(" + response.country[0].isoAlpha3 + ")";
 
                     imagePath = "{{ asset('app-logo/tick.png') }}";
-                    var eligibleText = `<h2 class="text-center">Congratulations!<br>You are eligible to apply for ESTA</h2>`;
+                    var eligibleText = `<h3 class="text-center"><b style="color: limegreen;font-size: 32px;">Congratulations!</b><br><strong>You are eligible to apply for  a U.S. Entry Waiver & Canadian Record Suspension (Pardon)</strong></h3>`;
 
                     var sectionHtml =`<div class="summary mb-16 d-flex" id="eligibility-form-step-2-outcome">
-                                        <img src="${imagePath}" alt="esta-eligibility-checker-eligible">
+                                        <!--<img src="${imagePath}" alt="esta-eligibility-checker-eligible">-->
                                         ${eligibleText}
                                     </div>
                                     <div class="step-row d-flex bg-gray-50 border-0-4 p-8" id="citizenship-meta">
@@ -537,7 +591,7 @@
                                             <span class="meta-key">Max length of stay:</span>
                                         </div>
                                         <div class="col-6 text-end">
-                                            <span class="meta-value">90 Days</span>
+                                            <span class="meta-value">180 Days</span>
                                         </div>
                                     </div>
                                     <div class="step-row d-flex bg-gray-50 border-0-4 p-8" id="type-meta">
@@ -545,7 +599,7 @@
                                             <span class="meta-key">Recommended visa type:</span>
                                         </div>
                                         <div class="col-6 text-end">
-                                            <span class="meta-value">ESTA</span>
+                                            <span class="meta-value">U.S. Entry Waiver (Valid for 5 years)</span>
                                         </div>
                                     </div>
                                     <div class="step-row bg-gray-50 border-0-4 p-8">
@@ -653,41 +707,41 @@
 
             if (email_send) {
 
-                $.ajax({
-                    url: '/send_email',
-                    method: 'POST',
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    data: { email: email_send },
-                    success: function (response) {
-                        console.log('Email sent successfully!');
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error occurred while sending email:', error);
-                    }
-                });
-
-                $.ajax({
-                    url: '/send_data',
-                    method: 'POST',
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    data: {
-                        email: email_send,
-                        firstName: firstName,
-                        lastName: lastName,
-                        countryCode: countryCode,
-                        phoneNumber: phoneNumber
-                    },
-                    success: function (response) {
-                        console.log('Send Data successfully!');
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error occurred while sending email:', error);
-                    }
-                });
+                // $.ajax({
+                //     url: '/send_email',
+                //     method: 'POST',
+                //     headers: {
+                //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                //     },
+                //     data: { email: email_send },
+                //     success: function (response) {
+                //         console.log('Email sent successfully!');
+                //     },
+                //     error: function(xhr, status, error) {
+                //         console.error('Error occurred while sending email:', error);
+                //     }
+                // });
+                //
+                // $.ajax({
+                //     url: '/send_data',
+                //     method: 'POST',
+                //     headers: {
+                //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                //     },
+                //     data: {
+                //         email: email_send,
+                //         firstName: firstName,
+                //         lastName: lastName,
+                //         countryCode: countryCode,
+                //         phoneNumber: phoneNumber
+                //     },
+                //     success: function (response) {
+                //         console.log('Send Data successfully!');
+                //     },
+                //     error: function(xhr, status, error) {
+                //         console.error('Error occurred while sending email:', error);
+                //     }
+                // });
 
 
                 $('#eligibility-form-step-2-submit').on('click', function(e) {

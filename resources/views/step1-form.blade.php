@@ -21,9 +21,9 @@
         <!-- </div> -->
     </section>
     <header class="image-color-background">
-    	<div class="secure-text">
-    		<i class="fa fa-shield"></i> SECURE APPLICATION
-    	</div>
+{{--    	<div class="secure-text">--}}
+{{--    		<i class="fa fa-shield"></i> SECURE APPLICATION--}}
+{{--    	</div>--}}
     </header>
     <section class="container main-section-content px-5 py-4">
     	<div class="row">
@@ -141,8 +141,7 @@
                     <div class="mt-4 form-check bg-grey p-5">
                       <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
                       <label class="form-check-label" for="agreeCheck">
-                        I have read and consent to the Privacy Policy and Terms & Conditions of this website. I am of legal age, or have parental/guardian consent. Price: US$ 9.95
-                      </label>
+                        I have read and consent to the Privacy Policy and Terms & Conditions of this website. I am of legal age, or have parental/guardian consent. Price: $9.99 CAD</label>
                     </div>
                     <div class="col-md-12 mt-4 ">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -156,17 +155,16 @@
         			<div class="row">
                         <h2 class="light-grey px-5 sidebar-head">B-2 TOURIST VISA APPLICATION GUIDE</h2>
                         <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-5">
-                        <p class="px-5 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE US$ 9.95 </p>
+                        <p class="px-5 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE $9.99 CAD</p>
                         <img class="my-3 px-5" src="{{ asset('app-logo/star-separator.png') }}">
-                        <p class="text-justify text-paragraph">Many visitors to the U.S. need to apply for a B-2 tourist visa depending on which passport is being used. The B-2 tourist visa application process can take several months, and all tourists  are advised to start the visa process early to avoid any trip delays. Download the Visa Application Guide for more information about how to apply and what documents are needed.</p>
+                        <p class="text-justify text-paragraph">If you have a criminal record, you are not alone. Nearly one in seven adult Canadians has a criminal record of some kind. For the millions of Canadians who have a criminal record, whether it’s a simple summary conviction or a major indictment, a criminal record prevents you from:</p>
                         <ul class="list-style mx-3">
-                            <li class="gap-reduce">Overview of the B-2 Tourist Visa Application</li>
-                            <li class="gap-reduce">What is the B-2 Tourist Visa?</li>
-                            <li class="gap-reduce">List of Who Can Apply and Restrictions</li>
-                            <li class="gap-reduce">All B-2 Tourist Visa Requirements</li>
-                            <li class="gap-reduce">All Documents & Forms Included</li>
-                            <li class="gap-reduce">Step by Step Guide on How to Apply</li>
-                            <li class="gap-reduce">All You Need to Know About the B-2 Tourist Visa Application</li>
+                            <li class="gap-reduce">Traveling south of the border</li>
+                            <li class="gap-reduce">Getting jobs</li>
+                            <li class="gap-reduce">Finding a place to live</li>
+                            <li class="gap-reduce">Being licensed in a profession</li>
+                            <li class="gap-reduce">Acquiring student aid</li>
+                            <li class="gap-reduce">Volunteering for most community based organizations</li>
                         </ul>
                         <p class="text-center">
                             <img width="200" src="{{ asset('app-logo/credit-cards-accepted.png') }}" class="img-payment">
@@ -192,7 +190,7 @@
                 </ul>
             </div>
             <div class="col-md-12">
-                <p class="footer-text">Online Immigration is owned and operated by a private company. Our mission is to help immigrants and travelers through the complex United States immigration system with our do-it-yourself immigration guides and travel authorization consultancy. We are not a law firm, and our website does not provide legal advice. We are not affiliated with the United States government. All applicants have the option to file their submission directly at uscis.gov or travel.state.gov without our assistance. Online Immigration is a division of ETAS Travel LLC, which is affiliated with a U.S. law firm.</p>
+                <p class="footer-text">Services of Canada is owned and operated by a private company. Our mission is to help immigrants and travelers through the complex United States immigration system with our do-it-yourself immigration guides and travel authorization consultancy. We are not a law firm, and our website does not provide legal advice. We are not affiliated with the United States government. All applicants have the option to file their submission directly at uscis.gov or travel.state.gov without our assistance. Online Immigration is a division of ETAS Travel LLC, which is affiliated with a U.S. law firm.</p>
             </div>
         </div>
     </section>

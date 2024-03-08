@@ -7,11 +7,10 @@
 
 <div style="margin: 0 auto; max-width: 600px; padding: 20px;">
     <h3>Dear {{ $mailData['data']['ssl_first_name'] }},</h3>
-    <p>Thank you for your order. This email is a confirmation and summary of your order for a <b>"B-2 Tourist Visa Application
-            Guide"</b> which can be downloaded instantly.</p>
+    <p>Thank you for your order. This email is a confirmation and summary of your order for a <b>Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians"</b> which can be downloaded instantly.</p>
     <a href="{{ env('APP_URL') }}/book/e-book.pdf" target="_blank" style="background-color: #28a745; border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 4px;">Download your eBook</a>
     <br><br>
-    <p>The charge for your eBook will appear on your credit card statement as: <a href="https://www.immigrationfee.com/" style="color: blue;"><b>IMMIGRATIONFEE.COM</b></a>  - <b>$9.95</b></p>
+    <p>The charge for your eBook will appear on your credit card statement as: <a href="https://www.servicesofcanada.help/" style="color: blue;"><b>SERVICESOFCANADA.HELP</b></a>  - <b>$9.99 CAD</b></p>
 
     <h4 style="color: #ff6b6b; font-size: 17px; margin: 0">DOWNLOAD INSTRUCTIONS:</h4>
     <p style="margin: 0">Click on the "Download" link to receive your Immigration Guide instantly. We recommend that you save the file on your
@@ -58,9 +57,9 @@
     </table>
 
     <p>Do not hesitate to contact us if you require any further assistance.</p>
-    <p>You may visit our website <a href="https://www.onlineimmigration.org" style="color: blue;">https://www.onlineimmigration.org</a> if you have any questions related to your purchase.</p>
+    <p>You may visit our website <a href="https://servicesofcanada.help" style="color: blue;">https://servicesofcanada.help</a> if you have any questions related to your purchase.</p>
 
-    <p style="margin: 0; color: black;">Regards,<br>Online Immigration<br>Web: <a href="https://www.onlineimmigration.org" style="color: blue;">https://www.onlineimmigration.org</a><br>Email: <a href="mailto:info@onlineimmigration.org" style="color: blue;">info@onlineimmigration.org</a>
+    <p style="margin: 0; color: black;">Regards,<br>Services of Canada<br>Web: <a href="https://servicesofcanada.help" style="color: blue;">https://servicesofcanada.help</a><br>Email: <a href="mailto:admin@recordremoval.org" style="color: blue;">admin@recordremoval.org</a>
     </p>
 
 </div>

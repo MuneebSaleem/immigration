@@ -1,7 +1,18 @@
 @extends('layouts.app')
-<link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">
+<link rel="stylesheet" href="{{ asset('dist/css/styles.css')  }}">
+<style>
+    .bg-atlantic-blue {
+        --bs-bg-opacity: 1;
+        background-color: #36459c;
+    }
 
+    .py-20 {
+        padding-top: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+    }
+</style>
 @section('content')
+
 
 
     <section id="top-bar-main" class="bg-atlantic-blue py-20">
@@ -9,7 +20,7 @@
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/1672-X-288-White.png') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{asset('app-logo/LogoWebp.webp')}}" alt="US Immigration support">
 
                 </div>
 
@@ -17,20 +28,6 @@
                     <div class="my-auto me-3 d-none d-md-block">
                         <p class="check-gold text-white mb-0 check-gold">24/7 Customer Service</p>
                     </div>
-                              </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <section id="disclaimer-top" class="bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col my-2 text-gray-900">
-                    <p>U.S. Immigration Support is an information website not affiliated with the United States government.</p>
                 </div>
             </div>
         </div>
@@ -38,47 +35,40 @@
 
 
 
+    <section class="container main-section-content px-5 py-4">
+        <div class="row">
+            <div class="col-md-8 px-4">
+                    <div class="container-form">
 
 
+                        <div class=" px-4 py-2 mt-4">
+                            <h1 class="m-0">Thank You for your order</h1><br>
+                            <p>Product: Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians</p>
+                            <p>Download link: <a id="downloadLink" href="#">Click Here</a></p>
+                            <p>The ebook purchased is available for immediate download using the link above. A confirmation email with the download link has also been sent to the email address used for this transaction. </p>
+                            <p>The charge will be displayed on your credit card / bank statement as: SERVICESOFCANADA.HELP, CAD $9.99</p>
+                            <p>Please contact us if you have any questions about your order.
+                                Our Customer Support Department can be reached at: <a href="mailto:admin@recordremoval.org" style="color: blue;">admin@recordremoval.org</a>
+                            </p>
+                        </div>
 
+                    </div>
 
-    <section id="eligibility-form" class="py-32 py-md-128">
-        <div class="container">
-            <div class="form-wrapper row">
-                <div class="col-12 col-xl-6 offset-xl-3">
-
-
-                    <!-- STEP 1 -->
-                    <section id="eligibility-form-step-1-section" class="form-step">
-                            <div class="step-header">
-                            </div>
-                            <div class="mb-4 text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="75" height="75"
-                                     fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                </svg>
-                            </div>
-
-                            <div class="text-center">
-                                <h1>Thank You !</h1>
-                                <p>Congratulations! We are delighted to inform you that your request has been successfully approved! Details regarding the approval have been sent to the email. <a id="downloadLink" href="#">Click Here</a> to download EBOOK </p>
-                                <button  id="return_home" class="btn btn-success">
-                                    Back Home</button>
-                            </div>
-
-
-                    </section>
-
-                    <!-- STEP 2 -->
-
-
-
-
+            </div>
+            <div class="col-md-4 p-5 gap-2 border-left">
+                <div class="sidebar-form">
+                    <div class="row">
+                        <h2 class="light-grey px-5 sidebar-head">B-2 TOURIST VISA APPLICATION GUIDE</h2>
+                        <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-5">
+                        <button  id="downloadButton" class="btn btn-success">
+                            Download Now!</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <div class="container-xxl">
         <div class="row pt-3">
@@ -112,6 +102,23 @@
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+        });
+
+        $("#downloadButton").on("click", function(e) {
+            e.preventDefault(); // Prevent the default action of the button
+
+            var pdfUrl = "{{ env('APP_URL') }}/book/e-book.pdf";
+
+            var link = document.createElement("a");
+            link.href = pdfUrl;
+            link.download = "e-book.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+
+        $('#return_home').on('click', function() {
+            window.location.href = '/';
         });
 
 

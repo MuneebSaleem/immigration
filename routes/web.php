@@ -17,11 +17,11 @@ use App\Http\Controllers\StepsController;
 |
 */
 
-Route::get('/waiver/us-entry-waiver-guide/', function () {
+Route::get('/pardon/pardons-canada-guide/', function () {
     return view('welcome');
 });
 
-Route::get('/pardon/pardons-canada-guide/', function () {
+Route::get('/waiver/us-entry-waiver-guide/', function () {
     return view('welcomes');
 });
 

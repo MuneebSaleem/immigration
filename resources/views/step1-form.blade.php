@@ -145,7 +145,7 @@
                     </div>
                     <div class="col-md-12 mt-4 ">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button id="orderButton" class="btn btn-success me-md-2" type="button">Order Now <i class="fa fa-angle-right"></i> </button>
+                            <button id="orderButton" class="btn btn-success me-md-2" type="button">Order Now  </button>
                         </div>
                     </div>
     			</form>

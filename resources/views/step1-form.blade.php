@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/1672-X-288-White.png') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}" alt="US Immigration support">
 
                 </div>
 
@@ -178,7 +178,7 @@
     <section class="container px-5 py-4 background-navy">
         <div class="row">
             <div class="col-md-6">
-                <img class="navbar-brand" src="{{ asset('app-logo/1672-X-288-White.png') }}">
+                <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}">
             </div>
             <div class="col-md-6">
                 <ul class="list-inline footer-nav">

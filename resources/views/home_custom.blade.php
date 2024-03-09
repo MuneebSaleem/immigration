@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/Artboard 47.png') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}" alt="US Immigration support">
 
                 </div>
 
@@ -102,7 +102,7 @@
                             <div class="step-row mx-md-2">
                                 <div id="reason-for-travel" class="mb-4">
                                     <label class="text-dark mb-2">
-                                        Select reason for traveling to the United States                                        </label>
+                                        Select reason for travelling to the United States                                      </label>
                                     <div class="row">
                                         <div class="col-12 col-md-4 px-md-1">
 
@@ -110,7 +110,7 @@
                                                 <input class="form-check-input mx-auto" type="radio" name="reason-for-travel" id="reason-for-travel-tourism" value="tourism">
 
                                                 <div class="wrapper text-center my-auto">
-                                                    <img class="d-none d-md-block" src="https://www.usimmigrationsupport.org/wp-content/themes/USISORG-Eligibility-K-1.1/theme/assets/images/tourism-visit.svg">
+                                                    <img class="d-none d-md-block" src="{{ asset('app-logo/Tourism.svg')  }}">
                                                     <div class="p-strong text-center mt-1">
                                                         Tourism &amp; Travel                                                                                                                                                                                                </div>
                                                 </div>
@@ -123,7 +123,7 @@
                                                 <input class="form-check-input mx-auto" type="radio" name="reason-for-travel" id="reason-for-travel-business" value="business">
 
                                                 <div class="wrapper text-center my-auto">
-                                                    <img class="d-none d-md-block" src="https://www.usimmigrationsupport.org/wp-content/themes/USISORG-Eligibility-K-1.1/theme/assets/images/business.svg">
+                                                    <img class="d-none d-md-block" src="{{ asset('app-logo/Business.svg')  }}">
                                                     <div class="p-strong text-center mt-1">
                                                         Business                                                                                                                                                                                                </div>
                                                 </div>
@@ -136,9 +136,9 @@
                                                 <input class="form-check-input mx-auto" type="radio" name="reason-for-travel" id="reason-for-travel-transit" value="transit">
 
                                                 <div class="wrapper text-center my-auto">
-                                                    <img class="d-none d-md-block" src="https://www.usimmigrationsupport.org/wp-content/themes/USISORG-Eligibility-K-1.1/theme/assets/images/transit.svg">
+                                                    <img class="d-none d-md-block" src="{{ asset('app-logo/Career.svg')  }}">
                                                     <div class="p-strong text-center mt-1">
-                                                        Transit                                                                                                                                                                                                </div>
+                                                        Career                                                                                                                                                                                                </div>
                                                 </div>
                                             </label>
 
@@ -280,24 +280,24 @@
                     </div>
                     <div class="col-6 px-0 col-md-auto order-1">
                         <ul>
-                            <li><img decoding="async" src="{{ asset('country/ad.png') }}" alt="ESTA Countries">  Canada </li>
+                            <li><img decoding="async" src="{{ asset('app-logo/Frame5.png') }}" alt="ESTA Countries">  Canada </li>
                         </ul>
                     </div>
                     <div class="col-6 px-0 col-md-auto order-3 order-md-2">
                         <ul>
-                            <li><img decoding="async" src="{{ asset('country/ee-min.png') }}" alt="ESTA Countries">  Palau </li>
+                            <li><img decoding="async" src="{{ asset('app-logo/palau.png') }}" alt="ESTA Countries">  Palau </li>
 
                         </ul>
                     </div>
                     <div class="col-6 px-0 col-md-auto order-5 order-md-3">
                         <ul>
-                            <li><img decoding="async" src="{{ asset('country/it-min.png') }}" alt="ESTA Countries">  Federated States of Micronesia</li>
+                            <li><img decoding="async" src="{{ asset('app-logo/federated.png') }}" alt="ESTA Countries">  Federated States of Micronesia</li>
 
                         </ul>
                     </div>
                     <div class="col-6 px-0 col-md-auto order-2 order-md-4">
                         <ul>
-                            <li><img decoding="async" src="{{ asset('country/nl-min.png') }}" alt="ESTA Countries">  Marshall Islands</li>
+                            <li><img decoding="async" src="{{ asset('app-logo/marshal.png') }}" alt="ESTA Countries">  Marshall Islands</li>
                         </ul>
                     </div>
 
@@ -442,7 +442,7 @@
             <div class="row">
                 <div class="col-12 col-lg-5 text-center text-lg-start mb-20 my-lg-auto">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/1672-X-288-White.png') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}" alt="US Immigration support">
 
                 </div>
 

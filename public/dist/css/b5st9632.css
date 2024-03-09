@@ -8908,7 +8908,7 @@ textarea.form-control-lg {
 
 .bg-atlantic-blue {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-atlantic-blue-rgb), var(--bs-bg-opacity)) !important; }
+  background-color: #182780; !important; }
 
 .bg-corfu-blue {
   --bs-bg-opacity: 1;

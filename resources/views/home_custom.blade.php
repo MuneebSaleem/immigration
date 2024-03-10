@@ -10,6 +10,16 @@
     input[type=number] {
         -moz-appearance: textfield;
     }
+
+    .bg-atlantic-blue {
+        --bs-bg-opacity: 1;
+        background-color: #122951;
+    }
+
+    .py-20 {
+        padding-top: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+    }
 </style>
 @section('content')
 
@@ -393,7 +403,7 @@
     </div>  <div class="col-12 py-1">
     </div>
 
-
+    <section class="py-24 bg-gray-50">
     <div class="container">
         <div class="row mx-0 py-12 border-1-4 mb-4">
             <div class="col-12">
@@ -432,6 +442,7 @@
             </div>
         </div>
     </div>
+    </section>
 
 
 

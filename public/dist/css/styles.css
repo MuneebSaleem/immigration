@@ -9021,3 +9021,6 @@ section.container.px-5.py-4.background-navy {
 .link-decortion-none {
   text-decoration: none;
 }
+
+#privacy .modal-dialog, #terms .modal-dialog, #cookies .modal-dialog , #legal .modal-dialog {
+    max-width: 961px; }

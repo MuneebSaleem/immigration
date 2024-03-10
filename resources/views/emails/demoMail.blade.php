@@ -3,6 +3,18 @@
 <head>
     <title>US Application</title>
 </head>
+
+<style type="text/css">
+    @media only screen
+    and (device-width : 375px)
+    and (device-height : 667px)
+    and (-webkit-device-pixel-ratio : 2) {
+
+        .navbar-brand, .Mg .Og  .Cg > img{
+            height: 150px;
+        }
+    }
+</style>
 <body>
 
 <img class="navbar-brand" src="https://colonyfoods.s3.amazonaws.com/email-header.png">

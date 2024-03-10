@@ -485,9 +485,9 @@
         </div>
     </div>
 
-
+    @include('home_modal')
 @endsection
-@include('home_modal')
+
 
 
 <script src="{{ asset('dist/js/jquery-3.6.4.min.js') }}"></script>

@@ -2,28 +2,48 @@
 <link rel="stylesheet" href="{{ asset('dist/css/styles.css')  }}">
 @section('content')
     <link rel="stylesheet" href="{{ asset('dist/css/modal.css')  }}">
+
+    <style>
+
+        .bg-atlantic-blue {
+            --bs-bg-opacity: 1;
+            background-color: #122951;
+        }
+
+        .py-20 {
+            padding-top: 1.25rem !important;
+            padding-bottom: 1.25rem !important;
+        }
+
+
+
+    </style>
 <div class="loading" style="display: none;">Loading&#8230;</div>
-<div class="container-fluid p-0">
-	<section id="top-bar-main" class="py-20">
-        <!-- <div class="container"> -->
+
+    <section id="top-bar-main" class="bg-atlantic-blue py-20">
+        <div class="container">
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
-
-                    <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{asset('app-logo/LogoWebp.webp')}}" alt="US Immigration support">
 
                 </div>
 
                 <div class="col-3 col-md-6 col-xl-8 my-auto d-flex justify-content-end text-end">
 
 
+                    <div class="my-auto me-3 d-none d-md-block">
+                        <p class="check-gold text-white mb-0 check-gold">24/7 Customer Service</p>
+                    </div>
                 </div>
             </div>
-        <!-- </div> -->
+
+        </div>
     </section>
+
     <header class="image-color-background">
-{{--    	<div class="secure-text">--}}
-{{--    		<i class="fa fa-shield"></i> SECURE APPLICATION--}}
-{{--    	</div>--}}
+    <div class="secure-text">
+        <i class="fa fa-shield"></i> SECURE APPLICATION
+    </div>
     </header>
     <section class="container main-section-content px-5 py-4">
     	<div class="row">
@@ -175,26 +195,31 @@
     		</div>
     	</div>
     </section>
-    <section class="container-fluid px-5 py-4 background-navy">
-        <div class="row">
-            <div class="col-md-6">
-                <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}">
+    <footer id="site-footer" class="bg-atlantic-blue py-20 py-md-64">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 text-center text-lg-start mb-20 my-lg-auto">
+
+                    <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}" alt="US Immigration support">
+
+                </div>
+
+                <div class="col-12 col-lg-7 my-auto">
+                    <div class="wrapper popup-control d-grid text-center text-lg-end d-md-flex
+                justify-content-md-center
+                justify-content-lg-end">
+                        <a class="text-white me-md-3 mb-3 mb-md-0" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms">Terms &amp;
+                            Conditions</a>
+                        <a class="text-white me-md-3 mb-3 mb-md-0" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy">Privacy Policy</a>
+                        <a class="text-white me-md-3 mb-3 mb-md-0" type="button" href="#cookies" data-bs-toggle="modal" data-bs-target="#cookies">Cookies</a>
+                        <a type="text-white button" href="#contact" data-bs-toggle="modal" data-bs-target="#contact">Contact</a>
+                    </div>
+
+                </div>
             </div>
-            <div class="col-md-6">
-                <ul class="list-inline footer-nav">
-                  <li class="list-inline-item">
-                      <a class="link-decortion-none text-white" href="#termsModal" data-bs-toggle="modal">Terms & Conditions</a>
-                    </li>
-                  <li class="list-inline-item"><a class="link-decortion-none text-white" href="#">Privacy Policy</a></li>
-                  <li class="list-inline-item"><a class="link-decortion-none text-white" href="#">Cookies</a></li>
-                  <li class="list-inline-item"><a class="link-decortion-none text-white" href="#">Contact</a></li>
-                </ul>
-            </div>
-            <!-- <div class="col-md-12">
-                <p class="footer-text">Services of Canada is owned and operated by a private company. Our mission is to help immigrants and travelers through the complex United States immigration system with our do-it-yourself immigration guides and travel authorization consultancy. We are not a law firm, and our website does not provide legal advice. We are not affiliated with the United States government. All applicants have the option to file their submission directly at uscis.gov or travel.state.gov without our assistance. Online Immigration is a division of ETAS Travel LLC, which is affiliated with a U.S. law firm.</p>
-            </div> -->
         </div>
-    </section>
+
+    </footer>
     <section class="container copy-right px-5 py-4">
         <div class="row">
             <div class="col-md-6">

@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/WhiteLogo.webp') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/LogoChanges2.webp') }}" alt="US Immigration support">
 
                 </div>
 
@@ -453,7 +453,7 @@
             <div class="row">
                 <div class="col-12 col-lg-5 text-center text-lg-start mb-20 my-lg-auto">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/WhiteLogo.webp') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/LogoChanges2.webp') }}" alt="US Immigration support">
 
                 </div>
 

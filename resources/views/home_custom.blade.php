@@ -237,7 +237,7 @@
 
                         </form>
                         <div class="step-row mt-16 mt-md- text-center">
-                            <button id="eligibility-form-step-2-submit-123" class="btn btn-success text-white text-uppercase ajax-request">Proceed To Application</button>
+                            <button id="eligibility-form-canadian-pardon" class="btn btn-success text-white text-uppercase ajax-request">Proceed To Application</button>
                         </div>
                     </section>
 
@@ -667,7 +667,7 @@
         $('.form-control').focusout(function() {
             $(this).removeClass('is-invalid');
         });
-        $('#eligibility-form-step-2-submit-123').click(function(event){
+        $('#eligibility-form-canadian-pardon').click(function(event){
 
             var form = $('#eligibility-form-step-2-custom')[0];
             if (form.checkValidity() === false) {

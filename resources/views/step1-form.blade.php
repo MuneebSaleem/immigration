@@ -208,13 +208,13 @@
                     <div class="wrapper popup-control d-grid text-center text-lg-end d-md-flex
                 justify-content-md-center
                 justify-content-lg-end">
-                        <a class="text-white me-md-3 mb-3 mb-md-0" type="button" href="#legal" data-bs-toggle="modal" data-bs-target="#legal">Legal Disclaimer</a>
+                        <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#legal" data-bs-toggle="modal" data-bs-target="#legal" id="legalModal">Legal Disclaimer</a>
 
-                        <a class="text-white me-md-3 mb-3 mb-md-0" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms">Terms &amp;
+                        <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms" id="termModal">Terms &amp;
                             Conditions</a>
-                        <a class="text-white me-md-3 mb-3 mb-md-0" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy">Privacy Policy</a>
-                        <a class="text-white me-md-3 mb-3 mb-md-0" type="button" href="#cookies" data-bs-toggle="modal" data-bs-target="#cookies">Cookies</a>
-                        <a type="text-white button" href="#contact" data-bs-toggle="modal" data-bs-target="#contact">Contact</a>
+                        <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy" id="privacylModal">Privacy Policy</a>
+                        <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#cookies" data-bs-toggle="modal" data-bs-target="#cookies" id="cookiesModal">Cookies</a>
+                        <a class="text-white button link-decortion-none" href="#contact" data-bs-toggle="modal" data-bs-target="#contact" id="contactModal">Contact</a>
                     </div>
 
                 </div>
@@ -236,6 +236,8 @@
 
 
 @endsection
+@include('home_modal')
+
 
 
 <div class="modal failure-modal" tabindex="-1" style="display:none;">
@@ -259,6 +261,9 @@
 
 
 
+
+
+
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
@@ -272,6 +277,26 @@
 <script type="text/javascript">
 
     $(document).ready(function() {
+
+        $("#legalModal").click(function () {
+            $("#legal").removeClass( "fade" )
+        });
+
+        $("#termModal").click(function () {
+            $("#terms").removeClass( "fade" )
+        });
+
+        $("#privacylModal").click(function () {
+            $("#privacy").removeClass( "fade" )
+        });
+
+        $("#cookiesModal").click(function () {
+            $("#cookies").removeClass( "fade" )
+        });
+
+        $("#contactModal").click(function () {
+            $("#contact").removeClass( "fade" )
+        });
 
         $('#ssl_card_number').on('input', function() {
             var cardNumber = $(this).val().replace(/[^\d]/g, ''); // Remove non-numeric characters

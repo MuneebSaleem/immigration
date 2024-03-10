@@ -15411,7 +15411,7 @@ body {
   width: 20px !important;
   height: auto !important; }
 
-#privacy .modal-dialog, #terms .modal-dialog, #cookies .modal-dialog {
+#privacy .modal-dialog, #terms .modal-dialog, #cookies .modal-dialog , #legal .modal-dialog {
   max-width: 961px; }
 
 ol li {

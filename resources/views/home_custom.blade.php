@@ -461,6 +461,7 @@
                     <div class="wrapper popup-control d-grid text-center text-lg-end d-md-flex
                 justify-content-md-center
                 justify-content-lg-end">
+                        <a class="text-white me-md-3 mb-3 mb-md-0" type="button" href="#legal" data-bs-toggle="modal" data-bs-target="#legal">Legal Disclaimer</a>
                         <a class="text-white me-md-3 mb-3 mb-md-0" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms">Terms &
                             Conditions</a>
                         <a class="text-white me-md-3 mb-3 mb-md-0" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy">Privacy Policy</a>

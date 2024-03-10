@@ -1,3 +1,39 @@
+<div class="modal fade" id="legal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="legalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close h-auto" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2>Legal Disclaimer</h2>
+                <p class="mb-0">Neither Services of Canada, http://Servicesofcanada.help, nor Record Removal Services of Canada, including its publications, are affiliated with the United States Department of State (US DOS), the United States Department of Homeland Security (US DHS), the United States Citizenship & Immigration Services (USCIS), or any other United States governmental agency or foreign governmental agency.</p>
+                <p>Services of Canada, http://Servicesofcanada.help, and Record Removal Services of Canada, along with their publications, do not constitute a law firm and are not a substitute for the advice of an attorney. The services provided should not be construed as legal advice. Your purchase of these publications does not establish an attorney-client relationship between you and Services of Canada, http://Servicesofcanada.help, or Record Removal Services of Canada. Depending on your specific situation, you may require the assistance of a licensed attorney, and Services of Canada, http://Servicesofcanada.help, and Record Removal Services of Canada, including their publications, are not a substitute for such legal advice.
+                </p>
+                <p>The travel document policy of the issuing authority outlines the requirements for foreign nationals to obtain travel documents necessary for travel to, entry into, and/or residence in another country.</p>
+                <p>All information provided by you, or on your behalf by a designated third party, must be true and correct. Travel documents may be revoked by the issuing authority at any time and for any reason, such as new information influencing eligibility. Knowingly providing false information may result in administrative or criminal penalties.
+                </p>
+                <p >Listed purchase prices for application preparation assistance services do not include any government application, medical examination fees, filings, or biometrics fees, which are non-refundable. Please refer to our Refund Policy for further details.</p>
+                <p>Some clients may provide reviews of past experiences on this website. However, these reviews do not guarantee similar outcomes for your travel document application. The information on this website is intended solely for general informational purposes and should not be considered a guarantee of specific results in every case. The outcome of your application may depend on various factors beyond the control of these entities.</p>
+                <p>This website contains general information about immigration and non-immigration issues and developments and should not be construed as legal advice on any specific set of facts or circumstances. For guidance on individual legal problems, please consult a qualified attorney.
+                While efforts are made to keep the website up to date and accurate, Services of Canada, http://Servicesofcanada.help, and Record Removal Services of Canada, along with their publications, make no warranties, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the website or the information, products, services, or related graphics contained on the website for any purpose. Your reliance on such material is at your own risk.
+                </p>
+                <p>Although every effort is made to keep the website running smoothly, Services of Canada, http://Servicesofcanada.help, and Record Removal Services of Canada, along with their publications, do not accept responsibility for any temporary unavailability of the website due to technical issues beyond their control. Furthermore, they are not liable for any loss or damage suffered due to the use of or access to, or inability to use or access this website whatsoever.
+                    Certain links on this website may lead to external websites not under the control of Services of Canada, http://Servicesofcanada.help, or Record Removal Services of Canada, including their publications. Activation of these links will redirect you away from our website. We have no control over and accept no liability for materials, products, or services available on any website not under our control.
+                </p>
+                <p>To the extent not prohibited by law, Services of Canada, http://Servicesofcanada.help, or Record Removal Services of Canada, including their publications, shall not be liable to you or any third parties for any loss or damage (including, without limitation, damage for loss of business or loss of profits) arising directly or indirectly from your use of this website or any of the material contained within it.</p>
+                <p>The applications completed using our service are available as blank forms for free on some government websites. We are a private, technology internet-based travel service provider dedicated to assisting individuals in traveling around the world.
+                    Your visit and/or use of this publication indicates that you agree and clearly understand the disclaimers and other legal pages on the author's website.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
 
 <div class="modal fade" id="terms" data-bs-keyboard="false" tabindex="-1" aria-labelledby="legalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">

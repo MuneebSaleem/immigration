@@ -395,7 +395,7 @@
 
 
     <div class="container">
-        <div class="row mx-0 py-12 border-1-4">
+        <div class="row mx-0 py-12 border-1-4 mb-4">
             <div class="col-12">
                 <h2>Preparation Checklist for Visiting the United States</h2>
             </div>

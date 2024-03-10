@@ -3,7 +3,7 @@
 @section('content')
     <link rel="stylesheet" href="{{ asset('dist/css/modal.css')  }}">
 <div class="loading" style="display: none;">Loading&#8230;</div>
-<div class="container">
+<div class="container-fluid p-0">
 	<section id="top-bar-main" class="py-20">
         <!-- <div class="container"> -->
             <div class="row">
@@ -175,23 +175,24 @@
     		</div>
     	</div>
     </section>
-    <section class="container px-5 py-4 background-navy">
+    <section class="container-fluid px-5 py-4 background-navy">
         <div class="row">
             <div class="col-md-6">
                 <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}">
             </div>
             <div class="col-md-6">
                 <ul class="list-inline footer-nav">
-                  <li class="list-inline-item">Item 1</li>
-                  <li class="list-inline-item">Item 2</li>
-                  <li class="list-inline-item">Item 3</li>
-                  <li class="list-inline-item">Item 4</li>
-                  <li class="list-inline-item">Item 5</li>
+                  <li class="list-inline-item">
+                      <a class="link-decortion-none text-white" href="#termsModal" data-bs-toggle="modal">Terms & Conditions</a>
+                    </li>
+                  <li class="list-inline-item"><a class="link-decortion-none text-white" href="#">Privacy Policy</a></li>
+                  <li class="list-inline-item"><a class="link-decortion-none text-white" href="#">Cookies</a></li>
+                  <li class="list-inline-item"><a class="link-decortion-none text-white" href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
                 <p class="footer-text">Services of Canada is owned and operated by a private company. Our mission is to help immigrants and travelers through the complex United States immigration system with our do-it-yourself immigration guides and travel authorization consultancy. We are not a law firm, and our website does not provide legal advice. We are not affiliated with the United States government. All applicants have the option to file their submission directly at uscis.gov or travel.state.gov without our assistance. Online Immigration is a division of ETAS Travel LLC, which is affiliated with a U.S. law firm.</p>
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="container copy-right px-5 py-4">
@@ -207,9 +208,7 @@
 </div>
 
 
-
 @endsection
-
 
 
 <div class="modal failure-modal" tabindex="-1" style="display:none;">
@@ -232,9 +231,14 @@
 </div>
 
 
+
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 
 
 
@@ -346,18 +350,13 @@
                 }
             });
         });
+
+        $('#number').select2( {
+            theme: "bootstrap-5",
+            width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+            placeholder: $( this ).data( 'placeholder' ),
+        } );
     });
 
-
-
-
-	$(document).ready(function() {
-		$('#number').select2( {
-		    theme: "bootstrap-5",
-		    width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
-		    placeholder: $( this ).data( 'placeholder' ),
-		} );
-	});
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

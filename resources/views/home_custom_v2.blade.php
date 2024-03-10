@@ -13,7 +13,7 @@
 
     .bg-atlantic-blue {
         --bs-bg-opacity: 1;
-        background-color: #122951;
+        background-color: #0f184E;
     }
 
     .py-20 {
@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/WhiteLogo.webp') }}" alt="US Immigration support">
 
                 </div>
 
@@ -424,7 +424,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6" style="flex: 0 0 auto; width: 48% !important;">
                     <ul class="check-green">
                         <li>Download travel maps and relevant apps.
                         </li>
@@ -453,7 +453,7 @@
             <div class="row">
                 <div class="col-12 col-lg-5 text-center text-lg-start mb-20 my-lg-auto">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/WhiteLogo.webp') }}" alt="US Immigration support">
 
                 </div>
 
@@ -483,7 +483,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="mb-0" style="text-align: center;">U.S. Immigration Support is owned and operated by a private company. Our mission is to help immigrants and travelers through the complex United States immigration system with our do-it-yourself immigration guides and travel authorization consultancy. We are not a law firm, and our website does not provide legal advice. We are not affiliated with the the United States government. All applicants have the option file their submission directly at uscis.gov or travel.state.gov without our assistance. U.S. Immigration Support is a division of ETAS Travel LLC, which is affiliated with a U.S. law firm.</p>
+                    <p class="mb-0" style="text-align: center;">United States immigration system with our do-it-yourself immigration guides and travel authorization consultancy. We are not a law firm, and our website does not provide legal advice. We are not affiliated with the United States government. All applicants have the option to file their submissions directly at uscis.gov or travel.state.gov without our assistance.</p>
                 </div>
             </div>
         </div>
@@ -491,8 +491,8 @@
     <div class="container-xxl">
         <div class="row pt-3">
             <div class="col-sm ">
-                <p class="text-center">&copy; 2024 U.S. IMMIGRATION SUPPORT - All Rights
-                    Reserved</p>
+                <p class="text-center">&copy; 2024 SERVICES OF CANADA - All Rights Reserved
+                </p>
             </div>
         </div>
     </div>

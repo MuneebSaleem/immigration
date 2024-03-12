@@ -45,9 +45,9 @@
                 </div>
 
                 <div class="col-3 col-md-6 col-xl-8 my-auto d-flex justify-content-end text-end">
-{{--                    <div class="my-auto me-3 d-none d-md-block">--}}
-{{--                        <p class="check-gold text-white mb-0 check-gold">24/7 Customer Service</p>--}}
-{{--                    </div>--}}
+                    <div class="my-auto me-3 d-none d-md-block">
+                        <p class="check-gold text-white mb-0 check-gold">24/7 Customer Service</p>
+                    </div>
                               </div>
             </div>
         </div>

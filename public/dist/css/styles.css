@@ -9024,3 +9024,20 @@ section.container.px-5.py-4.background-navy {
 
 #privacy .modal-dialog, #terms .modal-dialog, #cookies .modal-dialog , #legal .modal-dialog {
     max-width: 961px; }
+
+
+.check-gold li, p.check-gold {
+    margin-bottom: 0;
+    position: relative;
+    list-style: none;
+    line-height: 30px; }
+.check-gold li:before, p.check-gold:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: -25px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    background-image: url("https://www.usimmigrationsupport.org/wp-content/themes/USISORG-Eligibility-K-1.1/theme/assets/images/check-gold.svg"); }

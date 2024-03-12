@@ -73,8 +73,7 @@
     <div class="container-xxl">
         <div class="row pt-3">
             <div class="col-sm ">
-                <p class="text-center">&copy; 2024 U.S. IMMIGRATION SUPPORT - All Rights
-                    Reserved</p>
+                <p class="text-center">© 2024 SERVICES OF CANADA - All Rights Reserved</p>
             </div>
         </div>
     </div>

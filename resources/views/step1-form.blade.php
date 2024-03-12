@@ -177,14 +177,15 @@
                         <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-5">
                         <p class="px-5 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE $9.99 CAD</p>
                         <img class="my-3 px-5" src="{{ asset('app-logo/star-separator.png') }}">
-                        <p class="text-justify text-paragraph">If you have a criminal record, you are not alone. Nearly one in seven adult Canadians has a criminal record of some kind. For the millions of Canadians who have a criminal record, whether it’s a simple summary conviction or a major indictment, a criminal record prevents you from:</p>
+                        <p class="text-justify text-paragraph">Criminal records can haunt individuals, impacting job prospects, travel plans, and more. With one in seven adult Canadians having a record, the need for a U.S. Entry Waiver is common. The application process, sometimes taking months, demands early action to avoid travel disruptions. Both waivers and record suspensions are crucial for crossing the border, securing employment, housing, education, and volunteering opportunities. Our guide, "Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians," provides comprehensive assistance, including official document requirements, stay duration clarity, recommended visa types, eligibility factors, and all necessary documents and forms. Purchase now for instant access!</p>
                         <ul class="list-style mx-3">
-                            <li class="gap-reduce">Traveling south of the border</li>
-                            <li class="gap-reduce">Getting jobs</li>
-                            <li class="gap-reduce">Finding a place to live</li>
-                            <li class="gap-reduce">Being licensed in a profession</li>
-                            <li class="gap-reduce">Acquiring student aid</li>
-                            <li class="gap-reduce">Volunteering for most community based organizations</li>
+                            <li class="gap-reduce">Impact of criminal records on employment and travel</li>
+                            <li class="gap-reduce">Common need for a U.S. Entry Waiver among Canadians</li>
+                            <li class="gap-reduce">Lengthy application process necessitates early action</li>
+                            <li class="gap-reduce">Waiver essential for various aspects of life, including travel and employment</li>
+                            <li class="gap-reduce">Guide "Crossing the Line" offers comprehensive assistance</li>
+                            <li class="gap-reduce">Includes official document requirements and visa types</li>
+                            <li class="gap-reduce">Instant access to all necessary documents and forms.</li>
                         </ul>
                         <p class="text-center">
                             <img width="200" src="{{ asset('app-logo/credit-cards-accepted.png') }}" class="img-payment">

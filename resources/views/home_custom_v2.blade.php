@@ -483,7 +483,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="mb-0" style="text-align: center;">United States immigration system with our do-it-yourself immigration guides and travel authorization consultancy. We are not a law firm, and our website does not provide legal advice. We are not affiliated with the United States government. All applicants have the option to file their submissions directly at uscis.gov or travel.state.gov without our assistance.</p>
+                    <p class="mb-0" style="text-align: center;">Services of Canada operates as a privately-owned entity. Our primary aim is to aid immigrants and travelers in navigating the intricate United States immigration process through our self-help immigration guides and travel authorization consultancy. We are not a law firm, and our website does not offer legal advice. We are independent of the United States government. Applicants retain the option to submit their applications directly at uscis.gov or travel.state.gov without our assistance.</p>
                 </div>
             </div>
         </div>

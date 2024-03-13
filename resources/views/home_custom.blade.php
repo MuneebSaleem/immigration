@@ -55,6 +55,9 @@
         line-height: 20px !important;
         margin-bottom: 8px !important;
     }
+    .list-inline{
+        display: flex;
+    }
 
 
 </style>
@@ -265,7 +268,7 @@
                                 </div>
                                 <div class="col-md-6 m-0">
                                     <label for="phoneNumber" class="form-label m-0">Phone No</label>
-                                    <input type="number"  name="phoneNumber" class="form-control" id="phoneNumber" placeholder="NPANXXXXXX" required>
+                                    <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="(XXX) XXX-XXXX" required>
                                     <div class="invalid-feedback">Please enter your phone number.</div>
                                 </div>
                             </div>
@@ -325,22 +328,22 @@
                         <strong>Eligible nonimmigrant citizens from:</strong>
                     <div class="col-6 col-md-auto">
                         <ul>
-                            <li><img decoding="async" src="{{ asset('app-logo/Frame5.png') }}" alt="ESTA Countries">  Canada </li>
+                            <li class="list-inline"><img decoding="async" src="{{ asset('app-logo/Frame5.png') }}" alt="ESTA Countries">  Canada </li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-auto">
                         <ul>
-                            <li><img decoding="async" src="{{ asset('app-logo/palau.png') }}" alt="ESTA Countries">  Palau </li>
+                            <li class="list-inline"><img decoding="async" src="{{ asset('app-logo/palau.png') }}" alt="ESTA Countries">  Palau </li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-auto">
                         <ul>
-                            <li><img decoding="async" src="{{ asset('app-logo/federated.png') }}" alt="ESTA Countries">  Federated States of Micronesia</li>
+                            <li class="list-inline"><img decoding="async" src="{{ asset('app-logo/federated.png') }}" alt="ESTA Countries">  Federated States of Micronesia</li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-auto">
                         <ul>
-                            <li><img decoding="async" src="{{ asset('app-logo/marshal.png') }}" alt="ESTA Countries">  Marshall Islands</li>
+                            <li class="list-inline"><img decoding="async" src="{{ asset('app-logo/marshal.png') }}" alt="ESTA Countries">  Marshall Islands</li>
                         </ul>
                     </div>
                         <h2  class="px-0 custom-h2"><b>Note:</b> If you're seeking admission under the Visa Waiver Program (VWP) per INA section 217, do not file this form. Inadmissible aliens from VWP countries must apply for a nonimmigrant visa at a U.S. Embassy or consulate for travel authorization.</h2>
@@ -542,6 +545,15 @@
 
 <script>
     $(document).ready(function(){
+
+        $('#phoneNumber').on('input', function(event) {
+            let inputValue = $(this).val().replace(/\D/g, ''); // Remove non-numeric characters
+            if (inputValue !== '') {
+                inputValue = `(${inputValue.slice(0, 3)}) ${inputValue.slice(3, 6)}-${inputValue.slice(6, 10)}`;
+            }
+            $(this).val(inputValue).trigger('input'); // Trigger input event to ensure validation and other scripts are updated
+        });
+
         $('#has-secondary-citizenship').change(function(){
             if($(this).is(":checked")) {
                 $('#secondary-citizenship-container').removeClass('d-none');

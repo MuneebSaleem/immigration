@@ -31,6 +31,32 @@
         font-style: normal;
         font-weight: 400;
     }
+
+    .check-green {
+        list-style-type: none;
+        padding-left: 21px;
+    }
+
+    .check-green li {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Media Queries */
+    @media (max-width: 991px) {
+        .col-lg-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .custom-li {
+        position: relative !important;
+        list-style: none !important;
+        line-height: 20px !important;
+        margin-bottom: 8px !important;
+    }
+
+
 </style>
 @section('content')
 
@@ -419,32 +445,32 @@
             </div>
             <div class="col-12 col-lg-6">
                 <ul class="check-green">
-                    <li>Ensure your passport is valid and not expired.</li>
-                    <li>Bring adaptors for 110V power outlets if required
+                    <li class="custom-li">Ensure your passport is valid and not expired.</li>
+                    <li class="custom-li">Bring adaptors for 110V power outlets if required
                     </li>
-                    <li>Prepare itinerary and confirm accommodation details.
+                    <li class="custom-li">Prepare itinerary and confirm accommodation details.
                     </li>
-                    <li>Secure travel insurance.
+                    <li class="custom-li">Secure travel insurance.
                     </li>
-                    <li>Explore transportation options for getting around.
+                    <li class="custom-li">Explore transportation options for getting around.
                     </li>
-                    <li>Carry sufficient local currency (USD) and payment methods.
+                    <li class="custom-li">Carry sufficient local currency (USD) and payment methods.
                     </li>
                 </ul>
             </div>
             <div class="col-12 col-lg-6">
                 <ul class="check-green">
-                    <li>Download travel maps and relevant apps.
+                    <li class="custom-li">Download travel maps and relevant apps.
                     </li>
-                    <li>Arrange for internet access during your stay.
+                    <li class="custom-li">Arrange for internet access during your stay.
                     </li>
-                    <li>Stay updated by following the latest news.
+                    <li class="custom-li">Stay updated by following the latest news.
                     </li>
-                    <li>Have emergency contact information readily available.
+                    <li class="custom-li">Have emergency contact information readily available.
                     </li>
-                    <li>Consider a language translation app if needed.
+                    <li class="custom-li">Consider a language translation app if needed.
                     </li>
-                    <li>Obtain your approved U.S. Entry waiver from DHS,  or necessary travel authorization.
+                    <li class="custom-li">Obtain your approved U.S. Entry waiver from DHS,  or necessary travel authorization.
                     </li>
                 </ul>
             </div>

@@ -268,7 +268,7 @@
                                 </div>
                                 <div class="col-md-6 m-0">
                                     <label for="phoneNumber" class="form-label m-0">Phone No</label>
-                                    <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="(XXX) XXX-XXXX" required>
+                                    <input type="text" name="phoneNumber" class="form-control phoneNumber" id="phoneNumber" placeholder="(XXX) XXX-XXXX" required>
                                     <div class="invalid-feedback">Please enter your phone number.</div>
                                 </div>
                             </div>
@@ -546,13 +546,6 @@
 <script>
     $(document).ready(function(){
 
-        $('#phoneNumber').on('input', function(event) {
-            let inputValue = $(this).val().replace(/\D/g, ''); // Remove non-numeric characters
-            if (inputValue !== '') {
-                inputValue = `(${inputValue.slice(0, 3)}) ${inputValue.slice(3, 6)}-${inputValue.slice(6, 10)}`;
-            }
-            $(this).val(inputValue).trigger('input'); // Trigger input event to ensure validation and other scripts are updated
-        });
 
         $('#has-secondary-citizenship').change(function(){
             if($(this).is(":checked")) {
@@ -562,10 +555,13 @@
             }
         });
 
-        $('#phoneNumber').on('input', function() {
+        $('.phoneNumber').on('input', function(event) {
             var phoneNumber = $(this).val().replace(/[^\d]/g, ''); // Remove non-numeric characters
             if (phoneNumber.length > 10) {
                 phoneNumber = phoneNumber.slice(0, 10); // Limit to 10 digits
+            }
+            if (phoneNumber.length >= 3) {
+                phoneNumber = `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`; // Apply formatting
             }
             $(this).val(phoneNumber); // Update the input value
         });

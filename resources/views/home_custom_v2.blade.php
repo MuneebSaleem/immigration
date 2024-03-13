@@ -20,6 +20,43 @@
         padding-top: 1.25rem !important;
         padding-bottom: 1.25rem !important;
     }
+    .custom-h2{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .custom-p{
+        font-size: 14px;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .check-green {
+        list-style-type: none;
+        padding-left: 21px;
+    }
+
+    .check-green li {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Media Queries */
+    @media (max-width: 991px) {
+        .col-lg-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .custom-li {
+        position: relative !important;
+        list-style: none !important;
+        line-height: 20px !important;
+        margin-bottom: 8px !important;
+    }
+
+
 </style>
 @section('content')
 
@@ -34,9 +71,9 @@
                 </div>
 
                 <div class="col-3 col-md-6 col-xl-8 my-auto d-flex justify-content-end text-end">
-                    {{--                    <div class="my-auto me-3 d-none d-md-block">--}}
-                    {{--                        <p class="check-gold text-white mb-0 check-gold">24/7 Customer Service</p>--}}
-                    {{--                    </div>--}}
+                    <div class="my-auto me-3 d-none d-md-block">
+                        <p class="check-gold text-white mb-0 check-gold">24/7 Customer Service</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -250,153 +287,150 @@
     </section>
 
 
-    <div class="container">
-        <section class="py-24">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-10">
-                        <h2>Visiting the USA with a Criminal Record: Canadian Pardons or U.S. Entry Waiver Authorization</h2>
-                        <p>Canadian foreign nationals, along with select international travelers visiting the United States of America (including individuals with prior arrest records or those who may have faced US deportation due to overstay violations), are required to possess a valid U.S. Entry Waiver as well as a Canadian Record Suspension (Pardon). Unlike a visa, which is obtained through a US embassy, the US Entry Waiver application undergoes a separate processing procedure. The Electronic Secured Adjudication Forms Environment (e-SAFE) simplifies the application process for the U.S. Visa Waiver Program, enabling individuals planning multiple air or sea travels to the USA to acquire necessary authorization before their journey.</p>
-                    </div>
-                    <div class="col-12 col-lg-2 my-auto">
-                        <img class="w-100 ps-lg-5" src="{{ asset('app-logo/Frame-27535.png')  }}" alt="ESTA Application">
-                    </div>
+    <section class="py-24">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-10">
+                    <h2 class="custom-h2">Visiting the USA with a Criminal Record: Canadian Pardons or U.S. Entry Waiver Authorization</h2>
+                    <p class="custom-p">Canadian foreign nationals, along with select international travelers visiting the United States of America (including individuals with prior arrest records or those who may have faced US deportation due to overstay violations), are required to possess a valid U.S. Entry Waiver as well as a Canadian Record Suspension (Pardon). Unlike a visa, which is obtained through a US embassy, the US Entry Waiver application undergoes a separate processing procedure. The Electronic Secured Adjudication Forms Environment (e-SAFE) simplifies the application process for the U.S. Visa Waiver Program, enabling individuals planning multiple air or sea travels to the USA to acquire necessary authorization before their journey.</p>
+                </div>
+                <div class="col-12 col-lg-2 my-auto">
+                    <img class="w-100 ps-lg-5" src="{{ asset('app-logo/Liberty.png') }}" alt="ESTA Application">
                 </div>
             </div>
-        </section>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2>What are the requirements for an i-192 Waiver?</h2>
-                <p>Eligibility for the U.S. Entry Waiver and Canadian Record Suspension (Pardon) extends to citizens of Canada as well as other qualifying countries. To obtain travel authorization, applicants must complete the U.S. Entry Waiver application process. Additionally, possession of a biometric RCMP report is mandatory. The U.S. Entry Waiver permits stays of up to 179 days per year and it's good for up to FIVE years, catering to various purposes such as tourism, transit, healthcare, or participation in accredited credited study programs.</p>
-                <p>We recommend applying for the U.S. Entry Waiver prior to making hotel or flight reservations, as some situations may require a lengthy document collection period. Upon approval of your U.S. Entry Waiver application, you can update it with final itinerary details before your departure for added convenience.
-                </p>
-            </div>
         </div>
-    </div>
-
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <p>&nbsp;</p>
-                <div class="row flag-list d-flex justify-content-between mx-0">
-                    <h2 class="px-0">Application Form I-192 for Advance Permission to Enter as a Nonimmigrant e-SAFE process for citizens of Canada:</h2>
-                    <strong>Eligible nonimmigrant citizens from:</strong>
-                    <div class="col-12 py-1">
-                    </div>
-                    <div class="col-6 px-0 col-md-auto order-1">
-                        <ul>
-                            <li><img decoding="async" src="{{ asset('app-logo/Frame5.png') }}" alt="ESTA Countries">  Canada </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 px-0 col-md-auto order-3 order-md-2">
-                        <ul>
-                            <li><img decoding="async" src="{{ asset('app-logo/palau.png') }}" alt="ESTA Countries">  Palau </li>
-
-                        </ul>
-                    </div>
-                    <div class="col-6 px-0 col-md-auto order-5 order-md-3">
-                        <ul>
-                            <li><img decoding="async" src="{{ asset('app-logo/federated.png') }}" alt="ESTA Countries">  Federated States of Micronesia</li>
-
-                        </ul>
-                    </div>
-                    <div class="col-6 px-0 col-md-auto order-2 order-md-4">
-                        <ul>
-                            <li><img decoding="async" src="{{ asset('app-logo/marshal.png') }}" alt="ESTA Countries">  Marshall Islands</li>
-                        </ul>
-                    </div>
-
-
+    </section>
+    <section class="py-24 bg-gray-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="custom-h2">What are the requirements for an i-192 Waiver?</h2>
+                    <p class="custom-p">Eligibility for the U.S. Entry Waiver and Canadian Record Suspension (Pardon) extends to citizens of Canada as well as other qualifying countries. To obtain travel authorization, applicants must complete the U.S. Entry Waiver application process. Additionally, possession of a biometric RCMP report is mandatory. The U.S. Entry Waiver permits stays of up to 179 days per year and it's good for up to FIVE years, catering to various purposes such as tourism, transit, healthcare, or participation in accredited credited study programs.</p>
+                    <p class="custom-p">We recommend applying for the U.S. Entry Waiver prior to making hotel or flight reservations, as some situations may require a lengthy document collection period. Upon approval of your U.S. Entry Waiver application, you can update it with final itinerary details before your departure for added convenience.</p>
                 </div>
-                <strong><b>Note:</b> If you're seeking admission under the Visa Waiver Program (VWP) per INA section 217, do not file this form. Inadmissible aliens from VWP countries must apply for a nonimmigrant visa at a U.S. Embassy or consulate for travel authorization.</strong>
-
             </div>
         </div>
-    </div>
+    </section>
 
+    <section class="py-24">
+        <div class="container">
 
+            <div class="row">
+                <div class="col-12">
+                    <p>&nbsp;</p>
+                    <div class="row flag-list d-flex justify-content-between mx-0">
 
+                        <h2 class="px-0 custom-h2">Application Form I-192 for Advance Permission to Enter as a Nonimmigrant e-SAFE process for citizens of Canada:</h2>
 
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <p>&nbsp;</p>
-                <div class="row flag-list d-flex justify-content-between mx-0">
-                    <h2 class="px-0">The 41 Visa Waiver Program Member Countries:</h2>
-                    <div class="col-12 py-1">
-                    </div>
-                    <div class="col-6 px-0 col-md-auto order-1">
-                        <ul>
-                            <li><img decoding="async" src="{{ asset('country/ad.png') }}" alt="ESTA Countries">  Andorra</li>
-                            <li><img decoding="async" src="{{ asset('country/au.png') }}" alt="ESTA Countries">  Australia</li>
-                            <li><img decoding="async" src="{{ asset('country/at.png') }}" alt="ESTA Countries">  Austria</li>
-                            <li><img decoding="async" src="{{ asset('country/be-min.png') }}" alt="ESTA Countries">  Belgium</li>
-                            <li><img decoding="async" src="{{ asset('country/bn-min.png') }}" alt="ESTA Countries">  Brunei</li>
-                            <li><img decoding="async" src="{{ asset('country/cl-min.png') }}" alt="ESTA Countries">  Chile</li>
-                            <li><img decoding="async" src="{{ asset('country/cr.png') }}" alt="ESTA Countries">  Croatia</li>
-                            <li><img decoding="async" src="{{ asset('country/cz-min.png') }}" alt="ESTA Countries">  Czech Republic</li>
-                            <li><img decoding="async" src="{{ asset('country/dk-min.png') }}" alt="ESTA Countries">  Denmark</li>
-                        </ul>
-                    </div>
-                    <div class="col-6 px-0 col-md-auto order-3 order-md-2">
-                        <ul>
-                            <li><img decoding="async" src="{{ asset('country/ee-min.png') }}" alt="ESTA Countries">  Estonia</li>
-                            <li><img decoding="async" src="{{ asset('country/fi-min.png') }}" alt="ESTA Countries">  Finland</li>
-                            <li><img decoding="async" src="{{ asset('country/fr-min.png') }}" alt="ESTA Countries">  France</li>
-                            <li><img decoding="async" src="{{ asset('country/de-min.png') }}" alt="ESTA Countries">  Germany</li>
-                            <li><img decoding="async" src="{{ asset('country/gr-min.png') }}" alt="ESTA Countries">  Greece</li>
-                            <li><img decoding="async" src="{{ asset('country/hu-min.png') }}" alt="ESTA Countries">  Hungary</li>
-                            <li><img decoding="async" src="{{ asset('country/is-min.png') }}" alt="ESTA Countries">  Iceland</li>
-                            <li><img decoding="async" src="{{ asset('country/ie-min.png') }}" alt="ESTA Countries">  Ireland</li>
-                            <li><img decoding="async" src="{{ asset('country/il-min.png') }}" alt="ESTA Countries">  Israel</li>
-                        </ul>
-                    </div>
-                    <div class="col-6 px-0 col-md-auto order-5 order-md-3">
-                        <ul>
-                            <li><img decoding="async" src="{{ asset('country/it-min.png') }}" alt="ESTA Countries">  Italy</li>
-                            <li><img decoding="async" src="{{ asset('country/jp-min.png') }}" alt="ESTA Countries">  Japan</li>
-                            <li><img decoding="async" src="{{ asset('country/kr-min.png') }}" alt="ESTA Countries">  South Korea</li>
-                            <li><img decoding="async" src="{{ asset('country/lv-min.png') }}" alt="ESTA Countries">  Latvia</li>
-                            <li><img decoding="async" src="{{ asset('country/li-min.png') }}" alt="ESTA Countries">  Liechtenstein</li>
-                            <li><img decoding="async" src="{{ asset('country/lt-min.png') }}" alt="ESTA Countries">  Lithuania</li>
-                            <li><img decoding="async" src="{{ asset('country/lu-min.png') }}" alt="ESTA Countries">  Luxembourg</li>
-                            <li><img decoding="async" src="{{ asset('country/mt-min.png') }}" alt="ESTA Countries">  Malta</li>
-                            <li><img decoding="async" src="{{ asset('country/mc-min.png') }}" alt="ESTA Countries">  Monaco</li>
-                        </ul>
-                    </div>
-                    <div class="col-6 px-0 col-md-auto order-2 order-md-4">
-                        <ul>
-                            <li><img decoding="async" src="{{ asset('country/nl-min.png') }}" alt="ESTA Countries">  Netherlands</li>
-                            <li><img decoding="async" src="{{ asset('country/nz-min.png') }}" alt="ESTA Countries">  New Zealand</li>
-                            <li><img decoding="async" src="{{ asset('country/no-min.png') }}" alt="ESTA Countries">  Norway</li>
-                            <li><img decoding="async" src="{{ asset('country/pl-min.png') }}" alt="ESTA Countries">  Poland</li>
-                            <li><img decoding="async" src="{{ asset('country/pt-min.png') }}" alt="ESTA Countries">  Portugal</li>
-                            <li><img decoding="async" src="{{ asset('country/sm-min.png') }}" alt="ESTA Countries">  San Marino</li>
-                            <li><img decoding="async" src="{{ asset('country/sg-min.png') }}" alt="ESTA Countries">  Singapore</li>
-                            <li><img decoding="async" src="{{ asset('country/sk-min.png') }}" alt="ESTA Countries">  Slovakia</li>
-                            <li><img decoding="async" src="{{ asset('country/si-min.png') }}" alt="ESTA Countries">  Slovenia</li>
-                        </ul>
-                    </div>
-                    <div class="col-6 px-0 col-md-auto order-4 order-md-5">
-                        <ul>
-                            <li><img decoding="async" src="{{ asset('country/es-min.png') }}" alt="ESTA Countries">  Spain</li>
-                            <li><img decoding="async" src="{{ asset('country/se-min.png') }}" alt="ESTA Countries">  Sweden</li>
-                            <li><img decoding="async" src="{{ asset('country/ch-min.png') }}" alt="ESTA Countries">  Switzerland</li>
-                            <li><img decoding="async" src="{{ asset('country/tw-min.png') }}" alt="ESTA Countries">  Taiwan</li>
-                            <li><img decoding="async" src="{{ asset('country/gb-min.png') }}" alt="ESTA Countries">  United Kingdom</li>
-                        </ul>
+                        <strong>Eligible nonimmigrant citizens from:</strong>
+                        <div class="col-6 col-md-auto">
+                            <ul>
+                                <li><img decoding="async" src="{{ asset('app-logo/Frame5.png') }}" alt="ESTA Countries">  Canada </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto">
+                            <ul>
+                                <li><img decoding="async" src="{{ asset('app-logo/palau.png') }}" alt="ESTA Countries">  Palau </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto">
+                            <ul>
+                                <li><img decoding="async" src="{{ asset('app-logo/federated.png') }}" alt="ESTA Countries">  Federated States of Micronesia</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto">
+                            <ul>
+                                <li><img decoding="async" src="{{ asset('app-logo/marshal.png') }}" alt="ESTA Countries">  Marshall Islands</li>
+                            </ul>
+                        </div>
+                        <h2  class="px-0 custom-h2"><b>Note:</b> If you're seeking admission under the Visa Waiver Program (VWP) per INA section 217, do not file this form. Inadmissible aliens from VWP countries must apply for a nonimmigrant visa at a U.S. Embassy or consulate for travel authorization.</h2>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+
+
+
+
+
+
+
+    <section class="py-24">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row flag-list d-flex justify-content-between mx-0">
+                        <h2 class="px-0 custom-h2">The 41 Visa Waiver Program Member Countries:</h2>
+                        <div class="col-12 py-1">
+                        </div>
+                        <div class="col-6 px-0 col-md-auto order-1">
+                            <ul>
+                                <li><img decoding="async" src="{{ asset('country/ad.png') }}" alt="ESTA Countries">  Andorra</li>
+                                <li><img decoding="async" src="{{ asset('country/au.png') }}" alt="ESTA Countries">  Australia</li>
+                                <li><img decoding="async" src="{{ asset('country/at.png') }}" alt="ESTA Countries">  Austria</li>
+                                <li><img decoding="async" src="{{ asset('country/be-min.png') }}" alt="ESTA Countries">  Belgium</li>
+                                <li><img decoding="async" src="{{ asset('country/bn-min.png') }}" alt="ESTA Countries">  Brunei</li>
+                                <li><img decoding="async" src="{{ asset('country/cl-min.png') }}" alt="ESTA Countries">  Chile</li>
+                                <li><img decoding="async" src="{{ asset('country/cr.png') }}" alt="ESTA Countries">  Croatia</li>
+                                <li><img decoding="async" src="{{ asset('country/cz-min.png') }}" alt="ESTA Countries">  Czech Republic</li>
+                                <li><img decoding="async" src="{{ asset('country/dk-min.png') }}" alt="ESTA Countries">  Denmark</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 px-0 col-md-auto order-3 order-md-2">
+                            <ul>
+                                <li><img decoding="async" src="{{ asset('country/ee-min.png') }}" alt="ESTA Countries">  Estonia</li>
+                                <li><img decoding="async" src="{{ asset('country/fi-min.png') }}" alt="ESTA Countries">  Finland</li>
+                                <li><img decoding="async" src="{{ asset('country/fr-min.png') }}" alt="ESTA Countries">  France</li>
+                                <li><img decoding="async" src="{{ asset('country/de-min.png') }}" alt="ESTA Countries">  Germany</li>
+                                <li><img decoding="async" src="{{ asset('country/gr-min.png') }}" alt="ESTA Countries">  Greece</li>
+                                <li><img decoding="async" src="{{ asset('country/hu-min.png') }}" alt="ESTA Countries">  Hungary</li>
+                                <li><img decoding="async" src="{{ asset('country/is-min.png') }}" alt="ESTA Countries">  Iceland</li>
+                                <li><img decoding="async" src="{{ asset('country/ie-min.png') }}" alt="ESTA Countries">  Ireland</li>
+                                <li><img decoding="async" src="{{ asset('country/il-min.png') }}" alt="ESTA Countries">  Israel</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 px-0 col-md-auto order-5 order-md-3">
+                            <ul>
+                                <li><img decoding="async" src="{{ asset('country/it-min.png') }}" alt="ESTA Countries">  Italy</li>
+                                <li><img decoding="async" src="{{ asset('country/jp-min.png') }}" alt="ESTA Countries">  Japan</li>
+                                <li><img decoding="async" src="{{ asset('country/kr-min.png') }}" alt="ESTA Countries">  South Korea</li>
+                                <li><img decoding="async" src="{{ asset('country/lv-min.png') }}" alt="ESTA Countries">  Latvia</li>
+                                <li><img decoding="async" src="{{ asset('country/li-min.png') }}" alt="ESTA Countries">  Liechtenstein</li>
+                                <li><img decoding="async" src="{{ asset('country/lt-min.png') }}" alt="ESTA Countries">  Lithuania</li>
+                                <li><img decoding="async" src="{{ asset('country/lu-min.png') }}" alt="ESTA Countries">  Luxembourg</li>
+                                <li><img decoding="async" src="{{ asset('country/mt-min.png') }}" alt="ESTA Countries">  Malta</li>
+                                <li><img decoding="async" src="{{ asset('country/mc-min.png') }}" alt="ESTA Countries">  Monaco</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 px-0 col-md-auto order-2 order-md-4">
+                            <ul>
+                                <li><img decoding="async" src="{{ asset('country/nl-min.png') }}" alt="ESTA Countries">  Netherlands</li>
+                                <li><img decoding="async" src="{{ asset('country/nz-min.png') }}" alt="ESTA Countries">  New Zealand</li>
+                                <li><img decoding="async" src="{{ asset('country/no-min.png') }}" alt="ESTA Countries">  Norway</li>
+                                <li><img decoding="async" src="{{ asset('country/pl-min.png') }}" alt="ESTA Countries">  Poland</li>
+                                <li><img decoding="async" src="{{ asset('country/pt-min.png') }}" alt="ESTA Countries">  Portugal</li>
+                                <li><img decoding="async" src="{{ asset('country/sm-min.png') }}" alt="ESTA Countries">  San Marino</li>
+                                <li><img decoding="async" src="{{ asset('country/sg-min.png') }}" alt="ESTA Countries">  Singapore</li>
+                                <li><img decoding="async" src="{{ asset('country/sk-min.png') }}" alt="ESTA Countries">  Slovakia</li>
+                                <li><img decoding="async" src="{{ asset('country/si-min.png') }}" alt="ESTA Countries">  Slovenia</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 px-0 col-md-auto order-4 order-md-5">
+                            <ul>
+                                <li><img decoding="async" src="{{ asset('country/es-min.png') }}" alt="ESTA Countries">  Spain</li>
+                                <li><img decoding="async" src="{{ asset('country/se-min.png') }}" alt="ESTA Countries">  Sweden</li>
+                                <li><img decoding="async" src="{{ asset('country/ch-min.png') }}" alt="ESTA Countries">  Switzerland</li>
+                                <li><img decoding="async" src="{{ asset('country/tw-min.png') }}" alt="ESTA Countries">  Taiwan</li>
+                                <li><img decoding="async" src="{{ asset('country/gb-min.png') }}" alt="ESTA Countries">  United Kingdom</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <div class="col-12 py-1">
@@ -407,36 +441,36 @@
         <div class="container">
             <div class="row mx-0 py-12 border-1-4 mb-4">
                 <div class="col-12">
-                    <h2>Preparation Checklist for Visiting the United States</h2>
+                    <h2 class="custom-h2">Preparation Checklist for Visiting the United States</h2>
                 </div>
                 <div class="col-12 col-lg-6">
                     <ul class="check-green">
-                        <li>Ensure your passport is valid and not expired.</li>
-                        <li>Bring adaptors for 110V power outlets if required
+                        <li class="custom-li">Ensure your passport is valid and not expired.</li>
+                        <li class="custom-li">Bring adaptors for 110V power outlets if required
                         </li>
-                        <li>Prepare itinerary and confirm accommodation details.
+                        <li class="custom-li">Prepare itinerary and confirm accommodation details.
                         </li>
-                        <li>Secure travel insurance.
+                        <li class="custom-li">Secure travel insurance.
                         </li>
-                        <li>Explore transportation options for getting around.
+                        <li class="custom-li">Explore transportation options for getting around.
                         </li>
-                        <li>Carry sufficient local currency (USD) and payment methods.
+                        <li class="custom-li">Carry sufficient local currency (USD) and payment methods.
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-lg-6" style="flex: 0 0 auto; width: 48% !important;">
+                <div class="col-12 col-lg-6">
                     <ul class="check-green">
-                        <li>Download travel maps and relevant apps.
+                        <li class="custom-li">Download travel maps and relevant apps.
                         </li>
-                        <li>Arrange for internet access during your stay.
+                        <li class="custom-li">Arrange for internet access during your stay.
                         </li>
-                        <li>Stay updated by following the latest news.
+                        <li class="custom-li">Stay updated by following the latest news.
                         </li>
-                        <li>Have emergency contact information readily available.
+                        <li class="custom-li">Have emergency contact information readily available.
                         </li>
-                        <li>Consider a language translation app if needed.
+                        <li class="custom-li">Consider a language translation app if needed.
                         </li>
-                        <li>Obtain your approved U.S. Entry waiver from DHS,  or necessary travel authorization.
+                        <li class="custom-li">Obtain your approved U.S. Entry waiver from DHS,  or necessary travel authorization.
                         </li>
                     </ul>
                 </div>

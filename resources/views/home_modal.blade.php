@@ -45,38 +45,52 @@
             </div>
             <div class="modal-body">
                 <h2>Terms &amp; Conditions</h2>
+                <p>Welcome to our website! Please read these terms and conditions carefully before using this site.</p>
                 <p class="mb-0"><strong>About this website</strong></p>
-                <p>This website is not affiliated with the United States Government. U.S. Immigration Support is an independent publisher of legal books and immigration guides. Our mission is to help immigrants through the United States immigration process by providing the most current information available. There are disclaimers located on the footer of every page of this website stating that U.S. Immigration Support is an independent entity, not a United States government agency.</p>
+                <p>This website, operated by Services of Canada, is an independent publisher of legal books and immigration guides. Our goal is to assist immigrants in navigating Both Canadian and United States post conviction process by providing up-to-date information. It's important to note that we are not affiliated with the United States Government. Our disclaimers, found in the footer of each page, clearly state that Services of Canada is an independent entity and not a government agency.</p>
                 <p class="mb-0"><strong>Shipping &amp; Delivery Policy</strong></p>
-                <p>eBooks: Available for download immediately after credit card approval.</p>
-                <p>Hard Copy Books: Shipped by FedEx within 2 business days from the date the order was received. Tracking information will be sent to the customer’s email address immediately after the order is shipped. DVDs: Shipped by FedEx or USPS Priority Mail within 2 business days from the date the order was received. Tracking information will be sent to the customer’s email address immediately after the order is shipped.</p>
+                <p>For eBooks, they are available for immediate download upon credit card approval. Please note that at present, we do not offer the option to ship hard copy books. However, we anticipate introducing this service in the near future. </p>
                 <p class="mb-0"><strong>Refund Policy</strong></p>
-                <p>All products and services purchased from this website are fully refundable within the 90 days of the date of purchase. The request for a refund must be to submitted within 90 days from the day the order was received. U.S. Immigration Support reserves the right to not issue a refund if the request is received after 90 days from the date of purchase. Refunds for credit card transactions are issued within 2 business days. Please be aware that it can take up to 5 business days for the transaction to actually post to your account. Refunds for payments received by check, money order, bank draft, travelers checks, or cash, will be issued as a company check. The refund check will be made payable to the person on the order form and mailed to the address indicated on the order form. If you have any questions with regards to your order, please contact our customer service department. If you wish to cancel your order, please contact us with the reasons for the cancellation request. You should not contact your credit card company or bank to file a dispute, as this will only delay the refund process.</p>
+                <p>We provide a complete refund for any products or services bought from our website within 5 days of the purchase date. Requests for refunds must be made within 5 days of receiving the order. Please be aware that refunds for credit card transactions are processed within 2 business days, but it may take up to 5 business days for the refund to reflect in your account. Refunds for other payment methods will be issued via company check to the name and address provided on the order form.</p>
                 <p class="mb-0"><strong>Our Products &amp; Services</strong></p>
-                <p class="mb-0"><strong>eBooks:</strong> U.S. Immigration Support offers downloadable immigration guides in eBook format (as PDF files). All eBooks available on our website are published by US Immigration Support, not by the USCIS or any United States government agency. Our Immigration eBooks are designed for information purposes only, and should not be considered legal advice.</p>
-                <p><strong>Hard Copy Books:</strong> U.S. Immigration Support offers many immigration books in Hard Copy format. Hard Copy Books are shipped by FedEx within 2 business days. All Hard Copy Books available on our website are published by US Immigration Support, not by the USCIS or any United States government agency. Our Immigration Hard Copy Books are designed for information purposes only, and should not be considered legal advice.</p>
+                <p>Our eBooks and hard copy books are designed for informational purposes only and should not be construed as legal advice. They are published by Services of Canada, not by the USCIS or any government agency.</p>
+
                 <p class="mb-0"><strong>Recurring Billing</strong></p>
-                <p>There is no recurring billing. U.S. Immigration Support does not charge any kind of recurring fees. All purchases on our website are 1-time transactions.</p>
-                <p class="mb-0"><strong>Typographical Errors</strong></p>
-                <p>In the event that a U.S. Immigration Support product or service is mistakenly listed at an incorrect price, we reserve the right to refuse or cancel any orders listed at the incorrect price. U.S. Immigration Support reserves the right to refuse or cancel any such orders whether or not the order has been confirmed and your credit card charged. In the event your credit card has been charged, a full refund will be issued in the amount of the incorrect price.</p>
+                <p>We do not engage in recurring billing. All transactions on our website are one-time purchases.</p>
+
                 <p class="mb-0"><strong>Links</strong></p>
-                <p>This website contains hyperlinks which may take you outside www.usimmigrationsupport.org. Links are made available for your convenience. However, the inclusion of any link does not imply endorsement or approval by U.S. Immigration Support. We are not responsible for any links to and from www.usimmigrationsupport.org. Framing of our website at any level is prohibited.</p>
-                <p class="mb-0"><strong>Copyright Information:</strong></p>
-                <p>All products on this website are published by US Immigration Support and are protected by United States and international copyright laws. Permission for use of our intellectual property should made in writing to our legal department.</p>
+                <p>While we provide hyperlinks for your convenience, inclusion of any link does not imply endorsement by Services of Canada. We are not responsible for the content of external sites linked to or from <a href="https://servicesofcanada.help/" target="_blank">https://servicesofcanada.help/</a>.</p>
+
+                <p class="mb-0"><strong>Copyright Information</strong></p>
+                <p>All products on this website are protected by copyright laws. Permission for use of our intellectual property must be obtained in writing from our legal department.</p>
+
                 <p class="mb-0"><strong>Intellectual Property Rights</strong></p>
-                <p>Except where otherwise stated, U.S. Immigration Support is the copyright holder of all content, layout, design, data, graphics, trademarks and logos under the www.usimmigrationsupport.org domain. The content is protected by United States and international copyright laws. U.S. Immigration Support will do our utmost to protect our rights, employees, customers, members and intellectual property. We will not hesitate to take legal action if necessary. Permission for use of our intellectual property should made by contacting our legal department.</p>
+                <p>We hold the copyright for all content, design, data, graphics, trademarks, and logos under the <a href="https://servicesofcanada.help/" target="_blank">https://servicesofcanada.help/</a>domain. Unauthorized use is prohibited.</p>
+
+
                 <p class="mb-0"><strong>Limitation of Liability</strong></p>
-                <p>U.S. Immigration Support shall not be liable for any special or consequential damages that result from the use of, or the inability to use, the materials on this website or the performance of the products, even if U.S. Immigration Support has been advised of the possibility of such damages. Applicable law may not allow the limitation of exclusion of liability or incidental or consequential damages, so the above limitation or exclusion may not apply to you.</p>
-                <p class="mb-0"><strong>Personal use Limitation</strong></p>
-                <p>The information, news, articles, emails, products and services provided by U.S. Immigration Support are for your personal and non-commercial use. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, or other content, products or services obtained from U.S. Immigration Support without the express written permission from our legal department.</p>
+                <p>Services of Canada shall not be liable for any special or consequential damages arising from the use of this website or our products. Applicable law may not allow the limitation of liability, so some exclusions may not apply.</p>
+
+                <p class="mb-0"><strong>Personal Use Limitation</strong></p>
+                <p>Our materials are for personal, non-commercial use only. Reproduction or distribution without express written permission is prohibited.</p>
+
+
                 <p class="mb-0"><strong>Warranty Disclaimer</strong></p>
-                <p>This site and the materials and products on this site are provided “as is” and without warranties of any kind, whether express or implied. To the fullest extent permissible pursuant to applicable law, U.S. Immigration Support disclaims all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose and non-infringement. U.S. Immigration Support does not represent or warrant that the functions contained in the site will be uninterrupted or error-free, that the defects will be corrected, or that this site or the server that makes the site available are free of viruses or other harmful components. U.S. Immigration Support does not make any warranties or representations regarding the use of the materials in this site in terms of their correctness, accuracy, adequacy, usefulness, timeliness, reliability or otherwise. Some states do not permit limitations or exclusions on warranties, so the above limitations may not apply to you.</p>
+                <p>We provide materials and products on an "as is" basis, without warranties of any kind. We do not guarantee uninterrupted or error-free access to our site.</p>
+
+
+
                 <p class="mb-0"><strong>Legal Form and Choice of Law</strong></p>
-                <p>By using our website, purchasing a products or service, you have entered into a legal contract with U.S. Immigration Support. You agree that the prevailing party in a civil lawsuit may be awarded reasonable attorney’s fees.</p>
+                <p>By using our site or purchasing products/services, you enter into a legal contract with Services of Canada. You agree to the prevailing party in a civil lawsuit being awarded reasonable attorney’s fees.</p>
+
+
                 <p class="mb-0"><strong>Currency of Transactions</strong></p>
-                <p>All products as sold in U.S. dollars.</p>
-                <p class="mb-0"><strong>Changes to the Terms and Conditions</strong></p>
-                <p>U.S. Immigration Support retains the right, at its discretion, to change our Terms and Conditions any time. Customers, members and all users of this website are recommended to review our Terms and Conditions, Privacy Policy, and Disclaimers (located on the footer of every page of this website) on a monthly basis.</p>
+                <p>All transactions are conducted in Canadian dollars.</p>
+
+                <p class="mb-0"><strong>Changes to Terms and Conditions</strong></p>
+                <p>Services of Canada reserves the right to change these terms and conditions at any time. Users are advised to review them, along with our Privacy Policy and Disclaimers, regularly for updates.</p>
+
+
             </div>
 
         </div>
@@ -214,14 +228,14 @@
             </div>
             <div class="modal-body">
                 <h2>How can you reach us?</h2>
-                <p>We take all requests seriously and welcome suggestions for ways to improve any of our processing services. You can contact us by completing the contact form on this webpage.</p>
-                <p>If you require assistance with an existing travel document that you have submitted to us, please send us a message via the contact form, including the following information</p>
-                <p><a href="https://www.usimmigrationsupport.org/cdn-cgi/l/email-protection#e68f888089a693958f8b8b8f819487928f898895939696899492c8899481"><strong>info@usimmigrationsupport.org</strong></a></p>
+                <p>We value all inquiries and appreciate suggestions for enhancing our processing services. To get in touch, simply fill out the contact form on this webpage.</p>
+                <p>For assistance regarding a previously submitted travel document, kindly send us a message through the contact form, ensuring to provide the following details:</p>
+                <p><strong><a href="mailto:admin@recordremoval.org">admin@recordremoval.org</a></strong></p>
                 <div class="contact-wrapper mt-2 bg-accent mb-3">
                     <ul class="check-green">
-                        <li>The applicant’s full name</li>
-                        <li>The applicant’s email address</li>
-                        <li>The final four digits of the credit card was used</li>
+                        <li>Applicant’s full name</li>
+                        <li>Applicant’s email address</li>
+                        <li>Last four digits of the credit card used</li>
                     </ul>
                 </div>
             </div>

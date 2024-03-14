@@ -58,7 +58,7 @@
             <div class="col-md-4 p-5 gap-2 border-left">
                 <div class="sidebar-form">
                     <div class="row">
-                        <h2 class="light-grey px-5 sidebar-head">B-2 TOURIST VISA APPLICATION GUIDE</h2>
+                        <h2 class="light-grey px-5 sidebar-head">Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians.</h2>
                         <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-5">
                         <button  id="downloadButton" class="btn btn-success">
                             Download Now!</button>

@@ -35,7 +35,7 @@
             <td style="padding: 8px; border: 1px solid #ddd; background: grey;"><a href="{{ env('APP_URL') }}/book/e-book.pdf" target="_blank" style="background-color: #28a745; border: none; color: white; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 4px;">Download</a>
             </td>
             <td style="padding: 8px; border: 1px solid #ddd; background: grey;">{{ $mailData['data']['ssl_txn_id'] }}</td>
-            <td style="padding: 8px; border: 1px solid #ddd; background: grey;">B-2 Tourist Visa Application Guide</td>
+            <td style="padding: 8px; border: 1px solid #ddd; background: grey;">Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians.</td>
             <td style="padding: 8px; border: 1px solid #ddd; background: grey;">$9.99 CAD</td>
         </tr>
         </tbody>

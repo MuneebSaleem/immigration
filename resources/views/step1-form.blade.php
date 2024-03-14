@@ -54,7 +54,7 @@
 
                         <div class="blue-area-bg px-4 py-2 mt-4">
                             <h1 class="m-0">Secure Billing Information
-                            <img class="float-right" src="{{ asset('app-logo/canada.png') }}" />
+                            <img class="float-right" src="{{ asset('app-logo/CanadaPNG.png') }}" />
                             </h1>
                         </div>
 
@@ -161,7 +161,7 @@
                     <div class="mt-4 form-check bg-grey p-5">
                       <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
                       <label class="form-check-label" for="agreeCheck">
-                        I have read and consent to the Privacy Policy and Terms & Conditions of this website. I am of legal age, or have parental/guardian consent. Price: $9.99 CAD</label>
+                        I have read and consent to the <a style="color: #3798DC !important; text-decoration: none; margin-right: 0rem !important;" class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy" id="privacylModal"> Privacy Policy</a> and <a style="color: #3798DC !important; text-decoration: none; margin-right: 0rem !important;" class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms" id="termModal"> Terms & Conditions</a> of this website. I am of legal age, or have parental/guardian consent. Price: $9.99 CAD</label>
                     </div>
                     <div class="col-md-12 mt-4 ">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -173,7 +173,7 @@
     		<div class="col-md-4 p-5 gap-2 border-left">
                 <div class="sidebar-form">
         			<div class="row">
-                        <h2 class="light-grey px-5 sidebar-head">B-2 TOURIST VISA APPLICATION GUIDE</h2>
+                        <h2 class="light-grey px-5 sidebar-head">Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians.</h2>
                         <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-5">
                         <p class="px-5 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE $9.99 CAD</p>
                         <img class="my-3 px-5" src="{{ asset('app-logo/star-separator.png') }}">
@@ -226,7 +226,7 @@
     <section class="container copy-right px-5 py-4">
         <div class="row">
             <div class="col-md-6">
-                <p>© 2024 onlineimmigration.com. All rights reserved.</p>
+                <p>© 2024 SERVICES OF CANADA - All Rights Reserved</p>
             </div>
             <div class="col-md-6">
                 <img class="float-right" src="{{ asset('app-logo/footer-icons.png') }}">

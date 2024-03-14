@@ -7,12 +7,12 @@
 
         .bg-atlantic-blue {
             --bs-bg-opacity: 1;
-            background-color: #122951;
+            background-color: #0f184E;
         }
 
         .py-20 {
-            padding-top: 1.25rem !important;
-            padding-bottom: 1.25rem !important;
+            padding-top: 2.25rem !important;
+            padding-bottom: 2.25rem !important;
         }
 
 
@@ -201,7 +201,7 @@
             <div class="row">
                 <div class="col-12 col-lg-5 text-center text-lg-start mb-20 my-lg-auto">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/LogoWebp.webp') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/LogoChanges2.webp') }}" alt="US Immigration support">
 
                 </div>
 

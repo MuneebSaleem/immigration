@@ -60,6 +60,21 @@
         display: flex;
     }
 
+    h1.text-text-primary {
+        font-size: 30px;
+    }
+
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 768px) {
+        h1.text-text-primary {
+            font-size: 20px;
+        }
+    }
+
+    .meta-value{
+        color: #4b5565;
+    }
+
 
 </style>
 @section('content')
@@ -114,7 +129,7 @@
                             <div class="step-header">
                                 <div class="w-75" style="width: 103% !important;">
                                     <h1 class="text-text-primary mb-10">
-                                        <b>US entry waiver</b></h1>
+                                        <b>US Entry Waiver Application Guide</b></h1>
                                 </div>
                             </div>
 

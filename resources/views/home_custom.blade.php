@@ -34,7 +34,7 @@
 
     .check-green {
         list-style-type: none;
-        padding-left: 21px;
+        padding-left: 32px;
     }
 
     .check-green li {

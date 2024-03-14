@@ -8941,7 +8941,7 @@ footer .footer.style p, footer .footer.style .foot-links a {
 .secure-text {
     color: #fff;
     text-align: end;
-    padding: 20px;
+    padding: 20px 110px;
     font-size: 12px;
 }
 .blue-area-bg {
@@ -9041,3 +9041,8 @@ section.container.px-5.py-4.background-navy {
     transform: translateY(-50%);
     width: 20px;
     background-image: url("https://www.usimmigrationsupport.org/wp-content/themes/USISORG-Eligibility-K-1.1/theme/assets/images/check-gold.svg"); }
+
+
+.border-bottom-white {
+  border-bottom: 1px solid #fff;
+}

@@ -20,7 +20,7 @@
     </style>
 <div class="loading" style="display: none;">Loading&#8230;</div>
 
-    <section id="top-bar-main" class="bg-atlantic-blue py-20">
+    <section id="top-bar-main" class="bg-atlantic-blue py-3 border-bottom-white">
         <div class="container">
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">

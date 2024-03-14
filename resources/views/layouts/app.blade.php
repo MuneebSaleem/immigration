@@ -13,11 +13,12 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('dist/css/font-awesome.min.css')  }}">
+    
     <link rel="stylesheet" href="{{ asset('dist/css/select2.min.css')  }}">
     <link rel="stylesheet" href="{{ asset('dist/css/select2-bootstrap-5-theme.min.css')  }}">
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('dist/css/font-awesome.min.css')  }}">
 </head>
 <body>
     <div id="app bg-white">

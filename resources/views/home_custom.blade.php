@@ -13,7 +13,7 @@
 
     .bg-atlantic-blue {
         --bs-bg-opacity: 1;
-        background-color: #0f184E;
+        background-color: #114A7E;
     }
 
     .py-20 {

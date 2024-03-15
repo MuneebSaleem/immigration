@@ -364,7 +364,7 @@
             });
 
             $.ajax({
-                url: "{{ route('step.send_payment') }}",
+                url: "{{ route('step.send_payment', ['locale' => app()->getLocale()]) }}",
                 method: 'POST',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -373,7 +373,7 @@
                 success: function(response) {
                     if(response.success === true){
                         $.ajax({
-                            url: "{{ route('order-email.send') }}",
+                            url: "{{ route('order-email.send', ['locale' => app()->getLocale()]) }}",
                             method: 'POST',
                             headers: {
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -383,7 +383,7 @@
                                 requestData: JSON.stringify(formDataObject)
                             },
                             success: function(response) {
-                                window.location.href = "{{ route('thankyou') }}";
+                                window.location.href = "{{ route('thankyou', ['locale' => app()->getLocale()]) }}";
                             },
                             error: function(xhr, status, error) {
                                 console.error('Request failed!');

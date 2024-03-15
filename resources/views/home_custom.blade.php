@@ -127,8 +127,8 @@
                         <form autocomplete="off" id="eligibility-form-step-1"  method="get">
                             <div class="step-header">
                                 <div class="w-75" style="width: 103% !important;">
-                                    <h1 class="text-text-primary mb-10">
-                                        <b>Canadian Pardon Application Guide</b></h1>
+                                    <h1 class="text-text-primary mb-10"><b>{{ __('messages.canadian_pardon_application_guide') }}</b></h1>
+
                                 </div>
                             </div>
 
@@ -629,7 +629,7 @@
 
             var selectedCountry = $('#citizenship-country').val();
             $.ajax({
-                url: '/get_country',
+                url: '/' + '{{ app()->getLocale() }}' + '/get_country',
                 method: 'POST',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -777,7 +777,7 @@
             if (email_send) {
 
                 $.ajax({
-                    url: '/send_email',
+                    url: '/' + '{{ app()->getLocale() }}' + '/send_email',
                     method: 'POST',
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -792,7 +792,7 @@
                 });
 
                 $.ajax({
-                    url: '/send_data',
+                    url: '/' + '{{ app()->getLocale() }}' + '/send_data',
                     method: 'POST',
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

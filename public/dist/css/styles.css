@@ -7093,7 +7093,7 @@ body {
 }
 /* line 28, ../../../sass/styles.scss */
 body footer .footer {
-  background: #142E5D;
+  background: #114A7E;
   height: 88px;
 }
 @media (min-width: 1200px) {
@@ -7841,7 +7841,7 @@ ul li {
 
 /* line 317, ../../../sass/styles.scss */
 .btn.btn-success, .btn.btn-success:hover {
-  background: #82C144;
+  background: #66c61c;;
   color: #fff;
   font-size: 16px;
   border: none;
@@ -8935,7 +8935,7 @@ footer .footer.style p, footer .footer.style .foot-links a {
   border: 1px solid black;
 }
 .image-color-background {
-  background: #142E5D url("../../app-logo/navmenubg.png") no-repeat right center;
+  background: #114A7E url("../../app-logo/navmenubg.png") no-repeat right center;
   height: 60px;
 }
 .secure-text {
@@ -8946,7 +8946,7 @@ footer .footer.style p, footer .footer.style .foot-links a {
 }
 .blue-area-bg {
   display: inline-block;
-  background: #142E5D;
+  background: #114A7E;
   width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;

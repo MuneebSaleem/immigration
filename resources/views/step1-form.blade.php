@@ -7,12 +7,16 @@
 
         .bg-atlantic-blue {
             --bs-bg-opacity: 1;
-            background-color: #0f184E;
+            background-color: #114A7E;
         }
 
         .py-20 {
             padding-top: 2.25rem !important;
             padding-bottom: 2.25rem !important;
+        }
+
+        .blue-area-bg {
+            background: #154a7e url("{{ asset('app-logo/product_heading.png') }}") no-repeat right center;
         }
 
 
@@ -24,7 +28,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
-                    <img class="navbar-brand" src="{{asset('app-logo/LogoWebp.webp')}}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{asset('app-logo/LogoChanges2.webp')}}" alt="US Immigration support">
 
                 </div>
 
@@ -54,7 +58,7 @@
 
                         <div class="blue-area-bg px-4 py-2 mt-4">
                             <h1 class="m-0">Secure Billing Information
-                            <img class="float-right" src="{{ asset('app-logo/CanadaPNG.png') }}" />
+                                <img class="float-right" src="{{ asset('app-logo/CanadaPNG.png') }}" />
                             </h1>
                         </div>
 
@@ -82,19 +86,17 @@
                             <label for="email" class="font-weight-500 form-label"> Email</label>
                             <input type="email" class="form-control" id="email" name="email" value="{{ isset($userData['email']) ? $userData['email']  : '' }}">
                         </div>
-                        <div class="col-md-6 mt-4 ">
+                        <div class="col-md-6 mt-4">
                             <label for="country" class="font-weight-500 form-label"><span class="red">*</span> Country</label>
-                            <select required class="form-select form-control" id="country"  name="country">
-                                <option value="" selected disabled>Select Country</option>
+                            <select required class="form-select form-control" id="country" name="country">
+                                <option value="" disabled>Select Country</option>
                                 @foreach ($countries as $country)
-                                    @if ($country->countryName == 'Canada')
-                                        <option value="{{ $country->countryName }}" selected style="font-weight: bold;">{{ $country->countryName }}</option>
-                                    @else
-                                        <option value="{{ $country->countryName }}">{{ $country->countryName }}</option>
-                                    @endif
+                                    <option value="{{ $country->countryName }}" {{ $country->countryName == 'Canada' ? 'selected' : '' }}>
+                                        {{ $country->countryName }}
+                                    </option>
                                 @endforeach
                             </select>
-                            <div class="invalid-feedback">Please select country.</div>
+                            <div class="invalid-feedback">Please select a country.</div>
                         </div>
                         <div class="col-md-6 mt-4 ">
                             <label for="ssl_card_number" class="font-weight-500 form-label"><span class="red">*</span> Card Number</label>
@@ -119,20 +121,21 @@
                                 <div class="col-md-6">
                                     <select required name="month" class="form-select form-control" id="month" data-placeholder="Choose Month">
                                         <option value="" selected disabled>Select Month</option>
-                                        <option value="01">01- January</option>
-                                        <option value="02">02- Febuary</option>
-                                        <option value="03">03- March</option>
-                                        <option value="04">04- April</option>
-                                        <option value="05">05- May</option>
-                                        <option value="06">06- June</option>
-                                        <option value="07">07- July</option>
-                                        <option value="08">08- August</option>
-                                        <option value="09">09- September</option>
-                                        <option value="10">10- October</option>
-                                        <option value="11">11- November</option>
-                                        <option value="12">12- December</option>
+                                        <option value="01">01 - January</option>
+                                        <option value="02">02 - February</option>
+                                        <option value="03">03 - March</option>
+                                        <option value="04">04 - April</option>
+                                        <option value="05">05 - May</option>
+                                        <option value="06">06 - June</option>
+                                        <option value="07">07 - July</option>
+                                        <option value="08">08 - August</option>
+                                        <option value="09">09 - September</option>
+                                        <option value="10">10 - October</option>
+                                        <option value="11">11 - November</option>
+                                        <option value="12">12 - December</option>
                                     </select>
-                                    <div class="invalid-feedback">Please select month.</div> <!-- Move outside the <select> element -->
+                                    <!-- Move the invalid feedback message inside the parent div -->
+                                    <div class="invalid-feedback">Please select a month.</div>
                                 </div>
                                 <div class="col-md-6">
                                     <select required name="year" class="form-select form-control" id="cardExpiration" data-placeholder="Choose Year">
@@ -158,14 +161,25 @@
 
 
 	    			</div>
-                    <div class="mt-4 form-check bg-grey p-5">
-                      <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
-                      <label class="form-check-label" for="agreeCheck">
-                        I have read and consent to the <a style="color: #3798DC !important; text-decoration: none; margin-right: 0rem !important;" class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy" id="privacylModal"> Privacy Policy</a> and <a style="color: #3798DC !important; text-decoration: none; margin-right: 0rem !important;" class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms" id="termModal"> Terms & Conditions</a> of this website. I am of legal age, or have parental/guardian consent. Price: $9.99 CAD</label>
+
+                    <p>&nbsp;</p>
+                    <div class="col-xs-12 text-justify accept-box form-group required" data-fieldname="accept" aria-required="true">
+                        <div class="checkbox" id="id_step1-accept">
+                            <label for="id_step1-accept_0"><input data-validation-error-decoration="true" id="id_step1-accept_0" name="step1-accept" type="checkbox" value="on">
+                                I have read and consent to the <a style="color: #3798DC !important; text-decoration: none; margin-right: 0rem !important;" class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy" id="privacylModal">Privacy Policy</a> and <a style="color: #3798DC !important; text-decoration: none; margin-right: 0rem !important;" class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms" id="termModal"> Terms & Conditions</a> of this website. I am of legal age, or have parental/guardian consent. <b>Price: $9.99 CAD</b></label>
+                        </div>
+                        <div class="col-xs-12 text-danger validation-advice" id="validation_application_step1-accept">
+
+                        </div>
                     </div>
+
+
+
                     <div class="col-md-12 mt-4 ">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button id="orderButton" class="btn btn-success me-md-2" type="button">Order Now  </button>
+                            <button id="orderButton" class="btn btn-success me-md-2" type="button">Order Now
+                            <img src="{{ asset('app-logo/button-next.png') }}" class="butt-arrow">
+                            </button>
                         </div>
                     </div>
     			</form>
@@ -177,7 +191,8 @@
                         <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-5">
                         <p class="px-5 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE $9.99 CAD</p>
                         <img class="my-3 px-5" src="{{ asset('app-logo/star-separator.png') }}">
-                        <p class="text-justify text-paragraph">Criminal records can haunt individuals, impacting job prospects, travel plans, and more. With one in seven adult Canadians having a record, the need for a U.S. Entry Waiver is common. The application process, taking months, demands early action to avoid travel disruptions. The waiver is crucial for crossing the border, securing employment, housing, education, and volunteering opportunities. Our guide, "Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians," provides comprehensive assistance, including official document requirements, stay duration clarity, recommended visa types, eligibility factors, and all necessary documents and forms. Purchase now for instant access!</p>
+                        <p class="text-justify text-paragraph">Criminal records can haunt individuals, impacting job prospects, travel plans, and more. With one in seven adult Canadians having a record, the need for a U.S. Entry Waiver is common. The application process, taking months, demands early action to avoid travel disruptions. The waiver is crucial for crossing the border, securing employment, housing, education, and volunteering opportunities. Our guide, "Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians," provides comprehensive assistance, including official document requirements, stay duration clarity, recommended visa types, eligibility factors, and all necessary documents and forms. Purchase now for instant access!
+                        </p>
                         <ul class="list-style mx-3">
                             <li class="gap-reduce">Impact of criminal records on employment and travel</li>
                             <li class="gap-reduce">Common need for a U.S. Entry Waiver among Canadians</li>
@@ -196,43 +211,43 @@
     		</div>
     	</div>
     </section>
-    <footer id="site-footer" class="bg-atlantic-blue py-20 py-md-64">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-5 text-center text-lg-start mb-20 my-lg-auto">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/LogoChanges2.webp') }}" alt="US Immigration support">
 
+
+    <footer class="row">
+        <div class="footer style">
+            <div class="container">
+                <div class="col-xs-12 col-sm-6 copyright">
+                    <p>
+                        © 2024 SERVICES OF CANADA - All Rights Reserved
+                    </p>
                 </div>
 
-                <div class="col-12 col-lg-7 my-auto">
-                    <div class="wrapper popup-control d-grid text-center text-lg-end d-md-flex
-                justify-content-md-center
-                justify-content-lg-end">
-                        <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#legal" data-bs-toggle="modal" data-bs-target="#legal" id="legalModal">Legal Disclaimer</a>
+                <div class="col-xs-12 col-sm-6 foot-links">
+                    <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#legal" data-bs-toggle="modal" data-bs-target="#legal" id="legalModal">Legal Disclaimer</a>
 
-                        <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms" id="termModal">Terms &amp;
-                            Conditions</a>
-                        <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy" id="privacylModal">Privacy Policy</a>
-                        <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#cookies" data-bs-toggle="modal" data-bs-target="#cookies" id="cookiesModal">Cookies</a>
-                        <a class="text-white button link-decortion-none" href="#contact" data-bs-toggle="modal" data-bs-target="#contact" id="contactModal">Contact</a>
-                    </div>
+                    <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms" id="termModal">Terms &amp;
+                        Conditions</a>
+                    <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy" id="privacylModal">Privacy Policy</a>
+                    <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#cookies" data-bs-toggle="modal" data-bs-target="#cookies" id="cookiesModal">Cookies</a>
+                    <a class="text-white button link-decortion-none" href="#contact" data-bs-toggle="modal" data-bs-target="#contact" id="contactModal">Contact</a>
 
                 </div>
             </div>
         </div>
-
     </footer>
-    <section class="container copy-right px-5 py-4">
-        <div class="row">
-            <div class="col-md-6">
-                <p>© 2024 SERVICES OF CANADA - All Rights Reserved</p>
-            </div>
-            <div class="col-md-6">
-                <img class="float-right" src="{{ asset('app-logo/footer-icons.png') }}">
+
+
+    <section>
+    <div class="row">
+        <div class="copyright">
+            <div class="container"><br>
+                <p>Disclaimer: This website is owned and operated by a private company. We are not affiliated with any government agency.</p>
             </div>
         </div>
+    </div>
     </section>
+
 </div>
 
 

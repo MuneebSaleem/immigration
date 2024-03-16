@@ -205,7 +205,7 @@
 
 
 
-    		<div class="col-md-4 p-5 gap-2 border-left order-md-2">
+    		<div class="col-md-4 p-md-5 gap-2 border-left order-md-2">
                 <div class="sidebar-form">
         			<div class="row">
                         <h2 class="light-grey px-5 sidebar-head">Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians.</h2>

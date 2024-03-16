@@ -3,7 +3,7 @@
 <style>
     .bg-atlantic-blue {
         --bs-bg-opacity: 1;
-        background-color: #0f184E;
+        background-color: #154a7e ;
     }
 
     /*.py-20 {
@@ -32,23 +32,31 @@
 
 
 
-    <section id="top-bar-main" class="bg-atlantic-blue py-4">
+    <section id="top-bar-main" class="bg-atlantic-blue py-3 border-bottom-white">
         <div class="container">
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
-
                     <img class="navbar-brand" src="{{asset('app-logo/LogoChanges2.webp')}}" alt="US Immigration support">
 
                 </div>
 
                 <div class="col-3 col-md-6 col-xl-8 my-auto d-flex justify-content-end text-end">
+
+
                     <div class="my-auto me-3 d-none d-md-block">
                         <p class="check-gold text-white mb-0 check-gold">24/7 Customer Service</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
+
+    <header class="image-color-background">
+        <div class="secure-text" style="font-weight: 600;">
+            <img class="float-left" style="margin-right: 5px;" src="{{ asset('app-logo/secure_application_icon.png') }}" /> SECURE APPLICATION
+        </div>
+    </header>
 
 
 

@@ -19,7 +19,7 @@
 
 <img class="navbar-brand" src="https://colonyfoods.s3.amazonaws.com/email-header.png">
 
-<h1><b>** General Information / Application Guide Instructions **</b></h1>
+<h2><b>** General Information / Application Guide Instructions **</b></h2>
 <br>
 <p><b>Thank you for your submission to Pardon Waiver Services Canada</b></p>
 <p>Pardon Waiver Services Canada is a nationwide Canadian Pardon (Record Suspension), and U.S. Entry Waiver application processing firm.</p>

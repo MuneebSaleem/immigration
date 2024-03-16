@@ -19,6 +19,23 @@
             background: #154a7e url("{{ asset('app-logo/product_heading.png') }}") no-repeat right center;
         }
 
+        @media (max-width: 767.98px) {
+            .testing {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .col-md-8,
+            .col-md-4 {
+                width: 100%;
+            }
+
+            .border-left {
+            border-left: none !important;
+        }
+        }
+        
+
 
 
     </style>
@@ -50,8 +67,8 @@
     </div>
     </header>
     <section class="container main-section-content px-5 py-4">
-    	<div class="row">
-    		<div class="col-md-8 px-4">
+    	<div class="row testing">
+    		<div class="col-md-8 px-4 order-md-1">
     			<form class="row font-14" id="paymentForm">
 	    			<div class="container-form">
 
@@ -184,7 +201,11 @@
                     </div>
     			</form>
     		</div>
-    		<div class="col-md-4 p-5 gap-2 border-left">
+
+
+
+
+    		<div class="col-md-4 p-5 gap-2 border-left order-md-2">
                 <div class="sidebar-form">
         			<div class="row">
                         <h2 class="light-grey px-5 sidebar-head">Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians.</h2>
@@ -205,12 +226,14 @@
                         <p class="text-center">
                             <img width="200" src="{{ asset('app-logo/credit-cards-accepted.png') }}" class="img-payment">
                         </p>
-
-
-
-
+                    </div>
+                </div>
+            </div>
 
     	</div>
+
+
+
     </section>
 
 

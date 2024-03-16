@@ -59,12 +59,12 @@
 
 
                         <div class=" px-4 py-2 mt-4">
-                            <h1 class="h1-heading">Thank You for your order</h1>
-                            <p>Product: Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians</p>
-                            <p>Download link: <a id="downloadLink" href="#">Click Here</a></p>
-                            <p>The ebook purchased is available for immediate download using the link above. A confirmation email with the download link has also been sent to the email address used for this transaction. </p>
-                            <p>The charge will be displayed on your credit card / bank statement as: SERVICESOFCANADA.HELP, CAD $9.99</p>
-                            <p>Please contact us if you have any questions about your order.
+                            <h1 class="h1-heading ">Thank You for your order</h1>
+                            <p class="text-justify">Product: Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians</p>
+                            <p class="text-justify">Download link: <a id="downloadLink" href="#">Click Here</a></p>
+                            <p class="text-justify">The ebook purchased is available for immediate download using the link above. A confirmation email with the download link has also been sent to the email address used for this transaction. </p>
+                            <p class="text-justify">The charge will be displayed on your credit card / bank statement as: SERVICESOFCANADA.HELP, CAD $9.99</p>
+                            <p class="text-justify">Please contact us if you have any questions about your order.
                                 Our Customer Support Department can be reached at: <a href="mailto:admin@recordremoval.org" style="color: blue;">admin@recordremoval.org</a>
                             </p>
                         </div>

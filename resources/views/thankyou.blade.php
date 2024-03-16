@@ -6,10 +6,10 @@
         background-color: #0f184E;
     }
 
-    .py-20 {
+    /*.py-20 {
         padding-top: 1.25rem !important;
         padding-bottom: 1.25rem !important;
-    }
+    }*/
 
     .h1-heading{
         font-weight: 600;
@@ -18,15 +18,10 @@
     }
 
     @media (max-width: 767.98px) {
-        .testing {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-
-        .col-md-8,
+        /*.col-md-8,
         .col-md-4 {
             width: 100%;
-        }
+        }*/
 
         .border-left {
             border-left: none !important;
@@ -37,7 +32,7 @@
 
 
 
-    <section id="top-bar-main" class="bg-atlantic-blue py-20">
+    <section id="top-bar-main" class="bg-atlantic-blue py-4">
         <div class="container">
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
@@ -59,7 +54,7 @@
 
     <section class="container main-section-content px-5 py-4">
         <div class="row">
-            <div class="col-md-8 px-4">
+            <div class="col-md-8 px-md-4">
                     <div class="container-form">
 
 
@@ -77,7 +72,7 @@
                     </div>
 
             </div>
-            <div class="col-md-4 p-5 gap-2 border-left">
+            <div class="col-md-4 p-md-5 gap-2 border-left">
                 <div class="sidebar-form">
                     <div class="row">
                         <h2 class="light-grey px-5 sidebar-head">Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians.</h2>

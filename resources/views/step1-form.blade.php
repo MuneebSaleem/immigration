@@ -62,8 +62,8 @@
     </section>
 
     <header class="image-color-background">
-    <div class="secure-text">
-        <i class="fa fa-shield"></i> SECURE APPLICATION
+    <div class="secure-text" style="font-weight: 600;">
+        <img class="float-left" style="margin-right: 5px;" src="{{ asset('app-logo/secure_application_icon.png') }}" /> SECURE APPLICATION
     </div>
     </header>
     <section class="container main-section-content px-5 py-4">

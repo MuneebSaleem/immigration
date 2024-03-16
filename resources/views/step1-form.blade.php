@@ -184,7 +184,7 @@
                         <div class="checkbox" id="id_step1-accept">
                             <label for="id_step1-accept_0">
                                 <input data-validation-error-decoration="true" id="id_step1-accept_0" name="step1-accept" type="checkbox" value="on">
-                                I have read and consent to the <a style="color: #3798DC !important; text-decoration: none; margin-right: 0rem !important;" class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy" id="privacylModal">Privacy Policy</a> and <a style="color: #3798DC !important; text-decoration: none; margin-right: 0rem !important;" class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms" id="termModal">Terms & Conditions </a> of this website. I am of legal age, or have parental/guardian consent.<b> Price: $9.99 CAD</b>
+                                I have read and consent to the <a  type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy" id="privacylModal">Privacy Policy</a> and <a style="color: #3798DC !important;" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms" id="termModal">Terms & Conditions </a> of this website. I am of legal age, or have parental/guardian consent.<b> Price: $9.99 CAD</b>
                             </label>
                         </div>
                         <div class="col-xs-12 text-danger validation-advice" id="validation_application_step1-accept"></div>

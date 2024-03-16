@@ -10,6 +10,28 @@
         padding-top: 1.25rem !important;
         padding-bottom: 1.25rem !important;
     }
+
+    .h1-heading{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    @media (max-width: 767.98px) {
+        .testing {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .col-md-8,
+        .col-md-4 {
+            width: 100%;
+        }
+
+        .border-left {
+            border-left: none !important;
+        }
+    }
 </style>
 @section('content')
 
@@ -42,7 +64,7 @@
 
 
                         <div class=" px-4 py-2 mt-4">
-                            <h1 class="m-0">Thank You for your order</h1><br>
+                            <h1 class="h1-heading">Thank You for your order</h1>
                             <p>Product: Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians</p>
                             <p>Download link: <a id="downloadLink" href="#">Click Here</a></p>
                             <p>The ebook purchased is available for immediate download using the link above. A confirmation email with the download link has also been sent to the email address used for this transaction. </p>

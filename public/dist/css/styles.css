@@ -9046,3 +9046,8 @@ section.container.px-5.py-4.background-navy {
 .border-bottom-white {
   border-bottom: 1px solid #fff;
 }
+
+.image-align{
+    margin-bottom: -16px;
+    margin-top: -16px;
+}

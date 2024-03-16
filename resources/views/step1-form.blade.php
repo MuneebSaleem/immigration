@@ -34,7 +34,7 @@
             border-left: none !important;
         }
         }
-        
+
 
 
 
@@ -128,14 +128,14 @@
                                     <div class="invalid-feedback">Please enter your cvv code.</div>
                                 </div>
                                 <div class="col-md-3 mt-4">
-                                    <img src="{{ asset('app-logo/cvv_small.png') }}">
+                                    <img class="image-align" src="{{ asset('app-logo/cvv_small.png') }}">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 mt-4 ">
-                            <label for="month" class="font-weight-500 form-label"><span class="red">*</span> Card Expiration</label>
+                        <div class="col-md-6 mt-4 ">
+                            <label for="month" class="font-weight-500 form-label"><span class="red">*</span> Card Expiration Date</label>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 mb-3 mb-md-0">
                                     <select required name="month" class="form-select form-control" id="month" data-placeholder="Choose Month">
                                         <option value="" selected disabled>Select Month</option>
                                         <option value="01">01 - January</option>
@@ -154,7 +154,7 @@
                                     <!-- Move the invalid feedback message inside the parent div -->
                                     <div class="invalid-feedback">Please select a month.</div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 mt-3 mt-md-0">
                                     <select required name="year" class="form-select form-control" id="cardExpiration" data-placeholder="Choose Year">
                                         <option value="" selected disabled>Select Year</option>
                                         <option value= "24">2024</option>

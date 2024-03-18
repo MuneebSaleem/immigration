@@ -643,7 +643,7 @@
                     var isoName = "(" + response.country[0].isoAlpha3 + ")";
 
                     imagePath = "{{ asset('app-logo/tick.png') }}";
-                    var eligibleText = `<h3 class="text-center"><b style="color: limegreen;font-size: 32px;">Congratulations!</b><br><strong>You are eligible to apply for  a U.S. Entry Waiver & Canadian Record Suspension (Pardon)</strong></h3>`;
+                    var eligibleText = `<h3 class="text-center"><b style="color: limegreen;font-size: 37px;">Congratulations!</b><br><br><strong>You are eligible to apply for  a U.S. Entry Waiver & Canadian Record Suspension (Pardon)</strong></h3>`;
 
                     var sectionHtml =`<div class="summary mb-16 d-flex" id="eligibility-form-step-2-outcome">
                                         <!--<img src="${imagePath}" alt="esta-eligibility-checker-eligible">-->

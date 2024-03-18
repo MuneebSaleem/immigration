@@ -340,7 +340,9 @@
 
                         <h2 class="px-0 custom-h2">Application Form I-192 for Advance Permission to Enter as a Nonimmigrant e-SAFE process for citizens of Canada:</h2>
 
+                    <div class="p-2">
                         <strong>Eligible nonimmigrant citizens from:</strong>
+                    </div>
                     <div class="col-6 col-md-auto">
                         <ul>
                             <li class="list-inline"><img decoding="async" src="{{ asset('app-logo/Frame5.png') }}" alt="ESTA Countries">  Canada </li>

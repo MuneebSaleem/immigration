@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<title>Pardons Canada Application Guide</title>
 <link rel="stylesheet" href="{{ asset('dist/css/styles.css')  }}">
 @section('content')
     <link rel="stylesheet" href="{{ asset('dist/css/modal.css')  }}">

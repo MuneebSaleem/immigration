@@ -7,13 +7,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'U.S. Immigration Support') }}</title>
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
-    
+
     <link rel="stylesheet" href="{{ asset('dist/css/select2.min.css')  }}">
     <link rel="stylesheet" href="{{ asset('dist/css/select2-bootstrap-5-theme.min.css')  }}">
     <!-- Scripts -->

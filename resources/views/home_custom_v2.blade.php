@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<title>US Entry Waiver Guide</title>
 <link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">
 <style>
     /* Hide number input spinner arrows */
@@ -364,7 +365,7 @@
                                 <li class="list-inline"><img decoding="async" src="{{ asset('app-logo/marshal.png') }}" alt="ESTA Countries">  Marshall Islands</li>
                             </ul>
                         </div>
-                        <h2  class="px-0 custom-h2"><b>Note:</b> If you're seeking admission under the Visa Waiver Program (VWP) per INA section 217, do not file this form. Inadmissible aliens from VWP countries must apply for a nonimmigrant visa at a U.S. Embassy or consulate for travel authorization.</h2>
+
                     </div>
                 </div>
             </div>
@@ -538,7 +539,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="mb-0" style="text-align: center;">Services of Canada operates as a privately-owned entity. Our primary aim is to aid immigrants and travelers in navigating the intricate United States immigration process through our self-help immigration guides and travel authorization consultancy. We are not a law firm, and our website does not offer legal advice. We are independent of the United States government. Applicants retain the option to submit their applications directly at uscis.gov or travel.state.gov without our assistance.</p>
+                    <p class="mb-0" style="text-align: center;">Services of Canada operates as a private entity, dedicated to assisting immigrants and travelers with the complex U.S. immigration process through our self-help guides and travel authorization consultancy. We are not a law firm, and our website does not provide legal advice. We are separate from the U.S. government. Applicants have the choice to submit their applications directly at uscis.gov or travel.state.gov without our aid.</p>
                 </div>
             </div>
         </div>

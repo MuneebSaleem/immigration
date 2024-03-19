@@ -20,6 +20,18 @@
             background: #154a7e url("{{ asset('app-logo/product_heading.png') }}") no-repeat right center;
         }
 
+        .form-select {
+            min-height: 40px; /* Adjust as needed */
+            max-height: 200px; /* Adjust as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .form-control{
+            min-height: 40px; /* Adjust as needed */
+            max-height: 200px; /* Adjust as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
         @media (max-width: 767.98px) {
             .testing {
                 display: flex;

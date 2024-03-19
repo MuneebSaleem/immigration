@@ -110,26 +110,73 @@
             </div>
             <div class="modal-body">
                 <h2>Privacy Policy</h2>
-                <p>U.S. Immigration Support is committed to protecting our clients’ privacy. U.S. Immigration Support only uses the information we collect to process orders requested by our clients. As a visitor to our website, you have the right to understand our information privacy practices. We understand that submitting your information over the Internet involves a great deal of trust on your part and we take this trust very seriously. Our highest priority is to ensure the security and confidentiality of our clients’ personally identifiable information such as name, address, phone number, email address and credit card details. Please review our Terms and Conditions page for more information.</p>
-                <p class="mb-0"><strong>What Information We Collect</strong></p>
-                <p>We do not collect any personal information by you browsing our website. If you choose to order any of our products or services, you must voluntarily provide us with your name, address, phone number, email address and credit card information. Once an order is placed, we provide tracking through FEDEX for hard copy products, and we record your IP address, time and date for downloadable products. Your information is not shared with any person, business or organization. No credit card information is stored on our servers. U.S. Immigration Support uses Authorize.net to process credit card transactions. Authorize.net is a leading provider of payment gateway services making it able for customers to purchase products online. Authorize.net will never use your personal information for any other reason. For statistical purposes we have installed Google Analytics. Visit our Business and Website Certifications section for more information.</p>
-                <p class="mb-0"><strong>Cookies</strong></p>
-                <p>A cookie is a small text file that is stored on a user’s computer for record-keeping purposes. We use cookies on this site. We do not link the information we store in cookies to any personally identifiable information you submit while on our site. We use both session ID cookies and persistent cookies. We use session cookies to make it easier for you to navigate our site. A session ID cookie expires when you close you browser. A persistent cookie remains on your hard drive for an extended period of time. You can remove persistent cookies by following directions provided in your Internet browser’s “help” file or visit our Cookies Page for more information. Persistent cookies also enable us to track and target the interests of our users to enhance the experience on our site. If you reject cookies, you may still use our site, but your ability to use some areas of our site, such as contests or surveys, will be limited. With cookies diabled you may not be able to submit your order.</p>
-                <p class="mb-0"><strong>Use of Your Data</strong></p>
-                <p>The information you voluntarily provide to us is only used to process your order. User data is never disclosed to any third parties unless as otherwise disclosed in this privacy statement. We disclose your personal information as required by law, such as to comply with a subpoena, or similar legal process when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request, to any other third party with your prior consent to do so.</p>
-                <p class="mb-0"><strong>Links to Other Web Sites</strong></p>
-                <p>Our Site includes links to other Web sites whose privacy practices may differ from those of Us Immigration Support. If you submit personal information to any of those sites, your information is governed by their privacy statements. We encourage you to carefully read the privacy statement of any Web site you visit.</p>
-                <p class="mb-0"><strong>Data Retention</strong></p>
-                <p>We will retain your information for as long as your account is active or as needed to provide you services. If you wish to cancel your account or request that we no longer use your information to provide you services contact us at <a href="https://www.usimmigrationsupport.org/cdn-cgi/l/email-protection#82ebece4edc2f7f1ebefefebe5f0e3f6ebedecf1f7f2f2edf0f6acedf0e5"><span class="__cf_email__" data-cfemail="91f8fff7fed1e4e2f8fcfcf8f6e3f0e5f8feffe2e4e1e1fee3e5bffee3f6">[email&#160;protected]</span></a>. We will retain and use your information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.</p>
-                <p class="mb-0"><strong>Data Retention</strong></p>
-                <p>Access to Personally Identifiable Information</p>
-                <p>If your personally identifiable information changes, or if you no longer desire our service, you may do the following: correct, update, amend, delete/remove or deactivate it, by contacting our customer service department at <a href="https://www.usimmigrationsupport.org/cdn-cgi/l/email-protection#c9a0a7afa689bcbaa0a4a4a0aebba8bda0a6a7babcb9b9a6bbbde7a6bbae"><span class="__cf_email__" data-cfemail="660f0800092613150f0b0b0f011407120f09081513161609141248091401">[email&#160;protected]</span></a></p>
+
+                <p></p>
+                <p class="mb-0"><strong></strong></p>
+
+                <p>Record Removal Services of Canada (“RRSC”), is committed to Maintaining Your Privacy and Security</p>
+                <p>Our priority is to ensure that your transaction is secure, the data you provide to us is protected, and that your privacy is respected. We take this responsibility very seriously.</p>
+
                 <p class="mb-0"><strong>Security</strong></p>
-                <p>Our shopping cart includes a Secure Socket Layer (SSL) certificate to protect our customers’ information when shopping online. SSL technology encrypts the customers’ name, address, and credit card information between your computer and our server. We work closely with Visa, MasterCard, American Express and Discover to eliminate any fraudulent transactions. It is easy to see that your connection is secure as the URL of your website will change from http:// to https:// indicating that the connection is secure during the check-out process. We follow generally accepted industry standards to protect the personal information submitted to us, both during transmission and once we receive it. No method of transmission over the Internet, or method of electronic storage, is 100% secure, however. Therefore, while we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
-                <p class="mb-0"><strong>Changes in this Privacy Statement</strong></p>
-                <p>If we decide to change our privacy policy, we will post those changes to this privacy statement, the home page, and other places we deem appropriate so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we disclose it. We reserve the right to modify this privacy statement at any time, so please review it frequently. If we make material changes to this policy, we will notify you here, by email, or by means of a notice on our home page.</p>
-                <p class="mb-0"><strong>Contact our Legal Department</strong></p>
-                <p>Email us at <a href="https://www.usimmigrationsupport.org/cdn-cgi/l/email-protection#7e171018113e0b0d17131317190c1f0a1711100d0b0e0e110c0a50110c19"><span class="__cf_email__" data-cfemail="9df4f3fbf2dde8eef4f0f0f4faeffce9f4f2f3eee8ededf2efe9b3f2effa">[email&#160;protected]</span></a> for further assistance.</p>
+
+                <p>We take significant steps to ensure that our servers and your data are always kept secure. We have even hired leading security firms to improve and audit our performance. When we collect personally identifiable information from you, the data is always secured by Secure Sockets Layer (SSL). SSL Certificates protect e-commerce transactions and other private information with 128-bit encryption, the strongest SSL protection available. All information collected is protected from unauthorized access.</p>
+
+                <p class="mb-0"><strong>Privacy And Sharing Of Data</strong></p>
+
+                <p>Personal information is collected when users voluntarily register at recordremoval.org to purchase items, receive newsletters, or for other special offers or promotional opportunities. It is recordremoval.org policy to maintain all personal information as confidential.</p>
+                <p>If you sign-up for Record Suspension Service, it is necessary for us to share your information with the RCMP in order to fulfill your service request. RCMP’s Privacy Policy can be found on http://www.rcmp-grc.gc.ca <br>Occasionally, we may share your contact information with other companies, in order for them to contact you regarding relevant products, and services or for non-marketing purposes. Out of respect for your privacy, we will always require those affiliated companies to abide by our Privacy Policy and, if they contact you, they will always provide you the opportunity to opt out of receiving those communications. <br>If you are already registered with RRSC but no longer wish to receive messages from us, or you wish to correct/update information provided to us, please let us know using the contact information at the bottom of this page.<br></p>
+
+                <p>Any of the information we collect from you may be used in any of the following ways:</p>
+                <p>To personalize your experience <br> To improve our website <br>To improve customer service <br>To process transactions <br>To respond to any questions or communication request <br>Aggregate Information About Website Visitors
+                </p>
+
+                <p>We create aggregate reports of visitors to our web sites in order to measure the performance of our web sites. These reports do not contain any personal data about visitors.</p>
+
+                <p class="mb-0"><strong>Children And Privacy</strong></p>
+                <p>RRSC encourages parents to spend time with their children online. Under no circumstances does RRSC intentionally collect personal data from any person under the age of 14. If you are under 14, please ask a parent to provide any information or exit this site.</p>
+
+
+                <p class="mb-0"><strong>Tracking And Use Of Cookies</strong></p>
+
+                <p>You may have clicked on an advertisement for this website that was delivered by an advertising network partner of Record Removal Services of Canada, such as Google.</p>
+
+                <p>RRSC and its advertising network partners often measure the performance of the advertising they deliver. By providing a tool to more accurately measure the performance of the ads delivered, RRSC and our advertising network partners will be able to improve the quality and relevance of the ads that you see online. One of the tools we and our advertising network partners use is called a “cookie;” a cookie is a small string of text that is placed on your computer when you click on ads or visit certain pages on our site or our partners’ sites. Cookies can remain active on your computer for up to 180 days. If you visit certain pages of our website or partner websites during that period, RRSC and our advertising network partners will be able to tell that you saw an ad and visited particular pages or completed particular actions, such as placing an order with us (if applicable). <br>If you’d like to know more about how RRSC handles information gathered from the use of cookies, please read this disclaimer and you can find links to our advertising network partners’ privacy policies below:</p>
+
+                <p>Google <br> Yahoo! <br> Microsoft <br> Elavon</p>
+
+                <p>If you want to disable the use of cookies, you can reset your browser to refuse all cookies or to indicate when a cookie is being sent. However, some websites may not function properly if you refuse to accept cookies</p>
+
+                <p class="mb-0"><strong>What payment methods are accepted?</strong></p>
+
+                <p>Accepted payment methods are:</p>
+
+                <ul>
+                    <li>Debit cards attached to bank accounts</li>
+                    <li>Credit cards (as long as they are not pre-paid)</li>
+                    <li>Visa, MasterCard™️, Discover, American Express®️ are accepted</li>
+
+                </ul>
+
+                <p>Payment methods that are not accepted:</p>
+
+                <ul>
+                    <li>Pre-paid or reloadable credit/debit cards (Example: cards that can be purchased from a retail store)</li>
+                    <li>PayPal®️</li>
+                    <li>Venmo</li>
+                    <li>Cash App Card</li>
+                    <li>ACH bank transfers (Direct Debit)</li>
+                    <li>Money orders, cash or cash equivalents</li>
+                </ul>
+
+
+                <p>Capital One recently made a decision to prevent their Capital One credit cards from being used to make RRSC purchases.</p>
+                <p>* Apple Pay can only be used to pay for active installments on your RRSC orders. It cannot be used to make an initial purchase.</p>
+
+                <p class="mb-0"><strong>Third Party Advertising And Analytics</strong></p>
+                <p>We may also use third-party advertising or analytics firms to serve ads on our behalf or to help us serve more relevant content, and/or measure our advertising, website effectiveness, and other factors.</p>
+
+                <p class="mb-0"><strong>Changes To This Privacy Statement</strong></p>
+                <p>RRSC reserves the right to change this policy. If we do make changes, the revised privacy policy will be posted on this site.</p>
             </div>
 
         </div>

@@ -267,9 +267,9 @@
                 <div class="col-xs-12 col-sm-6 foot-links">
                     <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#legal" data-bs-toggle="modal" data-bs-target="#legal" id="legalModal">Legal Disclaimer</a>
 
-                    <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms" id="termModal">Terms &amp;
+                    <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#terms" data-bs-toggle="modal" data-bs-target="#terms" id="termModal1">Terms &amp;
                         Conditions</a>
-                    <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy" id="privacylModal">Privacy Policy</a>
+                    <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#privacy" data-bs-toggle="modal" data-bs-target="#privacy" id="privacylModal1">Privacy Policy</a>
                     <a class="text-white me-md-3 mb-3 mb-md-0 link-decortion-none" type="button" href="#cookies" data-bs-toggle="modal" data-bs-target="#cookies" id="cookiesModal">Cookies</a>
                     <a class="text-white button link-decortion-none" href="#contact" data-bs-toggle="modal" data-bs-target="#contact" id="contactModal">Contact</a>
 
@@ -343,7 +343,15 @@
             $("#terms").removeClass( "fade" )
         });
 
+        $("#termModal1").click(function () {
+            $("#terms").removeClass( "fade" )
+        });
+
         $("#privacylModal").click(function () {
+            $("#privacy").removeClass( "fade" )
+        });
+
+        $("#privacylModal1").click(function () {
             $("#privacy").removeClass( "fade" )
         });
 

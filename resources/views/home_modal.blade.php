@@ -111,8 +111,7 @@
             <div class="modal-body">
                 <h2>Privacy Policy</h2>
 
-                <p></p>
-                <p class="mb-0"><strong></strong></p>
+                <p class="mb-0"><strong>PRIVACY POLICY</strong></p>
 
                 <p>Record Removal Services of Canada (“RRSC”), is committed to Maintaining Your Privacy and Security</p>
                 <p>Our priority is to ensure that your transaction is secure, the data you provide to us is protected, and that your privacy is respected. We take this responsibility very seriously.</p>
@@ -127,8 +126,10 @@
                 <p>If you sign-up for Record Suspension Service, it is necessary for us to share your information with the RCMP in order to fulfill your service request. RCMP’s Privacy Policy can be found on http://www.rcmp-grc.gc.ca <br>Occasionally, we may share your contact information with other companies, in order for them to contact you regarding relevant products, and services or for non-marketing purposes. Out of respect for your privacy, we will always require those affiliated companies to abide by our Privacy Policy and, if they contact you, they will always provide you the opportunity to opt out of receiving those communications. <br>If you are already registered with RRSC but no longer wish to receive messages from us, or you wish to correct/update information provided to us, please let us know using the contact information at the bottom of this page.<br></p>
 
                 <p>Any of the information we collect from you may be used in any of the following ways:</p>
-                <p>To personalize your experience <br> To improve our website <br>To improve customer service <br>To process transactions <br>To respond to any questions or communication request <br>Aggregate Information About Website Visitors
+                <p>To personalize your experience <br> To improve our website <br>To improve customer service <br>To process transactions <br>To respond to any questions or communication request
                 </p>
+                <p class="mb-0"><strong>Aggregate Information About Website Visitors</strong></p>
+
 
                 <p>We create aggregate reports of visitors to our web sites in order to measure the performance of our web sites. These reports do not contain any personal data about visitors.</p>
 
@@ -166,17 +167,14 @@
                     <li>Cash App Card</li>
                     <li>ACH bank transfers (Direct Debit)</li>
                     <li>Money orders, cash or cash equivalents</li>
+                    <li>Capital One recently made a decision to prevent their Capital One credit cards from being used to make RRSC purchases.</li>
+                    <li>* Apple Pay can only be used to pay for active installments on your RRSC orders. It cannot be used to make an initial purchase.</li>
                 </ul>
 
-
-                <p>Capital One recently made a decision to prevent their Capital One credit cards from being used to make RRSC purchases.</p>
-                <p>* Apple Pay can only be used to pay for active installments on your RRSC orders. It cannot be used to make an initial purchase.</p>
 
                 <p class="mb-0"><strong>Third Party Advertising And Analytics</strong></p>
                 <p>We may also use third-party advertising or analytics firms to serve ads on our behalf or to help us serve more relevant content, and/or measure our advertising, website effectiveness, and other factors.</p>
 
-                <p class="mb-0"><strong>Changes To This Privacy Statement</strong></p>
-                <p>RRSC reserves the right to change this policy. If we do make changes, the revised privacy policy will be posted on this site.</p>
             </div>
 
         </div>
@@ -191,72 +189,18 @@
             </div>
             <div class="modal-body">
                 <h2>Cookie Policy</h2>
-                <p><strong>Notice</strong><br/>
-                    We use cookies on our website to give you the most relevant experience by remembering your preferences and repeat visits. By clicking “Accept All”, you consent to the use of ALL the cookies. However, you may visit “More info” to provide a controlled consent.</p>
-                <p><strong>Cookies Policy</strong></p>
-                <ul>
-                    <li>We inform users (hereinafter, “you”) that cookies are used on the Website (hereinafter, “our/this Website”).</li>
-                    <li>The below Cookie Policy describes how USIMMIGRATIONSUPPORT.ORG, which owns and controls the Website, uses cookies (hereinafter, “we”).</li>
-                    <li>We advise users to examine this policy on a frequent basis because it may be updated as a result of new regulations or business reasons.</li>
-                </ul>
-                <p><strong>Why do we utilize cookies, and what are they?</strong><br/>
-                    “Cookies” are file formats that are used for a variety of reasons, including adjusting the Website’s layout to your device, gathering statistical data, enhancing your user experience, and so on.</p>
-                <p>You consent to the establishment of cookies by entering and exploring this Website and purchasing the services offered.</p>
-                <p>These include session cookies (which are automatically deleted when you close your browser), persistent cookies (which are stored on your device for a long time), owned cookies (which are sent to your device by our Website to collect data for our use), and third-party cookies (which are sent to your device by a third party) (service providers we have contracted, e.g., links to social media to reshare our content).</p>
-                <p>Cookies for user login, cookies for user security, cookies for authentication or identity, add-on cookies, user interface cookies, and certain session cookies are exempt from such permission.</p>
-                <p>Please be aware that if you modify your browser’s settings by deactivating the limits imposed on the storage of cookies, we will infer you give us your permission.</p>
-                <p>Furthermore, your consent will not be necessary if the placement of cookies is essential to provide a service on our Website that you have specifically requested.</p>
-                <p>Third-party cookies are subject to the Privacy and Cookies Policies of the third-party.</p>
-                <p>We are not responsible for the content or validity of the third-party Policies mentioned above.</p>
-                <p><strong>The following cookie types may be installed in your browser by us:</strong></p>
-                <ul>
-                    <li>Technical cookies enable the management and operation of our Website, as well as its features and services, such as carry-out sales, payment processing, social media content sharing, and so on.</li>
-                    <li>Analytical cookies let us understand how you use our website and which data or services you are most interested in, so we can improve your overall customer experience.</li>
-                    <li>Advertising cookies help us improve the quality of our website’s adverts.</li>
-                </ul>
-                <table width="403">
-                    <tbody>
-                    <tr>
-                        <td width="129"><strong>Cookies name</strong></td>
-                        <td width="88"><strong>Supplier</strong></td>
-                        <td width="94"><strong>Type</strong></td>
-                        <td width="231"><strong>Storage Period</strong></td>
-                    </tr>
-                    <tr>
-                        <td width="129">Authorization</td>
-                        <td width="88">Owned</td>
-                        <td width="94">Technical</td>
-                        <td width="231">Session</td>
-                    </tr>
-                    <tr>
-                        <td width="129">Matomo</td>
-                        <td width="88">Matomo</td>
-                        <td width="94">Analytical</td>
-                        <td width="231">2 years</td>
-                    </tr>
-                    <tr>
-                        <td width="129"></td>
-                        <td width="88">usimmigrationsupport.org</td>
-                        <td width="94">Analytical</td>
-                        <td width="231">Session</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p>&nbsp;</p>
-                <p><strong>What rights does the user have when it comes to blocking or refusing cookies?</strong></p>
-                <p>You can revoke your permission to the placement of cookies by this Website at any time by changing the settings on your device’s browser.</p>
-                <p>For the most common internet browsers, here are links to instructions on how to handle or erase cookies:</p>
-                <ul>
-                    <li>Google Chrome</li>
-                    <li>Mozilla Firefox</li>
-                    <li>Microsoft IE and Edge</li>
-                    <li>Apple Safari</li>
-                    <li>Chrome for Android</li>
-                    <li>Opera</li>
-                </ul>
-                <p>Keep in mind that if you disable cookies, you will lose access to certain Website functions that require them.</p>
-                <p>You may also set your computer browser to automatically allow or reject all types of cookies. You can also set your browser to inform you whenever a cookie is received, allowing you to choose whether or not to accept it.</p>
-                <p>You can also enable private browsing, which prevents your browser from saving browsing data, website logins, cookies, and other information about the web pages you visit, and non-tracking browsing, which prevents your browser from tracking your visits and user patterns.</p>
+
+                <p class="mb-0"><strong>Tracking And Use Of Cookies</strong></p>
+                <p>You may have clicked on an advertisement for this website that was delivered by an advertising network partner of Record Removal Services of Canada, such as Google.</p>
+
+                <p>RRSC and its advertising network partners often measure the performance of the advertising they deliver. <br><br> By providing a tool to more accurately measure the performance of the ads delivered, RRSC and our advertising network partners will be able to improve the quality and relevance of the ads that you see online. <br><br> One of the tools we and our advertising network partners use is called a “cookie;” a cookie is a small string of text that is placed on your computer when you click on ads or visit certain pages on our site or our partners’ sites. <br><br> Cookies can remain active on your computer for up to 180 days. If you visit certain pages of our website or partner websites during that period, RRSC and our advertising network partners will be able to tell that you saw an ad and visited particular pages or completed particular actions, such as placing an order with us (if applicable).
+                    If you’d like to know more about how RRSC handles information gathered from the use of cookies, please read this disclaimer and you can find links to our advertising network partners’ privacy policies below:
+                </p>
+
+                <p>Google <br> Yahoo! <br> Microsoft <br> Elavon</p>
+
+                <p>If you want to disable the use of cookies, you can reset your browser to refuse all cookies or to indicate when a cookie is being sent. However, some websites may not function properly if you refuse to accept cookies.</p>
+
             </div>
 
         </div>

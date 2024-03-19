@@ -26,14 +26,18 @@
                 flex-direction: column-reverse;
             }
 
-            .col-md-8,
-            .col-md-4 {
-                width: 100%;
-            }
+
 
             .border-left {
             border-left: none !important;
         }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .form-select {
+                position: relative;
+                z-index: 1000;
+            }
         }
 
 

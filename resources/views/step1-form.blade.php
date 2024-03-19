@@ -214,7 +214,7 @@
                 <div class="sidebar-form">
         			<div class="row">
                         <h2 class="light-grey px-5 sidebar-head">Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians.</h2>
-                        <img src="{{ asset('app-logo/b-2-tourist-visa.jpg') }}" class="mb-4 px-5">
+                        <img src="{{ asset('app-logo/Booksample.png') }}" class="mb-4 px-5">
                         <p class="px-5 text-center mt-4"><img src="{{ asset('app-logo/icon_pdf.png') }}" /> PRICE $9.99 CAD</p>
                         <img class="my-3 px-5" src="{{ asset('app-logo/star-separator.png') }}">
                         <p class="text-justify text-paragraph">Criminal records can haunt individuals, impacting job prospects, travel plans, and more. With one in seven adult Canadians having a record, the need for a U.S. Entry Waiver is common. The application process, taking months, demands early action to avoid travel disruptions. The waiver is crucial for crossing the border, securing employment, housing, education, and volunteering opportunities. Our guide, "Crossing the Line: A Step-by-Step Guide to Form I-192 U.S. Entry Waivers for Canadians," provides comprehensive assistance, including official document requirements, stay duration clarity, recommended visa types, eligibility factors, and all necessary documents and forms. Purchase now for instant access!

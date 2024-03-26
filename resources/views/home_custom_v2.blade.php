@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col-9 col-md-6 col-xl-4">
 
-                    <img class="navbar-brand" src="{{ asset('app-logo/BridgeSealHeader.webp') }}" alt="US Immigration support">
+                    <img class="navbar-brand" src="{{ asset('app-logo/newlogoweb.webp') }}" alt="US Immigration support">
 
                 </div>
 
@@ -130,7 +130,7 @@
                             <div class="step-header">
                                 <div class="w-75" style="width: 103% !important;">
                                     <h1 class="text-text-primary mb-10">
-                                        <b>US Entry Waiver Guide</b></h1>
+                                        <b>U.S. Entry Waiver Guide</b></h1>
                                 </div>
                             </div>
 

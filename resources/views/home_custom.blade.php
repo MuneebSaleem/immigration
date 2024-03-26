@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<title>Pardons Canada Application Guide</title>
+<title>Canadian Pardon Application Guide</title>
 <link rel="stylesheet" href="{{ asset('dist/css/b5st9632.css')  }}">
 <style>
     /* Hide number input spinner arrows */

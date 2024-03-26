@@ -17,7 +17,7 @@ use App\Http\Controllers\StepsController;
 |
 */
 
-Route::get('/pardon/pardons-canada-guide/', function () {
+Route::get('/pardons/canadian-pardon-application-guide/', function () {
     return view('welcome');
 });
 
